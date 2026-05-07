@@ -2,6 +2,7 @@
 <html lang="de-AT">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://commons.wikimedia.org; connect-src 'self' https://formsubmit.co; frame-ancestors 'none';">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Kontakt | Mag. Tamas Toth — Handelsagent in Wien</title>
   <meta name="description" content="Kontakt zu Mag. Tamas Toth — Handelsagent in Wien für Markteintritt und Marktentwicklung in Österreich und Ungarn. Anfrage per Formular, E-Mail, Telefon oder WhatsApp.">
@@ -11,9 +12,7 @@
   <link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/kapcsolat/">
   <link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/contact/">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
 
   <link rel="stylesheet" href="../../assets/css/styles.css">
 
@@ -25,6 +24,7 @@
     "inLanguage": "de-AT",
     "mainEntity": {
       "@type": "ProfessionalService",
+        "logo": {"@type":"ImageObject","url":"https://commons.wikimedia.org/wiki/File:Mag._Tamas_Toth_logo_(de).jpg","name":"Mag. Tamas Toth Logo"},
       "name": "Mag. Tamas Toth — Handelsagent",
       "telephone": "+43-699-1264-2565",
       "email": "tamas.toth@metallagentur.at",
@@ -38,13 +38,36 @@
     }
   }
   </script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mag. Tamas Toth — Handelsagent">
+  <meta property="og:title" content="Kontakt — Anfrage an Mag. Tamas Toth, Handelsagent Wien">
+  <meta property="og:description" content="Kontaktformular, E-Mail, Telefon und WhatsApp. Werktags Antwort innerhalb 24 Stunden.">
+  <meta property="og:url" content="https://magtamastoth.com/de/kontakt/">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:image" content="https://magtamastoth.com/assets/img/logo_de.webp">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MagTamasToth">
+  <meta name="twitter:title" content="Kontakt — Anfrage an Mag. Tamas Toth, Handelsagent Wien">
+  <meta name="twitter:description" content="Kontaktformular, E-Mail, Telefon und WhatsApp. Werktags Antwort innerhalb 24 Stunden.">
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
-      <a class="site-logo" href="/de/"><span class="site-logo__mark">TT</span><span>Mag. Tamas Toth</span></a>
+      <a class="site-logo" href="/de/" aria-label="Mag. Tamas Toth — Handelsagent Wien">
+        <picture>
+          <source srcset="/assets/img/logo_de.webp" type="image/webp">
+          <img src="/assets/img/logo_de_small.png"
+               alt="Mag. Tamas Toth — Handelsagent Wien"
+               width="600" height="600"
+               loading="eager"
+               fetchpriority="high">
+        </picture>
+      </a>
       <nav class="primary-nav">
         <ul>
           <li><a href="/de/leistungen/">Leistungen</a></li>
@@ -53,7 +76,7 @@
           <li><a href="/de/loesungen/">Lösungen</a></li>
           <li><a href="/de/ueber-mich/">Über mich</a></li>
           <li><a href="/de/faq/">FAQ</a></li>
-          <li><a href="/de/kontakt/" class="btn btn--primary" style="padding:0.5rem 1rem;" aria-current="page">Kontakt</a></li>
+          
         </ul>
       </nav>
       <div class="lang-switch">
@@ -73,7 +96,7 @@
       <li><a href="/de/loesungen/">Lösungen</a></li>
       <li><a href="/de/ueber-mich/">Über mich</a></li>
       <li><a href="/de/faq/">FAQ</a></li>
-      <li><a href="/de/kontakt/">Kontakt</a></li>
+      
     </ul>
   </div>
 
@@ -206,16 +229,20 @@
               <textarea class="form__textarea" name="message" id="message" required placeholder="Skizze des Vorhabens, Zielmarkt, Zeitrahmen, evtl. konkrete Fragen"></textarea>
             </div>
 
-            <label class="checkbox-item">
-              <input type="checkbox" name="consent" required>
-              <span>Ich stimme der Verarbeitung meiner Daten gemäß <a href="/de/datenschutz/">Datenschutzerklärung</a> zu. <span class="required">*</span></span>
-            </label>
-
-            <input type="hidden" name="_subject" value="Anfrage über magtamastoth.com (DE)">
-
-            <button type="submit" class="btn btn--primary btn--block">Anfrage senden <span class="btn__arrow">→</span></button>
-
-            <p class="form__legal">Ihre Daten werden ausschließlich zur Bearbeitung der Anfrage verwendet und nicht an Dritte weitergegeben. Mehr in der <a href="/de/datenschutz/">Datenschutzerklärung</a>.</p>
+            <div class="form__submit-row">
+              <label class="consent-row" for="consent_de">
+                <input type="checkbox" id="consent_de" name="consent" required>
+                <span>
+                  Ich habe die <a href="/de/datenschutz/" target="_blank" rel="noopener noreferrer">Datenschutzerklärung</a>
+                  gelesen und stimme der Verarbeitung meiner Daten zu.
+                  <span class="required" aria-label="Pflichtfeld">*</span>
+                </span>
+              </label>
+              <button type="submit" class="btn btn--primary">
+                Anfrage senden <span class="btn__arrow" aria-hidden="true">→</span>
+              </button>
+            </div>
+            <input type="hidden" name="_subject" value="Anfrage von magtamastoth.com (DE)">
           </form>
         </div>
       </div>
@@ -239,7 +266,7 @@
             <li><a href="/de/loesungen/">Lösungen</a></li>
             <li><a href="/de/ueber-mich/">Über mich</a></li>
             <li><a href="/de/faq/">FAQ</a></li>
-            <li><a href="/de/kontakt/">Kontakt</a></li>
+            
           </ul>
         </div>
         <div>
@@ -270,5 +297,86 @@
 
   <script src="../../assets/js/script.js" defer></script>
   <script src="../../assets/js/contact.js" defer></script>
+
+
+<div class="fab-cta" id="fab-cta" role="complementary" aria-label="Beratung anfragen">
+  <a href="/de/kontakt/" class="fab-cta__btn" aria-label="Beratung anfragen">
+    <span class="fab-cta__icon" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </span>
+    <span class="fab-cta__label">Beratung anfragen</span>
+  </a>
+</div>
+<script>
+(function() {
+  'use strict';
+  // Csak technikai cookie-k vannak (session) — nincs tracking/analytics
+  // TKG 2021 §165 Abs 3: "unbedingt erforderlich" cookies = keine Einwilligung nötig
+  // Trotzdem: Hinweis empfohlen (Österreichische Datenschutzbehörde Empfehlung)
+  
+  var key = 'cookie_notice_v1';
+  if (sessionStorage.getItem(key)) return;
+  
+  var lang = document.documentElement.lang || 'de';
+  var l = lang.slice(0,2);
+  
+  var texts = {
+    de: { 
+      msg: 'Diese Website verwendet ausschließlich technisch notwendige Cookies. Es werden keine Tracking- oder Analyse-Cookies gesetzt.',
+      link: '/de/datenschutz/', 
+      linkText: 'Datenschutz',
+      ok: 'Verstanden', 
+      more: 'Details'
+    },
+    hu: { 
+      msg: 'Ez a weboldal kizárólag technikailag szükséges sütiket használ. Nyomkövető vagy elemzési sütik nincsenek.',
+      link: '/hu/adatvedelem/', 
+      linkText: 'Adatvédelem',
+      ok: 'Rendben', 
+      more: 'Részletek'
+    },
+    en: { 
+      msg: 'This website uses only technically necessary cookies. No tracking or analytics cookies are set.',
+      link: '/en/privacy/', 
+      linkText: 'Privacy',
+      ok: 'Got it', 
+      more: 'Details'
+    }
+  };
+  
+  var t = texts[l] || texts.de;
+  
+  var banner = document.createElement('div');
+  banner.className = 'cookie-banner';
+  banner.setAttribute('role', 'dialog');
+  banner.setAttribute('aria-label', t.ok);
+  banner.innerHTML = 
+    '<p class="cookie-banner__text">' + t.msg + 
+    ' &mdash; <a href="' + t.link + '">' + t.linkText + '</a></p>' +
+    '<div class="cookie-banner__actions">' +
+    '<button class="cookie-banner__btn cookie-banner__btn--decline" data-action="more">' + t.more + '</button>' +
+    '<button class="cookie-banner__btn cookie-banner__btn--accept" data-action="ok">' + t.ok + '</button>' +
+    '</div>';
+  
+  document.body.appendChild(banner);
+  
+  setTimeout(function() { banner.classList.add('is-visible'); }, 300);
+  
+  banner.addEventListener('click', function(e) {
+    var btn = e.target.closest('[data-action]');
+    if (!btn) return;
+    var action = btn.dataset.action;
+    if (action === 'ok') {
+      sessionStorage.setItem(key, '1');
+      banner.classList.remove('is-visible');
+      setTimeout(function() { banner.remove(); }, 400);
+    } else if (action === 'more') {
+      window.location.href = t.link;
+    }
+  });
+})();
+</script>
 </body>
 </html>

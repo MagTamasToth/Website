@@ -75,3 +75,57 @@
   const yearSpan = document.querySelector('[data-current-year]');
   if (yearSpan) yearSpan.textContent = new Date().getFullYear();
 })();
+
+// ── FAB CTA gomb — cookie-banner után jelenik meg ────────────────────────
+(function () {
+  var fab = document.getElementById('fab-cta');
+  if (!fab) return;
+
+  function showFab() {
+    fab.classList.add('is-visible');
+  }
+
+  // Ha a cookie-notice már el van fogadva → azonnal látható
+  var cookieKey = 'cookie_notice_v1';
+  try {
+    if (sessionStorage.getItem(cookieKey)) {
+      // Kis késleltetés az oldalbetöltés utáni animációhoz
+      setTimeout(showFab, 600);
+      return;
+    }
+  } catch (e) {}
+
+  // Cookie-banner még látható → FAB csak a bezárás után jelenik meg
+  // MutationObserver: figyeli ha a banner eltűnik a DOM-ból
+  var observer = new MutationObserver(function () {
+    var banner = document.querySelector('.cookie-banner');
+    if (!banner || !banner.classList.contains('is-visible')) {
+      setTimeout(showFab, 400);
+      observer.disconnect();
+    }
+  });
+
+  observer.observe(document.body, { childList: true, subtree: true, attributes: true, attributeFilter: ['class'] });
+
+  // Fallback: 5mp után mindenképp megjelenik
+  setTimeout(function () {
+    showFab();
+    observer.disconnect();
+  }, 5000);
+
+  // Cookie-banner "Verstanden" → body.cookie-visible class kezelés
+  document.addEventListener('click', function (e) {
+    var btn = e.target.closest('.cookie-banner__btn');
+    if (!btn) return;
+    document.body.classList.remove('cookie-visible');
+    setTimeout(showFab, 450);
+  });
+
+  // Kezdeti állapot: ha banner látható, body kap egy class-t
+  var checkBanner = function () {
+    var b = document.querySelector('.cookie-banner.is-visible');
+    if (b) document.body.classList.add('cookie-visible');
+    else document.body.classList.remove('cookie-visible');
+  };
+  setTimeout(checkBanner, 350);
+})();

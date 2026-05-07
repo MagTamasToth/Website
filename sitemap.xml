@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ROOT / SPRACHWEICHE -->
+  <url>
+    <loc>https://magtamastoth.com/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magtamastoth.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- DEUTSCH -->
+  <url>
+    <loc>https://magtamastoth.com/de/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/leistungen/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/leistungen/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/szolgaltatasok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/services/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/branchen/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/branchen/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/iparagak/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/industries/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/regionen/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/regionen/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/regiok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/regions/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/loesungen/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/loesungen/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/megoldasok/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/solutions/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/ueber-mich/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/ueber-mich/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/bemutatkozas/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/about/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/faq/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/faq/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/gyik/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/faq/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/kontakt/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/kontakt/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/kapcsolat/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/contact/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/impressum/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/datenschutz/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de/agb/</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- UNGARISCH -->
+  <url>
+    <loc>https://magtamastoth.com/hu/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://magtamastoth.com/hu/szolgaltatasok/</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/hu/iparagak/</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu/regiok/</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu/megoldasok/</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu/bemutatkozas/</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/hu/gyik/</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/hu/kapcsolat/</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/hu/impresszum/</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/hu/adatvedelem/</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/hu/aszf/</loc><priority>0.3</priority></url>
+
+  <!-- ENGLISCH -->
+  <url>
+    <loc>https://magtamastoth.com/en/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url><loc>https://magtamastoth.com/en/services/</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/en/industries/</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en/regions/</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en/solutions/</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en/about/</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/en/faq/</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/en/contact/</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/en/imprint/</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/en/privacy/</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/en/terms/</loc><priority>0.3</priority></url>
+
+</urlset>

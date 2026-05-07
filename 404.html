@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 — Page not found</title>
+  <meta name="robots" content="noindex, follow">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="/assets/css/styles.css">
+</head>
+<body>
+  <main style="min-height: 100vh; display: grid; place-items: center; padding: var(--space-6) 1.5rem; background: linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-warm) 100%);">
+    <div style="max-width: 560px; text-align: center;">
+      <p style="font-family: var(--font-mono); font-size: var(--text-xs); letter-spacing: 0.18em; text-transform: uppercase; color: var(--color-accent); margin-bottom: 1rem;">Error 404</p>
+      <h1 style="font-family: var(--font-display); font-size: var(--text-3xl); margin: 0 0 1.5rem;">Diese Seite existiert nicht.</h1>
+
+      <div style="display: grid; gap: 1rem; max-width: 460px; margin: var(--space-4) auto; font-family: var(--font-display); font-size: var(--text-md); color: var(--color-ink-soft);">
+        <p style="margin: 0;"><strong>DE</strong> — Diese Seite wurde verschoben oder gibt es nicht mehr.</p>
+        <p style="margin: 0;"><strong>HU</strong> — Ez az oldal nem található vagy áthelyezésre került.</p>
+        <p style="margin: 0;"><strong>EN</strong> — This page has moved or no longer exists.</p>
+      </div>
+
+      <div style="display: flex; flex-wrap: wrap; gap: 0.75rem; justify-content: center; margin-top: var(--space-5);">
+        <a class="btn btn--primary" href="/de/">Zur Startseite (DE)</a>
+        <a class="btn btn--secondary" href="/hu/">Kezdőlap (HU)</a>
+        <a class="btn btn--secondary" href="/en/">Home (EN)</a>
+      </div>
+    </div>
+  </main>
+</body>
+</html>

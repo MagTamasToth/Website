@@ -2,6 +2,7 @@
 <html lang="de-AT">
 <head>
   <meta charset="UTF-8">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' 'unsafe-inline'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https://commons.wikimedia.org; connect-src 'self' https://formsubmit.co; frame-ancestors 'none';">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Lösungen für typische Marktprobleme | Mag. Tamas Toth</title>
   <meta name="description" content="Sechs typische Marktprobleme rund um Markteintritt und Marktentwicklung in Österreich und Ungarn — und konkrete Lösungsansätze als Handelsagent.">
@@ -11,9 +12,7 @@
   <link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu/megoldasok/">
   <link rel="alternate" hreflang="en" href="https://magtamastoth.com/en/solutions/">
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/fonts/fonts.css">
 
   <link rel="stylesheet" href="../../assets/css/styles.css">
 
@@ -23,13 +22,36 @@
     { "@type": "ListItem", "position": 2, "name": "Lösungen", "item": "https://magtamastoth.com/de/loesungen/" }
   ]}
   </script>
+
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Mag. Tamas Toth — Handelsagent">
+  <meta property="og:title" content="Lösungen für typische Marktprobleme | Mag. Tamas Toth">
+  <meta property="og:description" content="Sechs häufige Marktprobleme beim Eintritt in österreichische und ungarische Märkte — und konkrete Lösungsansätze.">
+  <meta property="og:url" content="https://magtamastoth.com/de/loesungen/">
+  <meta property="og:locale" content="de_AT">
+  <meta property="og:image" content="https://magtamastoth.com/assets/img/logo_de.webp">
+  <meta property="og:image:width" content="600">
+  <meta property="og:image:height" content="600">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:site" content="@MagTamasToth">
+  <meta name="twitter:title" content="Lösungen für typische Marktprobleme | Mag. Tamas Toth">
+  <meta name="twitter:description" content="Sechs häufige Marktprobleme beim Eintritt in österreichische und ungarische Märkte — und konkrete Lösungsansätze.">
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
   <header class="site-header" role="banner">
     <div class="container site-header__inner">
-      <a class="site-logo" href="/de/"><span class="site-logo__mark">TT</span><span>Mag. Tamas Toth</span></a>
+      <a class="site-logo" href="/de/" aria-label="Mag. Tamas Toth — Handelsagent Wien">
+        <picture>
+          <source srcset="/assets/img/logo_de.webp" type="image/webp">
+          <img src="/assets/img/logo_de_small.png"
+               alt="Mag. Tamas Toth — Handelsagent Wien"
+               width="600" height="600"
+               loading="eager"
+               fetchpriority="high">
+        </picture>
+      </a>
       <nav class="primary-nav">
         <ul>
           <li><a href="/de/leistungen/">Leistungen</a></li>
@@ -38,7 +60,7 @@
           <li><a href="/de/loesungen/" aria-current="page">Lösungen</a></li>
           <li><a href="/de/ueber-mich/">Über mich</a></li>
           <li><a href="/de/faq/">FAQ</a></li>
-          <li><a href="/de/kontakt/" class="btn btn--primary" style="padding:0.5rem 1rem;">Kontakt</a></li>
+          
         </ul>
       </nav>
       <div class="lang-switch">
@@ -58,7 +80,7 @@
       <li><a href="/de/loesungen/">Lösungen</a></li>
       <li><a href="/de/ueber-mich/">Über mich</a></li>
       <li><a href="/de/faq/">FAQ</a></li>
-      <li><a href="/de/kontakt/">Kontakt</a></li>
+      
     </ul>
   </div>
 
@@ -208,7 +230,7 @@
             <li><a href="/de/loesungen/">Lösungen</a></li>
             <li><a href="/de/ueber-mich/">Über mich</a></li>
             <li><a href="/de/faq/">FAQ</a></li>
-            <li><a href="/de/kontakt/">Kontakt</a></li>
+            
           </ul>
         </div>
         <div>
@@ -217,6 +239,8 @@
             <li><a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a></li>
             <li><a href="tel:+436991264 2565">+43 699 1264 2565</a></li>
             <li><a href="tel:+36308971886">+36 30 8971 886</a></li>
+            <li><a href="https://www.linkedin.com/in/mag-tamas-toth/" target="_blank" rel="noopener">LinkedIn</a></li>
+            <li><a href="https://x.com/MagTamasToth" target="_blank" rel="noopener" aria-label="X — @MagTamasToth">X&nbsp;/@MagTamasToth</a></li>
           </ul>
         </div>
         <div>
@@ -236,5 +260,86 @@
   </footer>
 
   <script src="../../assets/js/script.js" defer></script>
+
+
+<div class="fab-cta" id="fab-cta" role="complementary" aria-label="Beratung anfragen">
+  <a href="/de/kontakt/" class="fab-cta__btn" aria-label="Beratung anfragen">
+    <span class="fab-cta__icon" aria-hidden="true">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>
+      </svg>
+    </span>
+    <span class="fab-cta__label">Beratung anfragen</span>
+  </a>
+</div>
+<script>
+(function() {
+  'use strict';
+  // Csak technikai cookie-k vannak (session) — nincs tracking/analytics
+  // TKG 2021 §165 Abs 3: "unbedingt erforderlich" cookies = keine Einwilligung nötig
+  // Trotzdem: Hinweis empfohlen (Österreichische Datenschutzbehörde Empfehlung)
+  
+  var key = 'cookie_notice_v1';
+  if (sessionStorage.getItem(key)) return;
+  
+  var lang = document.documentElement.lang || 'de';
+  var l = lang.slice(0,2);
+  
+  var texts = {
+    de: { 
+      msg: 'Diese Website verwendet ausschließlich technisch notwendige Cookies. Es werden keine Tracking- oder Analyse-Cookies gesetzt.',
+      link: '/de/datenschutz/', 
+      linkText: 'Datenschutz',
+      ok: 'Verstanden', 
+      more: 'Details'
+    },
+    hu: { 
+      msg: 'Ez a weboldal kizárólag technikailag szükséges sütiket használ. Nyomkövető vagy elemzési sütik nincsenek.',
+      link: '/hu/adatvedelem/', 
+      linkText: 'Adatvédelem',
+      ok: 'Rendben', 
+      more: 'Részletek'
+    },
+    en: { 
+      msg: 'This website uses only technically necessary cookies. No tracking or analytics cookies are set.',
+      link: '/en/privacy/', 
+      linkText: 'Privacy',
+      ok: 'Got it', 
+      more: 'Details'
+    }
+  };
+  
+  var t = texts[l] || texts.de;
+  
+  var banner = document.createElement('div');
+  banner.className = 'cookie-banner';
+  banner.setAttribute('role', 'dialog');
+  banner.setAttribute('aria-label', t.ok);
+  banner.innerHTML = 
+    '<p class="cookie-banner__text">' + t.msg + 
+    ' &mdash; <a href="' + t.link + '">' + t.linkText + '</a></p>' +
+    '<div class="cookie-banner__actions">' +
+    '<button class="cookie-banner__btn cookie-banner__btn--decline" data-action="more">' + t.more + '</button>' +
+    '<button class="cookie-banner__btn cookie-banner__btn--accept" data-action="ok">' + t.ok + '</button>' +
+    '</div>';
+  
+  document.body.appendChild(banner);
+  
+  setTimeout(function() { banner.classList.add('is-visible'); }, 300);
+  
+  banner.addEventListener('click', function(e) {
+    var btn = e.target.closest('[data-action]');
+    if (!btn) return;
+    var action = btn.dataset.action;
+    if (action === 'ok') {
+      sessionStorage.setItem(key, '1');
+      banner.classList.remove('is-visible');
+      setTimeout(function() { banner.remove(); }, 400);
+    } else if (action === 'more') {
+      window.location.href = t.link;
+    }
+  });
+})();
+</script>
 </body>
 </html>

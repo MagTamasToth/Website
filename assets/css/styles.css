@@ -58,9 +58,9 @@
 
 @media (min-width: 1024px) {
   :root {
-    --text-2xl: 2.75rem;
-    --text-3xl: 3.625rem;
-    --text-hero: 4.5rem;
+    --text-2xl:  2.375rem;   /* volt: 2.75rem  → −13% */
+    --text-3xl:  3rem;       /* volt: 3.625rem → −17% */
+    --text-hero: 3.375rem;   /* volt: 4.5rem   → −25%, ~75% */
   }
 }
 
@@ -382,13 +382,14 @@ h4 { font-size: var(--text-lg); font-weight: 600; }
 
 .hero__grid {
   display: grid;
-  gap: var(--space-5);
-  align-items: center;
+  gap: var(--space-4);
+  align-items: start;
 }
 @media (min-width: 1024px) {
   .hero__grid {
-    grid-template-columns: 1.4fr 1fr;
-    gap: var(--space-6);
+    grid-template-columns: 1.1fr 0.9fr;   /* volt: 1.4fr 1fr — kiegyenlítettebb */
+    gap: var(--space-5);
+    align-items: start;
   }
 }
 
@@ -1202,60 +1203,96 @@ body.cookie-visible .fab-cta {
 }
 
 /* ══════════════════════════════════════════════════════════════════════════
-   Portrait Figure — valódi fotók
+   Portrait Figure — egységes, prémium képkezelés
    ══════════════════════════════════════════════════════════════════════════ */
 
+/* Alap */
 .portrait-figure {
   margin: 0;
   position: relative;
   overflow: hidden;
+  border-radius: 12px;
 }
 
+/* Minden portrait képre: egységes renderelés */
 .portrait-figure__img {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
   object-fit: cover;
+  object-position: center 18%;
+  border-radius: 12px;
+  /* Nagyon finom softness: természetes, nem digitálisan kemény */
+  filter: contrast(0.96) saturate(0.94) brightness(1.01);
 }
 
-/* Hero szekció — lekerekített, enyhe árnyékkal */
+/* ── Hero — kezdőlap jobb oszlop ─────────────────────────────────────────── */
 .portrait-figure--hero {
-  border-radius: var(--radius-lg, 16px);
   box-shadow:
-    0 8px 32px rgba(15, 26, 43, 0.12),
-    0 2px 8px rgba(15, 26, 43, 0.08);
+    0 4px 24px rgba(15, 26, 43, 0.09),
+    0 1px 6px  rgba(15, 26, 43, 0.05);
 }
 .portrait-figure--hero .portrait-figure__img {
-  border-radius: var(--radius-lg, 16px);
+  aspect-ratio: 3 / 4;
+  object-position: center 12%;
+  max-height: 500px;
 }
 
-/* Trust szekció — kisebb, keretezett */
+/* ── Trust szekció — "Warum mit mir" ─────────────────────────────────────── */
 .portrait-figure--trust {
-  border-radius: var(--radius-md, 10px);
-  max-width: 280px;
-  margin: 0 auto;
   box-shadow:
-    0 4px 20px rgba(15, 26, 43, 0.10),
-    0 1px 4px rgba(15, 26, 43, 0.06);
+    0 4px 20px rgba(15, 26, 43, 0.08),
+    0 1px 5px  rgba(15, 26, 43, 0.05);
 }
 .portrait-figure--trust .portrait-figure__img {
-  border-radius: var(--radius-md, 10px);
+  aspect-ratio: 2 / 3;
+  object-position: center 18%;
+  max-height: 480px;
 }
 
-/* About oldal — teljes magasság, bal oldal */
+/* Trust portrait grid: szöveg bal, kép jobb */
+.trust-portrait-grid {
+  display: grid;
+  gap: var(--space-4);
+  align-items: start;
+}
+@media (min-width: 768px) {
+  .trust-portrait-grid {
+    grid-template-columns: 1fr 300px;
+    gap: var(--space-5);
+  }
+}
+
+/* ── About — Über mich / Bemutatkozás ─────────────────────────────────────── */
 .portrait-figure--about {
-  border-radius: var(--radius-lg, 16px);
   box-shadow:
-    0 8px 40px rgba(15, 26, 43, 0.14),
-    0 2px 8px rgba(15, 26, 43, 0.08);
+    0 4px 24px rgba(15, 26, 43, 0.09),
+    0 1px 6px  rgba(15, 26, 43, 0.05);
+  position: sticky;
+  top: calc(var(--header-height, 80px) + 1.5rem);
 }
 .portrait-figure--about .portrait-figure__img {
-  border-radius: var(--radius-lg, 16px);
-  max-height: 600px;
-  object-position: center top;  /* arcot középre igazítja */
+  aspect-ratio: 3 / 4;
+  object-position: center 10%;
+  max-height: 560px;
 }
 
-/* Caption stílus */
+/* ── Contact — Kapcsolat / Kontakt bal oszlop ────────────────────────────── */
+.portrait-figure--contact {
+  margin-top: var(--space-4);
+  box-shadow:
+    0 4px 20px rgba(15, 26, 43, 0.08),
+    0 1px 5px  rgba(15, 26, 43, 0.04);
+  position: sticky;
+  top: calc(var(--header-height, 80px) + 1.5rem);
+}
+.portrait-figure--contact .portrait-figure__img {
+  aspect-ratio: 3 / 4;
+  object-position: center 12%;
+  max-height: 520px;
+}
+
+/* ── Caption ─────────────────────────────────────────────────────────────── */
 .portrait-figure__caption {
   font-family: var(--font-mono);
   font-size: var(--text-xs);
@@ -1267,14 +1304,19 @@ body.cookie-visible .fab-cta {
   display: block;
 }
 
-/* Mobil: portrait_1 ne legyen túl magas */
+/* ── Mobil ───────────────────────────────────────────────────────────────── */
 @media (max-width: 767px) {
   .portrait-figure--hero .portrait-figure__img {
-    max-height: 420px;
-    object-fit: cover;
-    object-position: center top;
+    max-height: 360px;
+    aspect-ratio: 4 / 5;
+    object-position: center 8%;
   }
-  .portrait-figure--about .portrait-figure__img {
-    max-height: 400px;
+  .portrait-figure--about,
+  .portrait-figure--contact {
+    position: relative;
+    top: auto;
   }
+  .portrait-figure--about .portrait-figure__img { max-height: 320px; }
+  .portrait-figure--contact .portrait-figure__img { max-height: 320px; }
+  .portrait-figure--trust .portrait-figure__img { max-height: 340px; }
 }

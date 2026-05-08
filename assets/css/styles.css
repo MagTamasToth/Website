@@ -1200,3 +1200,81 @@ body.cookie-visible .fab-cta {
     bottom: calc(1.25rem + 100px);
   }
 }
+
+/* ══════════════════════════════════════════════════════════════════════════
+   Portrait Figure — valódi fotók
+   ══════════════════════════════════════════════════════════════════════════ */
+
+.portrait-figure {
+  margin: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.portrait-figure__img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
+
+/* Hero szekció — lekerekített, enyhe árnyékkal */
+.portrait-figure--hero {
+  border-radius: var(--radius-lg, 16px);
+  box-shadow:
+    0 8px 32px rgba(15, 26, 43, 0.12),
+    0 2px 8px rgba(15, 26, 43, 0.08);
+}
+.portrait-figure--hero .portrait-figure__img {
+  border-radius: var(--radius-lg, 16px);
+}
+
+/* Trust szekció — kisebb, keretezett */
+.portrait-figure--trust {
+  border-radius: var(--radius-md, 10px);
+  max-width: 280px;
+  margin: 0 auto;
+  box-shadow:
+    0 4px 20px rgba(15, 26, 43, 0.10),
+    0 1px 4px rgba(15, 26, 43, 0.06);
+}
+.portrait-figure--trust .portrait-figure__img {
+  border-radius: var(--radius-md, 10px);
+}
+
+/* About oldal — teljes magasság, bal oldal */
+.portrait-figure--about {
+  border-radius: var(--radius-lg, 16px);
+  box-shadow:
+    0 8px 40px rgba(15, 26, 43, 0.14),
+    0 2px 8px rgba(15, 26, 43, 0.08);
+}
+.portrait-figure--about .portrait-figure__img {
+  border-radius: var(--radius-lg, 16px);
+  max-height: 600px;
+  object-position: center top;  /* arcot középre igazítja */
+}
+
+/* Caption stílus */
+.portrait-figure__caption {
+  font-family: var(--font-mono);
+  font-size: var(--text-xs);
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--color-mute);
+  text-align: center;
+  margin-top: 0.75rem;
+  display: block;
+}
+
+/* Mobil: portrait_1 ne legyen túl magas */
+@media (max-width: 767px) {
+  .portrait-figure--hero .portrait-figure__img {
+    max-height: 420px;
+    object-fit: cover;
+    object-position: center top;
+  }
+  .portrait-figure--about .portrait-figure__img {
+    max-height: 400px;
+  }
+}

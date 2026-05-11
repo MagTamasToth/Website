@@ -2435,3 +2435,514 @@ main .content h3 {
     font-size: clamp(1.28rem, 5.2vw, 1.54rem) !important;
   }
 }
+
+/* ========================================================================== 
+   Executive finance × creative premium refinement · v8
+   - stronger elegant spacing across the whole site
+   - larger, calmer logo and centered desktop navigation
+   - preserved rounded image corners during hover zoom
+   - refined financial / creative visual language without changing structure
+   ========================================================================== */
+
+:root {
+  --color-ink: #0C1726;
+  --color-ink-soft: #263246;
+  --color-paper: #FBFAF6;
+  --color-paper-warm: #F3EFE4;
+  --color-accent: #B6872D;
+  --color-accent-hover: #9B7224;
+  --color-accent-soft: #F3E8CF;
+  --color-line: #DDD5C5;
+  --color-line-soft: #EEE8DC;
+  --color-mute: #687082;
+  --radius-md: 12px;
+  --radius-lg: 24px;
+  --radius-xl: 34px;
+  --shadow-finance: 0 18px 48px rgba(12, 23, 38, 0.075), 0 3px 12px rgba(12, 23, 38, 0.045);
+  --shadow-finance-soft: 0 10px 30px rgba(12, 23, 38, 0.055), 0 1px 8px rgba(12, 23, 38, 0.035);
+  --section-gap-premium: clamp(4.4rem, 8vw, 7.5rem);
+}
+
+body {
+  background:
+    radial-gradient(circle at 8% 0%, rgba(182, 135, 45, 0.055), transparent 34rem),
+    radial-gradient(circle at 92% 18%, rgba(12, 23, 38, 0.035), transparent 30rem),
+    var(--color-paper);
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background-image:
+    linear-gradient(rgba(12, 23, 38, 0.018) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(12, 23, 38, 0.014) 1px, transparent 1px);
+  background-size: 72px 72px;
+  mask-image: linear-gradient(to bottom, rgba(0,0,0,.55), rgba(0,0,0,.12) 45%, transparent 100%);
+}
+
+.container {
+  max-width: 1240px;
+}
+
+.section {
+  padding: var(--section-gap-premium) 0;
+}
+
+.section--warm {
+  background:
+    linear-gradient(135deg, rgba(251,250,246,0.72), rgba(243,239,228,0.92)),
+    var(--color-paper-warm);
+  border-top: 1px solid rgba(221, 213, 197, 0.55);
+  border-bottom: 1px solid rgba(221, 213, 197, 0.55);
+}
+
+.section--ink {
+  background:
+    radial-gradient(circle at 12% 0%, rgba(182, 135, 45, 0.2), transparent 26rem),
+    linear-gradient(135deg, #091423 0%, #111C2E 48%, #0C1726 100%);
+}
+
+/* Header: centered desktop menu, larger logo, premium financial restraint */
+.site-header {
+  height: 92px;
+  background: rgba(251, 250, 246, 0.92);
+  border-bottom: 1px solid rgba(221, 213, 197, 0.72);
+  box-shadow: 0 10px 35px rgba(12, 23, 38, 0.035);
+}
+
+.site-header.is-scrolled {
+  height: 76px;
+  box-shadow: 0 12px 40px rgba(12, 23, 38, 0.055);
+}
+
+.site-header__inner {
+  display: grid;
+  grid-template-columns: minmax(170px, 0.9fr) minmax(420px, 1.8fr) minmax(155px, 0.9fr) auto;
+  align-items: center;
+  gap: clamp(1rem, 2vw, 2rem);
+}
+
+.site-logo img {
+  height: 74px;
+  max-width: 270px;
+  object-fit: contain;
+}
+
+.site-header.is-scrolled .site-logo img {
+  height: 61px;
+}
+
+.site-logo__mark {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  box-shadow: var(--shadow-finance-soft);
+}
+
+.primary-nav {
+  justify-content: center;
+  min-width: 0;
+}
+
+.primary-nav ul {
+  width: 100%;
+  justify-content: center;
+  gap: clamp(0.2rem, 0.6vw, 0.55rem);
+}
+
+.primary-nav a {
+  padding: 0.52rem 0.78rem;
+  border-radius: 999px;
+  color: rgba(38, 50, 70, 0.86);
+  font-size: clamp(0.68rem, 0.72vw, 0.79rem);
+  letter-spacing: 0.075em;
+  text-transform: uppercase;
+  line-height: 1.1;
+  transition: color 220ms ease, background 220ms ease, transform 220ms ease;
+}
+
+.primary-nav a::after {
+  display: none;
+}
+
+.primary-nav a:hover,
+.primary-nav a[aria-current="page"] {
+  background: rgba(182, 135, 45, 0.105);
+  color: var(--color-ink);
+  transform: translateY(-1px);
+}
+
+.lang-switch {
+  justify-self: end;
+  padding: 0.34rem;
+  background: rgba(255, 255, 255, 0.54);
+  border: 1px solid rgba(221, 213, 197, 0.86);
+  border-radius: 999px;
+  box-shadow: 0 8px 22px rgba(12, 23, 38, 0.04);
+}
+
+.lang-switch a {
+  border-radius: 999px;
+  padding: 0.38rem 0.55rem;
+}
+
+.lang-switch a[aria-current="true"] {
+  background: var(--color-ink);
+  border-color: var(--color-ink);
+  color: var(--color-paper);
+}
+
+.menu-toggle {
+  border-radius: 999px;
+  background: rgba(255,255,255,0.48);
+  box-shadow: 0 8px 20px rgba(12, 23, 38, 0.04);
+}
+
+/* Elegant, breathable global content rhythm */
+.hero__grid,
+.grid,
+.process,
+.values-grid,
+.services-grid,
+.region-grid,
+.industry-grid,
+.contact-grid,
+.about-editorial-grid,
+.portrait-copy-grid {
+  gap: clamp(2rem, 4.5vw, 4.75rem);
+}
+
+.hero {
+  padding: clamp(4.4rem, 8vw, 7.8rem) 0 clamp(4.8rem, 8.5vw, 8.2rem);
+}
+
+.hero__content,
+.portrait-copy-grid > .reveal:last-child,
+.about-editorial-grid > .reveal:first-child,
+.card,
+.process__item,
+.value-card,
+.faq-item,
+.region-card,
+.industry-card,
+.service-card,
+.solution-card,
+.contact-card,
+.legal-card,
+.content-card {
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(145deg, rgba(255,255,255,0.78), rgba(251,250,246,0.56));
+  border: 1px solid rgba(221, 213, 197, 0.72);
+  box-shadow: var(--shadow-finance-soft);
+}
+
+.hero__content,
+.portrait-copy-grid > .reveal:last-child,
+.about-editorial-grid > .reveal:first-child {
+  padding: clamp(1.55rem, 3.2vw, 3rem);
+}
+
+.card,
+.process__item,
+.value-card,
+.faq-item,
+.region-card,
+.industry-card,
+.service-card,
+.solution-card,
+.contact-card,
+.legal-card,
+.content-card {
+  padding: clamp(1.35rem, 2.4vw, 2.15rem);
+  transition: transform 260ms ease, box-shadow 260ms ease, border-color 260ms ease, background 260ms ease;
+}
+
+.card:hover,
+.process__item:hover,
+.value-card:hover,
+.faq-item:hover,
+.region-card:hover,
+.industry-card:hover,
+.service-card:hover,
+.solution-card:hover,
+.contact-card:hover {
+  transform: translateY(-4px);
+  border-color: rgba(182, 135, 45, 0.34);
+  box-shadow: var(--shadow-finance);
+}
+
+/* Typography: financial clarity + creative editorial elegance */
+h1, h2, h3, h4 {
+  letter-spacing: -0.012em;
+}
+
+.hero__title {
+  font-size: clamp(1.62rem, 2.45vw, 2.08rem) !important;
+  max-width: 17ch;
+}
+
+.hero__lead,
+.lead {
+  color: rgba(38, 50, 70, 0.84);
+}
+
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  color: var(--color-accent-hover);
+}
+
+.eyebrow::before {
+  content: "";
+  width: 1.75rem;
+  height: 1px;
+  background: currentColor;
+  opacity: 0.55;
+}
+
+/* Images: fill the visual boxes, keep rounded corners during hover zoom */
+.portrait-placeholder,
+.portrait-placeholder__frame,
+.portrait-figure,
+.image-card,
+figure:has(img) {
+  border-radius: var(--radius-xl);
+}
+
+.portrait-placeholder,
+.portrait-placeholder__frame,
+.portrait-figure,
+.image-card {
+  overflow: hidden;
+  isolation: isolate;
+  transform: translateZ(0);
+  -webkit-mask-image: -webkit-radial-gradient(white, black);
+  clip-path: inset(0 round var(--radius-xl));
+}
+
+.portrait-placeholder__frame {
+  width: 100%;
+  height: 100%;
+  min-height: inherit;
+  box-shadow: var(--shadow-finance);
+  border: 1px solid rgba(221, 213, 197, 0.74);
+  background: linear-gradient(145deg, rgba(255,255,255,0.36), rgba(243,239,228,0.42));
+}
+
+.portrait-placeholder__image,
+.portrait-figure__img,
+.image-card img,
+main figure:not(.site-logo) img {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  border-radius: inherit;
+  transform: scale(1.001);
+  transform-origin: center center;
+  transition: transform 700ms cubic-bezier(.2,.7,.2,1), filter 700ms cubic-bezier(.2,.7,.2,1);
+  filter: contrast(0.965) saturate(0.91) brightness(1.025) sepia(0.012);
+  will-change: transform;
+}
+
+.portrait-placeholder:hover .portrait-placeholder__image,
+.portrait-placeholder:focus-within .portrait-placeholder__image,
+.portrait-figure:hover .portrait-figure__img,
+.image-card:hover img,
+main figure:not(.site-logo):hover img {
+  transform: scale(1.045);
+  filter: contrast(0.99) saturate(0.96) brightness(1.035) sepia(0.006);
+}
+
+.portrait-placeholder__frame::after {
+  border-radius: inherit;
+  pointer-events: none;
+}
+
+/* The images should feel equal to the boxes, not like small inserts */
+.portrait-placeholder--hero,
+.portrait-placeholder--trust,
+.portrait-placeholder--about {
+  width: 100%;
+  max-width: none;
+}
+
+.portrait-placeholder--hero .portrait-placeholder__frame,
+.portrait-placeholder--trust .portrait-placeholder__frame,
+.portrait-placeholder--about .portrait-placeholder__frame {
+  min-height: clamp(360px, 48vw, 620px);
+}
+
+.portrait-copy-grid__image,
+.about-editorial-grid .portrait-placeholder--about {
+  align-self: stretch;
+}
+
+.portrait-copy-grid__image .portrait-placeholder,
+.about-editorial-grid .portrait-placeholder--about,
+.portrait-copy-grid__image .portrait-placeholder__frame,
+.about-editorial-grid .portrait-placeholder--about .portrait-placeholder__frame {
+  height: 100%;
+}
+
+/* Magazine-style sections: more editorial, still stable */
+.portrait-copy-grid,
+.about-editorial-grid {
+  align-items: stretch;
+  position: relative;
+}
+
+.portrait-copy-grid::before,
+.about-editorial-grid::before {
+  content: "";
+  position: absolute;
+  inset: -1.4rem;
+  border: 1px solid rgba(182, 135, 45, 0.11);
+  border-radius: 42px;
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Buttons: quieter executive feel */
+.btn,
+button,
+input[type="submit"] {
+  border-radius: 999px;
+  box-shadow: 0 10px 24px rgba(12, 23, 38, 0.055);
+}
+
+.btn:hover,
+button:hover,
+input[type="submit"]:hover {
+  transform: translateY(-2px);
+}
+
+/* Mobile and tablet: large logo without crowding, airy but controlled */
+@media (max-width: 1199px) {
+  .site-header__inner {
+    grid-template-columns: minmax(150px, 1fr) auto auto;
+  }
+
+  .primary-nav {
+    display: none;
+  }
+
+  .site-logo img {
+    height: 66px;
+    max-width: 235px;
+  }
+
+  .site-header.is-scrolled .site-logo img {
+    height: 56px;
+  }
+}
+
+@media (max-width: 767px) {
+  :root {
+    --section-gap-premium: clamp(3.3rem, 11vw, 5rem);
+  }
+
+  .site-header {
+    height: 82px;
+  }
+
+  .site-header.is-scrolled {
+    height: 72px;
+  }
+
+  .site-header__inner {
+    gap: 0.7rem;
+  }
+
+  .site-logo img {
+    height: 58px;
+    max-width: min(205px, 43vw);
+  }
+
+  .site-header.is-scrolled .site-logo img {
+    height: 50px;
+  }
+
+  .lang-switch {
+    font-size: 0.64rem;
+    letter-spacing: 0.06em;
+    padding: 0.25rem;
+  }
+
+  .lang-switch a {
+    padding: 0.32rem 0.38rem;
+  }
+
+  .hero__content,
+  .portrait-copy-grid > .reveal:last-child,
+  .about-editorial-grid > .reveal:first-child,
+  .card,
+  .process__item,
+  .value-card,
+  .faq-item,
+  .region-card,
+  .industry-card,
+  .service-card,
+  .solution-card,
+  .contact-card {
+    border-radius: 20px;
+  }
+
+  .portrait-placeholder,
+  .portrait-placeholder__frame,
+  .portrait-figure,
+  .image-card,
+  figure:has(img) {
+    border-radius: 24px;
+  }
+
+  .portrait-placeholder--hero .portrait-placeholder__frame,
+  .portrait-placeholder--trust .portrait-placeholder__frame,
+  .portrait-placeholder--about .portrait-placeholder__frame {
+    min-height: clamp(320px, 88vw, 470px);
+    max-height: 500px;
+  }
+
+  .hero__title {
+    font-size: clamp(1.5rem, 7vw, 1.98rem) !important;
+    max-width: 16ch;
+  }
+
+  body::before {
+    background-size: 56px 56px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .portrait-placeholder__image,
+  .portrait-figure__img,
+  .image-card img,
+  main figure:not(.site-logo) img,
+  .card,
+  .process__item,
+  .value-card,
+  .faq-item,
+  .region-card,
+  .industry-card,
+  .service-card,
+  .solution-card,
+  .contact-card,
+  .btn,
+  button,
+  input[type="submit"] {
+    transition: none !important;
+  }
+
+  .portrait-placeholder:hover .portrait-placeholder__image,
+  .portrait-placeholder:focus-within .portrait-placeholder__image,
+  .portrait-figure:hover .portrait-figure__img,
+  .image-card:hover img,
+  main figure:not(.site-logo):hover img {
+    transform: none !important;
+  }
+}

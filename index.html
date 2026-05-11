@@ -6,10 +6,10 @@
   <title>Mag. Tamas Toth — Commercial Agent · Handelsagent · Kereskedelmi ügynök</title>
   <meta name="description" content="Commercial agent in Vienna for Austria and Hungary · Handelsagent in Wien für Österreich und Ungarn · Bécsi kereskedelmi ügynök Ausztria és Magyarország számára.">
 
-  <link rel="alternate" hreflang="de-AT" href="de.html">
-  <link rel="alternate" hreflang="hu-HU" href="hu.html">
-  <link rel="alternate" hreflang="en" href="en.html">
-  <link rel="alternate" hreflang="x-default" href="index.html">
+  <link rel="alternate" hreflang="de-AT" href="https://metallagentur.at/de.html">
+  <link rel="alternate" hreflang="hu-HU" href="https://metallagentur.at/hu.html">
+  <link rel="alternate" hreflang="en" href="https://metallagentur.at/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://metallagentur.at/">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -91,11 +91,11 @@
     }
     .gateway__meta a { border-bottom: 1px solid var(--color-line); }
   </style>
-  <link rel="canonical" href="index.html">
+  <link rel="canonical" href="https://metallagentur.at/">
   <meta property="og:title" content="Mag. Tamas Toth — Handelsagent · Commercial Agent · Kereskedelmi ügynök">
   <meta property="og:description" content="Commercial agent in Vienna for Austria and Hungary.">
-  <meta property="og:url" content="index.html">
-  <meta property="og:image" content="logo_en.webp">
+  <meta property="og:url" content="https://metallagentur.at/">
+  <meta property="og:image" content="https://metallagentur.at/logo_en.webp">
 </head>
 <body>
   <main class="gateway">
@@ -120,7 +120,7 @@
       </div>
 
       <p class="gateway__meta">1090 Wien · Liechtensteinstraße 131-133/24 · Mitglied WKO Wien · GISA 32963588<br>
-        <a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a> · <a href="tel:+436991264 2565">+43 699 1264 2565</a>
+        <a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a> · <a href="tel:+4369912642565">+43 699 1264 2565</a>
       </p>
     </div>
   </main>
@@ -143,9 +143,9 @@
       var target = null;
       for (var i = 0; i < langs.length; i++) {
         var l = langs[i];
-        if (l.indexOf('de') === 0) { target = '/de/'; break; }
-        if (l.indexOf('hu') === 0) { target = '/hu/'; break; }
-        if (l.indexOf('en') === 0) { target = '/en/'; break; }
+        if (l.indexOf('de') === 0) { target = 'de.html'; break; }
+        if (l.indexOf('hu') === 0) { target = 'hu.html'; break; }
+        if (l.indexOf('en') === 0) { target = 'en.html'; break; }
       }
       if (!target) return;
 
@@ -173,21 +173,21 @@
   var texts = {
     de: { 
       msg: 'Diese Website verwendet ausschließlich technisch notwendige Cookies. Es werden keine Tracking- oder Analyse-Cookies gesetzt.',
-      link: '/de/datenschutz/', 
+      link: 'de-datenschutz.html', 
       linkText: 'Datenschutz',
       ok: 'Verstanden', 
       more: 'Details'
     },
     hu: { 
       msg: 'Ez a weboldal kizárólag technikailag szükséges sütiket használ. Nyomkövető vagy elemzési sütik nincsenek.',
-      link: '/hu/adatvedelem/', 
+      link: 'hu-adatvedelem.html', 
       linkText: 'Adatvédelem',
       ok: 'Rendben', 
       more: 'Részletek'
     },
     en: { 
       msg: 'This website uses only technically necessary cookies. No tracking or analytics cookies are set.',
-      link: '/en/privacy/', 
+      link: 'en-privacy.html', 
       linkText: 'Privacy',
       ok: 'Got it', 
       more: 'Details'

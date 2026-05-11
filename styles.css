@@ -2946,3 +2946,492 @@ input[type="submit"]:hover {
     transform: none !important;
   }
 }
+
+
+/* ========================================================================== 
+   Premium blue-panel refinement · v9
+   - deep blue editorial panels beside portrait images
+   - selective ink panels across content blocks for richer page rhythm
+   - wider buttons with more inner breathing space
+   ========================================================================== */
+
+:root {
+  --color-panel-ink: #0f1a2b;
+  --color-panel-ink-soft: #18263a;
+  --color-panel-line: rgba(184, 134, 11, 0.22);
+  --shadow-panel-ink: 0 24px 58px rgba(8, 16, 28, 0.18), 0 8px 22px rgba(8, 16, 28, 0.10);
+}
+
+/* Deep-blue editorial blocks next to images */
+.hero__grid > .reveal:first-child,
+.portrait-copy-grid > .reveal:last-child,
+.about-editorial-grid > .reveal:first-child {
+  position: relative;
+  padding: clamp(1.35rem, 3vw, 2.6rem);
+  border-radius: clamp(20px, 2.6vw, 28px);
+  background:
+    linear-gradient(155deg, rgba(25, 38, 58, 0.985) 0%, rgba(15, 26, 43, 0.985) 52%, rgba(11, 21, 37, 0.99) 100%);
+  border: 1px solid var(--color-panel-line);
+  box-shadow: var(--shadow-panel-ink);
+  color: rgba(250, 250, 247, 0.92);
+  overflow: hidden;
+}
+
+.hero__grid > .reveal:first-child::before,
+.portrait-copy-grid > .reveal:last-child::before,
+.about-editorial-grid > .reveal:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(ellipse 46% 34% at 100% 0%, rgba(184, 134, 11, 0.20) 0%, transparent 62%),
+    linear-gradient(180deg, rgba(255,255,255,0.03), transparent 30%);
+  pointer-events: none;
+}
+
+.hero__grid > .reveal:first-child > *,
+.portrait-copy-grid > .reveal:last-child > *,
+.about-editorial-grid > .reveal:first-child > * {
+  position: relative;
+  z-index: 1;
+}
+
+.hero__grid > .reveal:first-child h1,
+.hero__grid > .reveal:first-child h2,
+.hero__grid > .reveal:first-child h3,
+.portrait-copy-grid > .reveal:last-child h1,
+.portrait-copy-grid > .reveal:last-child h2,
+.portrait-copy-grid > .reveal:last-child h3,
+.about-editorial-grid > .reveal:first-child h1,
+.about-editorial-grid > .reveal:first-child h2,
+.about-editorial-grid > .reveal:first-child h3 {
+  color: #fffdf8;
+}
+
+.hero__grid > .reveal:first-child p,
+.hero__grid > .reveal:first-child li,
+.hero__grid > .reveal:first-child strong,
+.hero__grid > .reveal:first-child .hero__lead,
+.hero__grid > .reveal:first-child .hero__meta,
+.portrait-copy-grid > .reveal:last-child p,
+.portrait-copy-grid > .reveal:last-child li,
+.portrait-copy-grid > .reveal:last-child strong,
+.about-editorial-grid > .reveal:first-child p,
+.about-editorial-grid > .reveal:first-child li,
+.about-editorial-grid > .reveal:first-child strong,
+.about-editorial-grid > .reveal:first-child .lead {
+  color: rgba(250, 250, 247, 0.84);
+}
+
+.hero__grid > .reveal:first-child .eyebrow,
+.portrait-copy-grid > .reveal:last-child .eyebrow,
+.about-editorial-grid > .reveal:first-child .eyebrow {
+  color: rgba(245, 237, 216, 0.84);
+}
+
+.hero__grid > .reveal:first-child .eyebrow::before,
+.portrait-copy-grid > .reveal:last-child .eyebrow::before,
+.about-editorial-grid > .reveal:first-child .eyebrow::before {
+  background: rgba(184, 134, 11, 0.72);
+}
+
+.hero__grid > .reveal:first-child .hero__meta {
+  border-top-color: rgba(250, 250, 247, 0.16);
+}
+
+/* Wider buttons with more breathing room */
+.btn,
+button,
+input[type="submit"] {
+  min-height: 3.35rem;
+  padding: 0.95rem 2rem;
+}
+
+.btn--primary,
+.btn--secondary {
+  min-width: clamp(12.5rem, 18vw, 15.75rem);
+  justify-content: center;
+  padding-inline: clamp(1.35rem, 2vw, 2.25rem);
+}
+
+.hero__cta .btn,
+.text-center .btn,
+.form__submit-row .btn,
+.form__submit-row button,
+.form__submit-row input[type="submit"] {
+  min-width: clamp(13.25rem, 20vw, 16.5rem);
+}
+
+.btn__arrow {
+  margin-left: 0.15rem;
+}
+
+/* Button contrast inside the new blue panels */
+.hero__grid > .reveal:first-child .btn--primary,
+.portrait-copy-grid > .reveal:last-child .btn--primary,
+.about-editorial-grid > .reveal:first-child .btn--primary {
+  background: linear-gradient(180deg, #c89517 0%, #b8860b 100%);
+  color: var(--color-ink);
+  border-color: rgba(255,255,255,0.06);
+  box-shadow: 0 14px 30px rgba(0,0,0,0.18);
+}
+
+.hero__grid > .reveal:first-child .btn--primary:hover,
+.portrait-copy-grid > .reveal:last-child .btn--primary:hover,
+.about-editorial-grid > .reveal:first-child .btn--primary:hover {
+  background: linear-gradient(180deg, #d5a52f 0%, #c28f12 100%);
+  color: var(--color-ink);
+}
+
+.hero__grid > .reveal:first-child .btn--secondary,
+.portrait-copy-grid > .reveal:last-child .btn--secondary,
+.about-editorial-grid > .reveal:first-child .btn--secondary {
+  background: rgba(255,255,255,0.03);
+  color: #fffdf8;
+  border-color: rgba(250,250,247,0.28);
+}
+
+.hero__grid > .reveal:first-child .btn--secondary:hover,
+.portrait-copy-grid > .reveal:last-child .btn--secondary:hover,
+.about-editorial-grid > .reveal:first-child .btn--secondary:hover {
+  background: rgba(250,250,247,0.12);
+  color: #fffdf8;
+  border-color: rgba(250,250,247,0.42);
+}
+
+/* Use the same deep-blue language selectively on block layouts across the site */
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(even),
+.process > .process__item:nth-child(even),
+.faq-list > .faq-item:nth-child(odd),
+.legal-grid > :is(.legal-card, .content-card):nth-child(even) {
+  background:
+    linear-gradient(160deg, rgba(26, 39, 59, 0.975) 0%, rgba(15, 26, 43, 0.985) 100%);
+  border-color: rgba(184, 134, 11, 0.18);
+  box-shadow: 0 18px 42px rgba(8, 16, 28, 0.12), 0 4px 12px rgba(8, 16, 28, 0.06);
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(even) :is(h2,h3,h4,.card__title,.value-card__title,.service-card__title,.region-card__title,.industry-card__title,.contact-card__title),
+.process > .process__item:nth-child(even) :is(h2,h3,h4),
+.faq-list > .faq-item:nth-child(odd) :is(h2,h3,h4,summary),
+.legal-grid > :is(.legal-card, .content-card):nth-child(even) :is(h2,h3,h4) {
+  color: #fffdf8;
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(even) :is(p, li, a:not(.btn), .card__body),
+.process > .process__item:nth-child(even) :is(p, li),
+.faq-list > .faq-item:nth-child(odd) :is(p, li),
+.legal-grid > :is(.legal-card, .content-card):nth-child(even) :is(p, li, a:not(.btn)) {
+  color: rgba(250, 250, 247, 0.82);
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(even) :is(a:not(.btn):hover),
+.process > .process__item:nth-child(even) :is(a:hover),
+.faq-list > .faq-item:nth-child(odd) :is(a:hover),
+.legal-grid > :is(.legal-card, .content-card):nth-child(even) :is(a:not(.btn):hover) {
+  color: #fffdf8;
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(even) .card__index,
+.process > .process__item:nth-child(even) .card__index,
+.faq-list > .faq-item:nth-child(odd) .card__index,
+.legal-grid > :is(.legal-card, .content-card):nth-child(even) .card__index {
+  color: rgba(245, 237, 216, 0.88);
+}
+
+/* Keep mobile elegant and readable */
+@media (max-width: 767px) {
+  .hero__grid > .reveal:first-child,
+  .portrait-copy-grid > .reveal:last-child,
+  .about-editorial-grid > .reveal:first-child {
+    padding: 1.2rem;
+  }
+
+  .btn,
+  button,
+  input[type="submit"] {
+    min-height: 3.2rem;
+    padding: 0.9rem 1.4rem;
+  }
+
+  .btn--primary,
+  .btn--secondary,
+  .hero__cta .btn,
+  .text-center .btn,
+  .form__submit-row .btn,
+  .form__submit-row button,
+  .form__submit-row input[type="submit"] {
+    min-width: 100%;
+  }
+}
+
+
+/* ========================================================================== 
+   Private banking + gold line system · v10
+   - stronger luxury consulting rhythm
+   - subtle gold rules around premium panels and cards
+   - calmer executive contrast, not flashy
+   ========================================================================== */
+
+:root {
+  --gold-line: rgba(184, 134, 11, 0.34);
+  --gold-line-soft: rgba(184, 134, 11, 0.16);
+  --gold-glow: rgba(184, 134, 11, 0.10);
+  --ink-gradient-luxury: linear-gradient(155deg, #17243a 0%, #0f1a2b 52%, #0a1423 100%);
+  --paper-gradient-luxury: linear-gradient(145deg, rgba(255,255,255,0.82), rgba(250,248,241,0.70));
+}
+
+body {
+  background:
+    radial-gradient(ellipse 46% 28% at 96% 5%, rgba(184, 134, 11, 0.12), transparent 70%),
+    radial-gradient(ellipse 38% 24% at 4% 28%, rgba(15, 26, 43, 0.045), transparent 66%),
+    linear-gradient(180deg, #fbfaf6 0%, #f7f3e9 42%, #fbfaf6 100%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: -1;
+  background:
+    linear-gradient(90deg, rgba(184,134,11,0.035) 1px, transparent 1px),
+    linear-gradient(180deg, rgba(184,134,11,0.028) 1px, transparent 1px);
+  background-size: 88px 88px;
+  mask-image: linear-gradient(180deg, transparent 0%, black 14%, black 72%, transparent 100%);
+}
+
+/* Private-banking header polish */
+.site-header {
+  border-bottom: 1px solid rgba(184, 134, 11, 0.18);
+  background:
+    linear-gradient(180deg, rgba(250,250,247,0.99), rgba(250,250,247,0.955));
+}
+
+.primary-nav a::after {
+  height: 2px;
+  background: linear-gradient(90deg, transparent, var(--color-accent), transparent);
+}
+
+.lang-switch {
+  border-color: rgba(184, 134, 11, 0.22);
+}
+
+/* Fine gold line system around premium blocks */
+.hero__grid > .reveal:first-child,
+.portrait-copy-grid > .reveal:last-child,
+.about-editorial-grid > .reveal:first-child,
+.card,
+.process__item,
+.value-card,
+.faq-item,
+.region-card,
+.industry-card,
+.service-card,
+.solution-card,
+.contact-card,
+.legal-card,
+.content-card {
+  position: relative;
+  border-color: var(--gold-line-soft);
+}
+
+.hero__grid > .reveal:first-child::after,
+.portrait-copy-grid > .reveal:last-child::after,
+.about-editorial-grid > .reveal:first-child::after,
+.card::after,
+.process__item::after,
+.value-card::after,
+.faq-item::after,
+.region-card::after,
+.industry-card::after,
+.service-card::after,
+.solution-card::after,
+.contact-card::after,
+.legal-card::after,
+.content-card::after {
+  content: "";
+  position: absolute;
+  inset: 0.72rem;
+  border: 1px solid var(--gold-line-soft);
+  border-radius: calc(var(--radius-lg) - 6px);
+  pointer-events: none;
+  opacity: 0.72;
+}
+
+.hero__grid > .reveal:first-child::after,
+.portrait-copy-grid > .reveal:last-child::after,
+.about-editorial-grid > .reveal:first-child::after {
+  inset: 0.85rem;
+  border-color: rgba(184, 134, 11, 0.28);
+}
+
+/* Luxury section rhythm: refined gold top rules */
+.section > .container > .reveal:first-child:not(.portrait-copy-grid__image),
+.section .container--narrow > .reveal:first-child {
+  position: relative;
+}
+
+.section > .container > .reveal:first-child:not(.portrait-copy-grid__image)::before,
+.section .container--narrow > .reveal:first-child::before {
+  content: "";
+  display: block;
+  width: clamp(3rem, 8vw, 5.5rem);
+  height: 1px;
+  margin-bottom: 1.15rem;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  opacity: 0.58;
+}
+
+/* Cards: private banking restraint, not loud */
+.card,
+.process__item,
+.value-card,
+.faq-item,
+.region-card,
+.industry-card,
+.service-card,
+.solution-card,
+.contact-card,
+.legal-card,
+.content-card {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.card:hover,
+.process__item:hover,
+.value-card:hover,
+.faq-item:hover,
+.region-card:hover,
+.industry-card:hover,
+.service-card:hover,
+.solution-card:hover,
+.contact-card:hover {
+  border-color: var(--gold-line);
+  box-shadow: 0 26px 64px rgba(8, 16, 28, 0.12), 0 0 0 1px rgba(184,134,11,0.06);
+}
+
+/* Image frames: thin gold edge, preserved radius on hover */
+.portrait-placeholder__frame,
+.portrait-figure,
+.image-card {
+  border: 1px solid rgba(184, 134, 11, 0.24);
+  box-shadow: 0 24px 58px rgba(8, 16, 28, 0.13), 0 0 0 1px rgba(184,134,11,0.055);
+}
+
+.portrait-placeholder__frame::before,
+.portrait-figure::before,
+.image-card::before {
+  content: "";
+  position: absolute;
+  inset: 0.65rem;
+  border: 1px solid rgba(250, 250, 247, 0.20);
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 2;
+}
+
+/* Editorial headings: slightly more luxury-consulting presence */
+.hero__title,
+h1,
+h2 {
+  text-wrap: balance;
+}
+
+.eyebrow {
+  color: #a87308;
+}
+
+.hero__grid > .reveal:first-child .eyebrow,
+.portrait-copy-grid > .reveal:last-child .eyebrow,
+.about-editorial-grid > .reveal:first-child .eyebrow {
+  letter-spacing: 0.16em;
+}
+
+/* Wider luxury buttons with fine gold edge */
+.btn,
+button,
+input[type="submit"] {
+  min-height: 3.45rem;
+  padding: 1rem 2.25rem;
+  border-radius: 999px;
+  letter-spacing: 0.012em;
+}
+
+.btn--primary,
+.btn--secondary {
+  min-width: clamp(13.5rem, 19vw, 17rem);
+  border-width: 1px;
+}
+
+.btn--primary {
+  background: linear-gradient(180deg, #111d31 0%, #0f1a2b 100%);
+  color: #fffdf8;
+  border-color: rgba(184, 134, 11, 0.36);
+}
+
+.btn--primary:hover {
+  background: linear-gradient(180deg, #b8860b 0%, #a97a09 100%);
+  color: #0f1a2b;
+  border-color: rgba(184, 134, 11, 0.56);
+}
+
+.btn--secondary {
+  border-color: rgba(15, 26, 43, 0.38);
+}
+
+/* Footer: align with private banking aesthetic */
+.site-footer {
+  background:
+    radial-gradient(ellipse 44% 28% at 92% 0%, rgba(184,134,11,0.14), transparent 72%),
+    linear-gradient(180deg, #121f34 0%, #0f1a2b 100%);
+  border-top: 1px solid rgba(184,134,11,0.24);
+}
+
+.footer-grid {
+  position: relative;
+}
+
+.footer-grid::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: -1.25rem;
+  width: min(18rem, 42vw);
+  height: 1px;
+  background: linear-gradient(90deg, var(--color-accent), transparent);
+  opacity: 0.72;
+}
+
+/* Mobile: keep luxury lines subtle, avoid cramped visual noise */
+@media (max-width: 767px) {
+  body::after {
+    background-size: 64px 64px;
+    opacity: 0.65;
+  }
+
+  .hero__grid > .reveal:first-child::after,
+  .portrait-copy-grid > .reveal:last-child::after,
+  .about-editorial-grid > .reveal:first-child::after,
+  .card::after,
+  .process__item::after,
+  .value-card::after,
+  .faq-item::after,
+  .region-card::after,
+  .industry-card::after,
+  .service-card::after,
+  .solution-card::after,
+  .contact-card::after,
+  .legal-card::after,
+  .content-card::after {
+    inset: 0.55rem;
+    opacity: 0.48;
+  }
+
+  .btn,
+  button,
+  input[type="submit"] {
+    min-height: 3.25rem;
+    padding: 0.92rem 1.45rem;
+  }
+}

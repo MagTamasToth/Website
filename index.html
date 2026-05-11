@@ -105,15 +105,15 @@
       <p style="font-family:var(--font-display);font-size:var(--text-md);color:var(--color-ink-soft);max-width:50ch;margin:0 auto var(--space-5);line-height:1.5;">Vertriebspartner für Österreich und Ungarn. · Sales partner for Austria and Hungary. · Értékesítési partner Ausztria és Magyarország számára.</p>
 
       <div class="gateway__choice">
-        <a class="gateway__lang" href="de/" hreflang="de-AT">
+        <a class="gateway__lang" href="/de/" hreflang="de-AT">
           <strong>Deutsch</strong>
           <span>DE · Österreich</span>
         </a>
-        <a class="gateway__lang" href="hu/" hreflang="hu-HU">
+        <a class="gateway__lang" href="/hu/" hreflang="hu-HU">
           <strong>Magyar</strong>
           <span>HU · Magyarország</span>
         </a>
-        <a class="gateway__lang" href="en/" hreflang="en">
+        <a class="gateway__lang" href="/en/" hreflang="en">
           <strong>English</strong>
           <span>EN · International</span>
         </a>
@@ -149,19 +149,10 @@
       }
       if (!target) return;
 
-      // Base path felismerése:
-      // metallagentur.at/       → base = ''   → target: '/hu/'   OK
-      // magtamastoth.github.io/Website/ → base = '/Website' → target: '/Website/hu/'
-      var pathParts = window.location.pathname.replace(/\/+$/, '').split('/').filter(Boolean);
-      var base = '';
-      if (pathParts.length > 0 && !['de','hu','en'].includes(pathParts[0])) {
-        base = '/' + pathParts[0];   // pl. '/Website'
-      }
-
       // 1.5 Sekunden Auswahl-Zeit, dann sanfte Weiterleitung
       setTimeout(function () {
         try { sessionStorage.setItem('chosen-lang', target); } catch (e) {}
-        window.location.replace(base + target);
+        window.location.replace(target);
       }, 1500);
     })();
   </script>

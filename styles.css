@@ -3435,3 +3435,116 @@ input[type="submit"] {
     padding: 0.92rem 1.45rem;
   }
 }
+
+
+/* ========================================================================== 
+   Premium refinement · v12
+   - restore second homepage portrait proportions
+   - hide header on downward scroll, reveal on upward scroll
+   - increase deep-blue block rhythm across pages
+   ========================================================================== */
+
+/* Header should slide away on scroll down and return on scroll up */
+.site-header {
+  transform: translateY(0);
+  will-change: transform;
+  transition:
+    transform 320ms cubic-bezier(.2,.7,.2,1),
+    height 250ms ease,
+    border-color 250ms ease,
+    box-shadow 250ms ease,
+    background 250ms ease;
+}
+
+.site-header.is-hidden {
+  transform: translateY(-112%);
+}
+
+/* Restore the homepage second image: no vertical stretching, natural portrait ratio */
+.portrait-copy-grid__image {
+  align-self: center !important;
+}
+
+.portrait-copy-grid__image .portrait-placeholder,
+.portrait-copy-grid__image .portrait-placeholder__frame,
+.portrait-placeholder--trust,
+.portrait-placeholder--trust .portrait-placeholder__frame {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+
+.portrait-placeholder--trust {
+  width: min(100%, 330px);
+  max-width: 330px !important;
+  margin-inline: auto;
+}
+
+.portrait-placeholder--trust .portrait-placeholder__frame {
+  aspect-ratio: 2 / 3 !important;
+}
+
+@media (min-width: 1100px) {
+  .portrait-copy-grid {
+    grid-template-columns: minmax(0, 0.92fr) minmax(260px, 340px) minmax(0, 1.16fr);
+  }
+
+  .portrait-placeholder--trust {
+    width: min(100%, 340px);
+    max-width: 340px !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .portrait-placeholder--trust {
+    width: min(78vw, 320px);
+    max-width: min(78vw, 320px) !important;
+  }
+}
+
+/* More deep-blue premium blocks: richer rhythm, not only every second card */
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(3n+1),
+.process > .process__item:nth-child(3n+1),
+.faq-list > .faq-item:nth-child(3n+2),
+.legal-grid > :is(.legal-card, .content-card):nth-child(3n+1),
+.solution-card:nth-child(3n+1),
+.solution:nth-child(3n+1) {
+  background:
+    radial-gradient(ellipse 48% 32% at 100% 0%, rgba(184, 134, 11, 0.12), transparent 66%),
+    linear-gradient(160deg, rgba(26, 39, 59, 0.982) 0%, rgba(15, 26, 43, 0.992) 100%);
+  border-color: rgba(184, 134, 11, 0.22);
+  box-shadow: 0 18px 42px rgba(8, 16, 28, 0.13), 0 4px 12px rgba(8, 16, 28, 0.07);
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(3n+1) :is(h2,h3,h4,.card__title,.value-card__title,.service-card__title,.region-card__title,.industry-card__title,.contact-card__title),
+.process > .process__item:nth-child(3n+1) :is(h2,h3,h4),
+.faq-list > .faq-item:nth-child(3n+2) :is(h2,h3,h4,summary),
+.legal-grid > :is(.legal-card, .content-card):nth-child(3n+1) :is(h2,h3,h4),
+.solution-card:nth-child(3n+1) :is(h2,h3,h4),
+.solution:nth-child(3n+1) :is(h2,h3,h4) {
+  color: #fffdf8;
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(3n+1) :is(p, li, a:not(.btn), .card__body),
+.process > .process__item:nth-child(3n+1) :is(p, li),
+.faq-list > .faq-item:nth-child(3n+2) :is(p, li),
+.legal-grid > :is(.legal-card, .content-card):nth-child(3n+1) :is(p, li, a:not(.btn)),
+.solution-card:nth-child(3n+1) :is(p, li, a:not(.btn)),
+.solution:nth-child(3n+1) :is(p, li, a:not(.btn), dt, dd) {
+  color: rgba(250, 250, 247, 0.82);
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(3n+1) .card__index,
+.process > .process__item:nth-child(3n+1) .card__index,
+.faq-list > .faq-item:nth-child(3n+2) .card__index,
+.legal-grid > :is(.legal-card, .content-card):nth-child(3n+1) .card__index {
+  color: rgba(245, 237, 216, 0.88);
+}
+
+:is(.grid, .values-grid, .services-grid, .region-grid, .regions-grid, .industry-grid, .industries-grid, .contact-grid) > :is(.card, .value-card, .service-card, .region-card, .industry-card, .contact-card):nth-child(3n+1)::after,
+.process > .process__item:nth-child(3n+1)::after,
+.faq-list > .faq-item:nth-child(3n+2)::after,
+.legal-grid > :is(.legal-card, .content-card):nth-child(3n+1)::after,
+.solution-card:nth-child(3n+1)::after {
+  border-color: rgba(184, 134, 11, 0.30);
+}

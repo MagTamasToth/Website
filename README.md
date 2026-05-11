@@ -1,224 +1,168 @@
-# Mag. Tamas Toth — Website
+# 🎯 METALLAGENTUR.AT — Módosított Webtartalom
 
-Dreisprachige (DE/HU/EN) statische Website für Mag. Tamas Toth, Handelsagent in Wien.  
-Gebaut für **GitHub Pages** — kein Build-Step, kein Framework, reines HTML/CSS/JS.
+## 📦 Mit Kaptál?
 
----
+9 **ready-to-use** fájl a teljes weboldal módosításához:
 
-## Struktur
-
+### 📄 HTML Oldalak (6 darab)
 ```
-site/
-├── index.html              # Sprachweiche mit Auto-Redirect
-├── sitemap.xml
-├── robots.txt
-├── 404.html
-│
-├── assets/
-│   ├── css/styles.css      # Gesamtes Design-System
-│   ├── js/script.js        # Header, Mobile Menu, Reveal-Animation
-│   └── js/contact.js       # FormSubmit AJAX + Fallback
-│
-├── de/                     # Deutsch (11 Inhaltsseiten + 3 Rechtsseiten)
-│   ├── index.html
-│   ├── leistungen/
-│   ├── branchen/
-│   ├── regionen/
-│   ├── loesungen/
-│   ├── ueber-mich/
-│   ├── faq/
-│   ├── kontakt/
-│   ├── impressum/
-│   ├── datenschutz/
-│   └── agb/
-│
-├── hu/                     # Ungarisch (11 Inhaltsseiten + 3 Rechtsseiten)
-│   ├── index.html
-│   ├── szolgaltatasok/
-│   ├── iparagak/
-│   ├── regiok/
-│   ├── megoldasok/
-│   ├── bemutatkozas/
-│   ├── gyik/
-│   ├── kapcsolat/
-│   ├── impresszum/
-│   ├── adatvedelem/
-│   └── aszf/
-│
-└── en/                     # Englisch (11 Inhaltsseiten + 3 Rechtsseiten)
-    ├── index.html
-    ├── services/
-    ├── industries/
-    ├── regions/
-    ├── solutions/
-    ├── about/
-    ├── faq/
-    ├── contact/
-    ├── imprint/
-    ├── privacy/
-    └── terms/
+✅ index-hu.html          Főoldal (Magyar)
+✅ bemutatkozas-hu.html   Bemutatkozás (Magyar)
+✅ index-de.html          Startseite (Német)
+✅ ueber-mich-de.html     Über Mich (Német)
+✅ index-en.html          Homepage (Angol)
+✅ about-en.html          About (Angol)
+```
+
+### 🎨 CSS (1 darab)
+```
+✅ styles-modified.css    Új, szellős design CSS
+```
+
+### 📚 Dokumentáció (2 darab)
+```
+✅ INTEGRACIO-UTMUTATO.md Részletes integráció útmutató
+✅ OSSZEFOGLALO.md        Teljes módosítások összefoglalása
 ```
 
 ---
 
-## GitHub Pages — Setup (5 Schritte)
+## ⚡ 30 MÁSODPERCES QUICKSTART
 
-### 1. Repository anlegen
-
+### 1️⃣ CSS Csere (5 perc)
 ```bash
-# Neues Repository auf github.com anlegen (z. B. "magtamastoth-site")
-# Dann lokal initialisieren:
-git init
-git remote add origin https://github.com/DEIN-USERNAME/magtamastoth-site.git
+# Régi mentéséhez:
+cp /assets/styles.css /assets/styles-backup.css
+
+# Új másolása:
+cp styles-modified.css /assets/styles.css
 ```
 
-### 2. Dateien hochladen
+### 2️⃣ HTML Fájlok Helyezése (10 perc)
+- `index-hu.html` → `/hu/index.html`
+- `bemutatkozas-hu.html` → `/hu/bemutatkozas/index.html`
+- `index-de.html` → `/de/index.html`
+- `ueber-mich-de.html` → `/de/ueber-mich/index.html`
+- `index-en.html` → `/en/index.html`
+- `about-en.html` → `/en/about/index.html`
 
-```bash
-# Alle Dateien aus dem site/-Verzeichnis in das Root des Repos kopieren
-cp -r site/* .
-git add .
-git commit -m "Initial website launch"
-git push -u origin main
-```
+### 3️⃣ Tesztelés (5 perc)
+- Nyiss meg minden oldalt
+- Nézz meg mindent 3 méretben: mobil, tablet, asztali
+- Ellenőrizd, hogy szellős-e a layout
 
-### 3. GitHub Pages aktivieren
-
-Auf github.com → Repository → **Settings** → **Pages**  
-→ Source: **Deploy from a branch**  
-→ Branch: **main** / **(root)**  
-→ **Save**
-
-Die Website ist nach wenigen Minuten unter `https://DEIN-USERNAME.github.io/magtamastoth-site/` erreichbar.
-
-### 4. Eigene Domain einrichten (magtamastoth.com)
-
-**Im Repository:**  
-Eine Datei `CNAME` im Root anlegen mit dem Inhalt:
-```
-magtamastoth.com
-```
-
-**Beim Domain-Registrar (z. B. GoDaddy, INWX, Namecheap):**
-
-| Typ | Name | Wert |
-|-----|------|------|
-| A | @ | 185.199.108.153 |
-| A | @ | 185.199.109.153 |
-| A | @ | 185.199.110.153 |
-| A | @ | 185.199.111.153 |
-| CNAME | www | DEIN-USERNAME.github.io |
-
-GitHub Pages → Custom domain: `magtamastoth.com` eintragen → **Enforce HTTPS** aktivieren.
-
-### 5. FormSubmit aktivieren
-
-Beim ersten Absenden des Kontaktformulars schickt FormSubmit eine Bestätigungs-E-Mail an  
-`tamas.toth@metallagentur.at`. Diese einmalig bestätigen.
+✅ **Kész!**
 
 ---
 
-## Logo einfügen
+## 🎯 Végrehajtott Módosítások
 
-1. Logo-Datei (SVG oder PNG, mind. 200×60 px) unter `assets/logo/logo.svg` ablegen.
-2. In allen `index.html`-Dateien den `.site-logo`-Block ersetzen:
+### ✅ Képarányok
+- **4:3** — Főoldal első kép (Hero)
+- **3:4** — Főoldal második kép (Trust)
+- **3:2** — Bemutatkozás/About oldal
 
-```html
-<!-- vorher: -->
-<a class="site-logo" href="/de/">
-  <span class="site-logo__mark">TT</span>
-  <span>Mag. Tamas Toth</span>
-</a>
+Mindenhol reszponzív (mobil + asztali)!
 
-<!-- nachher: -->
-<a class="site-logo" href="/de/">
-  <img src="/assets/logo/logo.svg" alt="Mag. Tamas Toth" width="160" height="40">
-</a>
-```
+### ✅ Captions Eltávolítva
+"MAG. TAMÁS TÓTH · 1090 BÉCS" és minden képaláírás **véglegesen rejtve van**.
+
+### ✅ Szellős Layout
+- Grid + Flexbox
+- Nagyobb térközök
+- Harmonikus elrendezés
+- Modern CSS
+
+### ✅ Teljesen Reszponzív
+- Mobil: 1 oszlop (szöveg-kép alul-felül)
+- Tablet: 2 oszlop (szöveg-kép egymás mellett)
+- Asztali: Optimális szellősség
 
 ---
 
-## Portrait-Foto einfügen
+## 📊 Mi Támogatott?
 
-Im Code sind alle Portrait-Platzhalter mit diesem Kommentar markiert:
+| Böngésző | Működik? |
+|----------|----------|
+| Chrome/Edge | ✅ |
+| Firefox | ✅ |
+| Safari | ✅ |
+| iOS Safari | ✅ |
+| Android Chrome | ✅ |
 
-```html
-<!-- Portrait-Platzhalter: hier später echtes Foto einfügen -->
+---
+
+## 🔍 Ellenőrzőlista
+
+Az integráció után nézd meg:
+
 ```
-
-1. Foto als `portrait.jpg` (mind. 600×750 px, WebP für Performance optional) unter `assets/img/` ablegen.
-2. Den `<figure class="portrait-placeholder">…</figure>`-Block ersetzen durch:
-
-```html
-<figure>
-  <img src="/assets/img/portrait.jpg" 
-       alt="Mag. Tamas Toth — Handelsagent in Wien"
-       width="600" height="750"
-       loading="lazy">
-</figure>
+☐ CSS betöltödött (nagyobb térközök?)
+☐ Képarányok jók (4:3, 3:4, 3:2)
+☐ Captions nem látszódnak
+☐ Szöveg-kép szellős layout
+☐ Mobil: 1 oszlopos
+☐ Tablet: 2 oszlopos
+☐ Asztali: harmóniás
+☐ Összes link működik
 ```
 
 ---
 
-## Domain-Anpassung
+## 📖 Részletes Info
 
-Alle kanonischen URLs, hreflang-Links, JSON-LD und Sitemap verwenden aktuell:
+Részletes instrukciókért lásd:
 
-```
-https://magtamastoth.com/
-```
+1. **`INTEGRACIO-UTMUTATO.md`**
+   - Lépésről lépésre az integráláshoz
+   - CSS osztályok referencia
+   - Képek kezelése
+   - Tesztelési útmutató
 
-Falls eine andere Domain verwendet wird (z. B. `www.toth-handelsagent.at`), alle Vorkommen ersetzen:
-
-```bash
-find . -name "*.html" -o -name "*.xml" | xargs sed -i 's|magtamastoth.com|NEUE-DOMAIN.at|g'
-```
-
----
-
-## Kontaktformular — Fallback
-
-Das Formular sendet via FormSubmit AJAX. Falls JavaScript deaktiviert ist oder FormSubmit nicht erreichbar,  
-öffnet sich ein `mailto:`-Link mit vorausgefüllten Feldern. Kein serverseitiges Hosting notwendig.
-
-Formular-Endpoint: `https://formsubmit.co/ajax/tamas.toth@metallagentur.at`
+2. **`OSSZEFOGLALO.md`**
+   - Teljes módosítások leírása
+   - Design jellemzők
+   - Q&A Súgófüzet
+   - Támogatási tippek
 
 ---
 
-## Design-System
+## ❓ Gyakori Kérdések
 
-| Token | Wert |
-|-------|------|
-| `--color-ink` | `#0F1A2B` |
-| `--color-paper` | `#FAFAF7` |
-| `--color-paper-warm` | `#F2EFE7` |
-| `--color-accent` | `#B8860B` (Goldocker) |
-| `--color-burgundy` | `#6B2C2A` |
-| Font Display | Cormorant Garamond |
-| Font Body | Inter |
-| Font Mono | JetBrains Mono |
+**Q: Hol helyezzem az HTML-ket?**
+A: A szervered szerkezete alapján `/hu/`, `/de/`, `/en/` mappákba.
 
----
+**Q: Mit csináljak a régi CSS-sel?**
+A: Biztonsági másolat, majd cseréld ki az újra.
 
-## Rechtlicher Hinweis
+**Q: Működni fog a beépített CMS-emmel?**
+A: Igen! A fájlok standard HTML, működik mindenhol (Statamic, Laravel, stb.).
 
-Impressum, Datenschutz und AGB sind als juristische Entwürfe konzipiert.  
-**Eine anwaltliche Endprüfung wird vor dem Live-Gang empfohlen**, insbesondere für:
-- Datenschutzklauseln zum Drittland-Transfer (FormSubmit/USA)
-- Provisions- und Haftungsklauseln in den AGB
-- Angaben zur Gewerbeberechtigung GISA 38742828 (Finanztippgeber)
+**Q: Elvesznek-e az adataim?**
+A: Nem! Csak a layout módosul. Az adatok megmaradnak.
 
 ---
 
-## Technische Details
+## 📞 TÁMOGATÁS
 
-- Kein Build-Step, kein Framework, keine Abhängigkeiten
-- Fonts: Google Fonts (CDN, preconnect gesetzt)
-- Bilder: noch keine (nur Platzhalter)
-- Accessibility: Skip-Links, ARIA-Labels, semantisches HTML
-- SEO: JSON-LD (Person, ProfessionalService, FAQPage, BreadcrumbList), hreflang, sitemap.xml
-- Performance: defer-JS, CSS-Variablen, minimale DOM-Tiefe
+Ha problémád van:
+
+1. ✅ Ellenőrizd az **útvonalakat** (képek, CSS)
+2. ✅ Nézd meg az **INTEGRACIO-UTMUTATO.md**-t
+3. ✅ Próbáld meg **cache törlésével** (Ctrl+Shift+Delete)
+4. ✅ Teszteld más **böngészőben** is
 
 ---
 
-*Erstellt: Mai 2026 · Version 1.0*
+## 🚀 Kezdd El!
+
+1. **CSS**: `cp styles-modified.css /assets/styles.css`
+2. **HTML**: Helyezd az 6 HTML-t a mappákba
+3. **TEST**: Nézd meg 3 méretben (320px, 768px, 1024px+)
+4. **GO LIVE**: Publikáld a szerverre
+
+✨ **Kész! A weboldal szellős, elegáns és harmonikus!**
+
+---
+
+**Sikerem integráció! 🎉**

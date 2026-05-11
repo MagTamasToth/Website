@@ -14,7 +14,7 @@ A weboldal flat GitHub Pages struktúrája működőképes és stabilizálható.
 - A flat struktúra GitHub Pages alatt egyszerűen kiszolgálható.
 
 ### Kritikus javítások, amelyek bekerültek
-- `magtamastoth.com` domainhivatkozások cseréje `metallagentur.at` domainre.
+- A korábbi domainhivatkozások egységesítve lettek a `metallagentur.at` domainre.
 - `CNAME` tartalma: `metallagentur.at`.
 - `robots.txt` sitemap hivatkozása: `https://metallagentur.at/sitemap.xml`.
 - `sitemap.xml` URL-ek átállítása `https://metallagentur.at/...` formára.

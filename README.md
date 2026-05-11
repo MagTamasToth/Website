@@ -125,14 +125,14 @@ Beim ersten Absenden des Kontaktformulars schickt FormSubmit eine Bestätigungs-
 
 ```html
 <!-- vorher: -->
-<a class="site-logo" href="/de/">
+<a class="site-logo" href="de.html">
   <span class="site-logo__mark">TT</span>
   <span>Mag. Tamas Toth</span>
 </a>
 
 <!-- nachher: -->
-<a class="site-logo" href="/de/">
-  <img src="/assets/logo/logo.svg" alt="Mag. Tamas Toth" width="160" height="40">
+<a class="site-logo" href="de.html">
+  <img src="logo_de.webp" alt="Mag. Tamas Toth" width="160" height="40">
 </a>
 ```
 
@@ -151,7 +151,7 @@ Im Code sind alle Portrait-Platzhalter mit diesem Kommentar markiert:
 
 ```html
 <figure>
-  <img src="/assets/img/portrait.jpg" 
+  <img src="portrait_1.webp" 
        alt="Mag. Tamas Toth — Handelsagent in Wien"
        width="600" height="750"
        loading="lazy">

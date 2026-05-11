@@ -15,6 +15,9 @@
   <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
 
+  <!-- Google Search Console verification placeholder: add the provided meta tag here if you choose HTML tag verification. -->
+  <!-- Bing Webmaster Tools verification placeholder: add the provided meta tag here if you choose HTML tag verification. -->
+
   <style>
     .gateway {
       min-height: 100vh;
@@ -138,20 +141,19 @@
         return l.toLowerCase();
       });
 
-      var target = null;
+      // Browser-language based start page.
+      // DE -> German, HU -> Hungarian, EN -> English; every other language defaults to English.
+      var target = 'en.html';
       for (var i = 0; i < langs.length; i++) {
         var l = langs[i];
         if (l.indexOf('de') === 0) { target = 'de.html'; break; }
         if (l.indexOf('hu') === 0) { target = 'hu.html'; break; }
         if (l.indexOf('en') === 0) { target = 'en.html'; break; }
       }
-      if (!target) return;
 
-      // 1.5 Sekunden Auswahl-Zeit, dann sanfte Weiterleitung
-      setTimeout(function () {
-        try { sessionStorage.setItem('chosen-lang', target); } catch (e) {}
-        window.location.replace(target);
-      }, 1500);
+      // Immediate redirect for a clean GitHub Pages landing flow.
+      try { sessionStorage.setItem('chosen-lang', target); } catch (e) {}
+      window.location.replace(target);
     })();
   </script>
 

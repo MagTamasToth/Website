@@ -1,18 +1,23 @@
-# Végleges SEO / GEO / Schema / GDPR ellenőrzési jegyzet
+# Végleges audit jegyzet — metallagentur.at
 
-## Elkészült ebben a csomagban
+## Javított technikai pontok
 
-- Flat GitHub Pages struktúra: minden HTML a gyökérben.
-- `metallagentur.at` domainre normalizált canonical, hreflang, sitemap és schema hivatkozások.
-- A régi `/de/`, `/hu/`, `/en/` útvonalak flat `.html` útvonalakra lettek átvezetve.
-- Google Fonts külső HTML-hivatkozások eltávolítva.
-- `fonts.css` lokális/system fallback alapú, külső Google-kérés nélkül.
-- Cookie notice linkek flat adatvédelmi oldalakra mutatnak.
-- A portré fájlok és prémium képstílus megmaradt.
+- A hibás `de.html.html`, `hu.html.html`, `en.html.html` schema URL-ek javítva.
+- A hibás `de.html-*`, `hu.html-*`, `en.html-*` schema URL-ek javítva a flat fájlnevekre.
+- A canonical, hreflang, sitemap és robots irány a `https://metallagentur.at/` domainhez igazítva.
+- Külső Google Fonts hívás nincs; a betűk lokális/system fallback logikával működnek.
+- Google Analytics, Tag Manager, YouTube embed, Google Maps embed és marketing pixel nincs beépítve.
+- Google Search Console és Bing Webmaster Tools bekötéshez előkészített kommenthely van az `index.html` head részében. Ezek nem tracking kódok.
+- Az űrlap FormSubmit továbbítással működik, adatvédelmi tájékoztatóhoz kötött consent checkboxszal és e-mail/telefon alternatívával.
 
-## Még emberi/jogi ellenőrzést igényel
+## Publikálás utáni ellenőrzés
 
-- Impressum / Offenlegung: osztrák jogász vagy WKO-s kontroll ajánlott.
-- Datenschutz: FormSubmit, GitHub Pages, e-mail/telefon kapcsolatfelvétel, server logok és sessionStorage részletek végleges jogi ellenőrzése.
-- Kapcsolati űrlap: ha ténylegesen FormSubmitot használ, az adatkezelési tájékoztatóban és az űrlap mellett is szerepelnie kell.
-- Külső linkek: LinkedIn, X, Wikimedia, GitHub dokumentációs linkek maradtak; ezek kattintásra harmadik félhez visznek, ezt a Datenschutzban érdemes jelezni.
+1. Google Search Console: domain property vagy URL-prefix property felvétele.
+2. Bing Webmaster Tools: sitemap beküldése.
+3. Google Rich Results Test / Schema Markup Validator futtatása főoldalakra.
+4. Search Console URL Inspection: `https://metallagentur.at/`, `de.html`, `hu.html`, `en.html`.
+5. Élő űrlap teszt egy rövid próbaüzenettel.
+
+## Jogi megjegyzés
+
+A csomag technikailag a megadott működéshez van tisztítva. A végleges osztrák jogi megfeleléshez az Impressum, Datenschutz és AGB szövegek ügyvédi/adatvédelmi szakértői ellenőrzése továbbra is javasolt.

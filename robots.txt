@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemaps
-Sitemap: https://magtamastoth.com/sitemap.xml
+Sitemap: https://metallagentur.at/sitemap.xml

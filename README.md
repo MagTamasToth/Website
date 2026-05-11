@@ -91,12 +91,12 @@ Auf github.com → Repository → **Settings** → **Pages**
 
 Die Website ist nach wenigen Minuten unter `https://DEIN-USERNAME.github.io/magtamastoth-site/` erreichbar.
 
-### 4. Eigene Domain einrichten (magtamastoth.com)
+### 4. Eigene Domain einrichten (metallagentur.at)
 
 **Im Repository:**  
 Eine Datei `CNAME` im Root anlegen mit dem Inhalt:
 ```
-magtamastoth.com
+metallagentur.at
 ```
 
 **Beim Domain-Registrar (z. B. GoDaddy, INWX, Namecheap):**
@@ -109,7 +109,7 @@ magtamastoth.com
 | A | @ | 185.199.111.153 |
 | CNAME | www | DEIN-USERNAME.github.io |
 
-GitHub Pages → Custom domain: `magtamastoth.com` eintragen → **Enforce HTTPS** aktivieren.
+GitHub Pages → Custom domain: `metallagentur.at` eintragen → **Enforce HTTPS** aktivieren.
 
 ### 5. FormSubmit aktivieren
 
@@ -165,13 +165,13 @@ Im Code sind alle Portrait-Platzhalter mit diesem Kommentar markiert:
 Alle kanonischen URLs, hreflang-Links, JSON-LD und Sitemap verwenden aktuell:
 
 ```
-https://magtamastoth.com/
+https://metallagentur.at/
 ```
 
 Falls eine andere Domain verwendet wird (z. B. `www.toth-handelsagent.at`), alle Vorkommen ersetzen:
 
 ```bash
-find . -name "*.html" -o -name "*.xml" | xargs sed -i 's|magtamastoth.com|NEUE-DOMAIN.at|g'
+find . -name "*.html" -o -name "*.xml" | xargs sed -i 's|metallagentur.at|NEUE-DOMAIN.at|g'
 ```
 
 ---

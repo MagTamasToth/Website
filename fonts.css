@@ -1,0 +1,86 @@
+/* ==========================================================================
+   Lokális betűtípusok — GDPR-kompatibilis (nincs külső kérés)
+   
+   TELEPÍTÉSI UTASÍTÁS:
+   Töltse le a font-fájlokat a Google Fonts API-ból lokálisan:
+   https://google-webfonts-helper.herokuapp.com/fonts/
+   
+   Cormorant Garamond: https://google-webfonts-helper.herokuapp.com/fonts/cormorant-garamond
+   Inter: https://google-webfonts-helper.herokuapp.com/fonts/inter
+   JetBrains Mono: https://google-webfonts-helper.herokuapp.com/fonts/jetbrains-mono
+   
+   Mentse a .woff2 fájlokat az /assets/fonts/ mappába,
+   majd aktiválja az alábbi @font-face blokkokat.
+   ========================================================================== */
+
+/* ── Fallback: System Font Stack (azonnali betöltés, GDPR-kompatibilis) ── */
+/* Ha a font-fájlok nincsenek helyben, ezek a rendszerbetűk töltődnek be   */
+
+:root {
+  --font-display: "Cormorant Garamond", "Palatino Linotype", "Book Antiqua", 
+                  "Palatino", "Times New Roman", Georgia, serif;
+  --font-body:    "Inter", "Segoe UI", "Helvetica Neue", "Arial", 
+                  "Liberation Sans", sans-serif;
+  --font-mono:    "JetBrains Mono", "Cascadia Code", "Fira Code", 
+                  "Consolas", "Monaco", monospace;
+}
+
+/* ── @font-face blokkok (aktiválni a .woff2 fájlok letöltése után) ──── */
+/*
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-v22-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-v22-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/cormorant-garamond-v22-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/inter-v18-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/inter-v18-latin-500.woff2") format("woff2");
+}
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/inter-v18-latin-600.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains-mono-v18-latin-regular.woff2") format("woff2");
+}
+@font-face {
+  font-family: "JetBrains Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/jetbrains-mono-v18-latin-500.woff2") format("woff2");
+}
+*/

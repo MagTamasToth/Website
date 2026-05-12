@@ -1611,3 +1611,53 @@ body.cookie-visible .fab-cta {
     max-width: 100% !important;
   }
 }
+
+
+/* ==========================================================================
+   v30 why-section portrait placement — portrait_2.JPG in the left open column
+   ========================================================================== */
+.why-side-portrait {
+  float: none !important;
+  display: block !important;
+  margin: clamp(1.4rem, 3vw, 2.1rem) 0 0 0 !important;
+  width: 100% !important;
+  max-width: min(100%, 560px) !important;
+}
+.why-side-portrait .portrait-placeholder__frame {
+  aspect-ratio: 2048 / 1535 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 0 18px 44px rgba(15, 26, 43, 0.10) !important;
+}
+.why-side-portrait .portrait-placeholder__frame::before,
+.why-side-portrait .portrait-placeholder__frame::after {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.why-side-portrait .portrait-placeholder__image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.reveal--with-trust-portrait {
+  display: block !important;
+}
+.reveal--with-trust-portrait ul {
+  margin-top: 0 !important;
+}
+@media (max-width: 1020px) {
+  .why-side-portrait {
+    max-width: min(100%, 520px) !important;
+    margin: 1.25rem 0 1.1rem 0 !important;
+  }
+}
+@media (max-width: 767px) {
+  .why-side-portrait {
+    max-width: 100% !important;
+    margin: 1.15rem 0 1.25rem 0 !important;
+  }
+}

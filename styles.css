@@ -3694,3 +3694,246 @@ main > section.section--regions-home {
     max-width: 420px !important;
   }
 }
+
+/* ========================================================================== 
+   v17 · final color concept cleanup
+   - only image-adjacent text boxes are dark blue
+   - every other card/box remains light
+   - light sections use dark blue + gold
+   - dark blue boxes use only gold + white
+   ========================================================================== */
+
+/* Main content sections return to a calm light editorial surface. Dark blue is no
+   longer used as a random section/card rhythm. */
+main > section.section:not(.hero) {
+  background:
+    radial-gradient(ellipse 44% 30% at 90% 0%, rgba(245,237,216,0.48), transparent 68%),
+    linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-warm) 100%) !important;
+  color: var(--color-ink) !important;
+}
+
+main > section.section:not(.hero)::before {
+  content: none !important;
+  display: none !important;
+}
+
+main > section.section:not(.hero) > .container {
+  position: relative;
+  z-index: 1;
+}
+
+/* Light-section typography: dark blue body, gold emphasis. This also fixes
+   the homepage process section where white inline text appeared on a light background. */
+main > section.section:not(.hero) :is(h1,h2,h3,h4,summary,dt,strong,.card__title) {
+  color: var(--color-ink) !important;
+}
+
+main > section.section:not(.hero) :is(p,li,dd,.lead,.card__body,a:not(.btn),span:not(.btn__arrow),small,.form__legal,.form__hint) {
+  color: var(--color-ink-soft) !important;
+}
+
+main > section.section:not(.hero) :is(.eyebrow,.card__index,.form__label,strong[style*="font-family:var(--font-mono)"]) {
+  color: var(--color-accent-hover) !important;
+}
+
+main > section.section:not(.hero) .eyebrow::before,
+main > section.section:not(.hero) .process__step::before {
+  background: rgba(184,134,11,0.70) !important;
+  color: var(--color-accent-hover) !important;
+}
+
+/* All standard boxes/cards are consistently light. */
+:is(
+  .card,
+  .process__step,
+  .process__item,
+  .value-card,
+  .faq-item,
+  .region-window,
+  .region-card,
+  .industry-card,
+  .service-card,
+  .solution-card,
+  .contact-card,
+  .legal-card,
+  .content-card,
+  .solution,
+  .form,
+  .form-card
+) {
+  background: linear-gradient(145deg, rgba(255,255,253,0.98), rgba(250,250,247,0.94)) !important;
+  color: var(--color-ink) !important;
+  border-color: rgba(217,213,202,0.78) !important;
+  box-shadow: 0 18px 42px rgba(15,26,43,0.065), 0 4px 12px rgba(15,26,43,0.028) !important;
+}
+
+:is(
+  .card,
+  .process__step,
+  .process__item,
+  .value-card,
+  .faq-item,
+  .region-window,
+  .region-card,
+  .industry-card,
+  .service-card,
+  .solution-card,
+  .contact-card,
+  .legal-card,
+  .content-card,
+  .solution,
+  .form,
+  .form-card
+) :is(h1,h2,h3,h4,summary,dt,strong,.card__title) {
+  color: var(--color-ink) !important;
+}
+
+:is(
+  .card,
+  .process__step,
+  .process__item,
+  .value-card,
+  .faq-item,
+  .region-window,
+  .region-card,
+  .industry-card,
+  .service-card,
+  .solution-card,
+  .contact-card,
+  .legal-card,
+  .content-card,
+  .solution,
+  .form,
+  .form-card
+) :is(p,li,dd,.card__body,a:not(.btn),span:not(.btn__arrow),small) {
+  color: var(--color-ink-soft) !important;
+}
+
+:is(
+  .card,
+  .process__step,
+  .process__item,
+  .value-card,
+  .faq-item,
+  .region-window,
+  .region-card,
+  .industry-card,
+  .service-card,
+  .solution-card,
+  .contact-card,
+  .legal-card,
+  .content-card,
+  .solution,
+  .form,
+  .form-card
+) :is(.eyebrow,.card__index,.form__label) {
+  color: var(--color-accent-hover) !important;
+}
+
+/* Only boxes directly connected to portrait/image storytelling may be dark blue. */
+.hero__grid > .reveal:first-child,
+.portrait-copy-grid > .reveal:first-child,
+.portrait-copy-grid > .reveal:last-child,
+.about-editorial-grid > .reveal:first-child {
+  position: relative;
+  padding: clamp(1.35rem, 3vw, 2.6rem) !important;
+  border-radius: clamp(20px, 2.6vw, 28px) !important;
+  background:
+    radial-gradient(ellipse 46% 34% at 100% 0%, rgba(184,134,11,0.18) 0%, transparent 62%),
+    linear-gradient(155deg, rgba(25,38,58,0.985) 0%, rgba(15,26,43,0.988) 54%, rgba(11,21,37,0.992) 100%) !important;
+  border: 1px solid rgba(184,134,11,0.24) !important;
+  box-shadow: 0 24px 58px rgba(8,16,28,0.18), 0 8px 22px rgba(8,16,28,0.10) !important;
+  color: rgba(255,255,255,0.92) !important;
+  overflow: hidden;
+}
+
+.hero__grid > .reveal:first-child::before,
+.portrait-copy-grid > .reveal:first-child::before,
+.portrait-copy-grid > .reveal:last-child::before,
+.about-editorial-grid > .reveal:first-child::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background: linear-gradient(180deg, rgba(255,255,255,0.035), transparent 32%);
+  display: block !important;
+}
+
+.hero__grid > .reveal:first-child > *,
+.portrait-copy-grid > .reveal:first-child > *,
+.portrait-copy-grid > .reveal:last-child > *,
+.about-editorial-grid > .reveal:first-child > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* Dark-blue image-adjacent boxes: gold for titles/highlights, white for descriptions. */
+.hero__grid > .reveal:first-child :is(h1,h2,h3,h4,.hero__title,.eyebrow,strong,.card__title),
+.portrait-copy-grid > .reveal:first-child :is(h1,h2,h3,h4,.eyebrow,strong),
+.portrait-copy-grid > .reveal:last-child :is(h1,h2,h3,h4,.eyebrow,strong),
+.about-editorial-grid > .reveal:first-child :is(h1,h2,h3,h4,.eyebrow,strong) {
+  color: var(--color-accent) !important;
+}
+
+.hero__grid > .reveal:first-child :is(p,li,.lead,.hero__lead,.hero__meta,span:not(.btn__arrow),a:not(.btn),small),
+.portrait-copy-grid > .reveal:first-child :is(p,li,.lead,span:not(.btn__arrow),a:not(.btn),small),
+.portrait-copy-grid > .reveal:last-child :is(p,li,.lead,span:not(.btn__arrow),a:not(.btn),small),
+.about-editorial-grid > .reveal:first-child :is(p,li,.lead,span:not(.btn__arrow),a:not(.btn),small) {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+.hero__grid > .reveal:first-child .eyebrow::before,
+.portrait-copy-grid > .reveal:first-child .eyebrow::before,
+.portrait-copy-grid > .reveal:last-child .eyebrow::before,
+.about-editorial-grid > .reveal:first-child .eyebrow::before {
+  background: rgba(184,134,11,0.78) !important;
+}
+
+.hero__grid > .reveal:first-child .hero__meta {
+  border-top-color: rgba(255,255,255,0.18) !important;
+}
+
+/* Buttons inside dark-blue boxes: stay within gold/white language. */
+.hero__grid > .reveal:first-child .btn--primary,
+.portrait-copy-grid > .reveal:first-child .btn--primary,
+.portrait-copy-grid > .reveal:last-child .btn--primary,
+.about-editorial-grid > .reveal:first-child .btn--primary {
+  background: linear-gradient(180deg, #c89517 0%, #b8860b 100%) !important;
+  color: #fffdf8 !important;
+  border-color: rgba(184,134,11,0.42) !important;
+}
+
+.hero__grid > .reveal:first-child .btn--secondary,
+.portrait-copy-grid > .reveal:first-child .btn--secondary,
+.portrait-copy-grid > .reveal:last-child .btn--secondary,
+.about-editorial-grid > .reveal:first-child .btn--secondary {
+  background: rgba(255,255,255,0.06) !important;
+  color: #fffdf8 !important;
+  border-color: rgba(255,255,255,0.32) !important;
+}
+
+/* Keep the homepage process section explicitly light/readable. */
+.section--process-home-light,
+.section--process-home-light * {
+  text-shadow: none !important;
+}
+.section--process-home-light :is(h1,h2,h3,h4,strong,summary) {
+  color: var(--color-ink) !important;
+}
+.section--process-home-light :is(p,li,.lead,span:not(.btn__arrow)) {
+  color: var(--color-ink-soft) !important;
+}
+.section--process-home-light .eyebrow,
+.section--process-home-light .process__step::before {
+  color: var(--color-accent-hover) !important;
+}
+
+@media (max-width: 767px) {
+  .hero__grid > .reveal:first-child,
+  .portrait-copy-grid > .reveal:first-child,
+  .portrait-copy-grid > .reveal:last-child,
+  .about-editorial-grid > .reveal:first-child {
+    padding: 1.15rem !important;
+    border-radius: 20px !important;
+  }
+}

@@ -5,18 +5,40 @@
 (function () {
   'use strict';
 
-  // --- 1. Sticky Header Scroll-State ---------------------------------------
+  // --- 1. Sticky Header Scroll-State + Hide-on-Scroll -----------------------
   const header = document.querySelector('.site-header');
   if (header) {
-    let lastY = 0;
-    const onScroll = () => {
-      const y = window.scrollY;
+    let lastY = window.scrollY || 0;
+    let ticking = false;
+
+    const updateHeader = () => {
+      const y = window.scrollY || 0;
+      const delta = y - lastY;
+      const menuOpen = document.querySelector('.mobile-menu.is-open');
+
       if (y > 24) header.classList.add('is-scrolled');
       else header.classList.remove('is-scrolled');
+
+      // Downward scroll hides the header after the first screen rhythm; upward scroll reveals it.
+      if (!menuOpen && y > 130 && delta > 8) {
+        header.classList.add('is-hidden');
+      } else if (delta < -6 || y <= 80 || menuOpen) {
+        header.classList.remove('is-hidden');
+      }
+
       lastY = y;
+      ticking = false;
     };
+
+    const onScroll = () => {
+      if (!ticking) {
+        window.requestAnimationFrame(updateHeader);
+        ticking = true;
+      }
+    };
+
     window.addEventListener('scroll', onScroll, { passive: true });
-    onScroll();
+    updateHeader();
   }
 
   // --- 2. Mobile Menu Toggle ----------------------------------------------

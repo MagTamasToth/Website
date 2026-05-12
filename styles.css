@@ -1427,3 +1427,47 @@ body.cookie-visible .fab-cta {
 .section h1 { font-size: clamp(1.55rem, 2.3vw, 2.15rem) !important; }
 .section h2 { font-size: clamp(1.35rem, 2vw, 1.95rem) !important; line-height: 1.15 !important; }
 .card h3, .knowledge-card h3 { font-size: clamp(1.05rem, 1.45vw, 1.25rem) !important; }
+
+
+/* ========================================================================== 
+   v25 precision patch — no desktop menu overlap, calmer about portrait
+   ========================================================================== */
+@media (max-width: 1359px) {
+  .site-header__inner { grid-template-columns: minmax(0, 1fr) auto auto !important; }
+  .primary-nav { display: none !important; }
+  .menu-toggle { display: grid !important; }
+  .mobile-menu { display: block; }
+}
+@media (min-width: 1360px) {
+  .site-header__inner { grid-template-columns: auto minmax(0, 1fr) auto auto !important; gap: clamp(0.45rem, 1vw, 1rem) !important; }
+  .site-logo img { height: 50px; max-width: 54px; }
+  .site-header.is-scrolled .site-logo img { height: 42px; }
+  .site-logo__text { padding-right: 0.35rem; }
+  .site-logo__name { font-size: clamp(0.96rem, 1vw, 1.16rem); }
+  .site-logo__domain { font-size: 0.62rem; letter-spacing: 0.08em; }
+  .primary-nav { display: flex !important; }
+  .primary-nav ul { justify-content: center !important; gap: 0; }
+  .primary-nav a { font-size: clamp(0.72rem, 0.72vw, 0.82rem) !important; padding: 0.25rem clamp(0.34rem, 0.55vw, 0.58rem) !important; letter-spacing: 0 !important; }
+  .primary-nav a::after { left: clamp(0.34rem, 0.55vw, 0.58rem) !important; }
+  .primary-nav a:hover::after,
+  .primary-nav a[aria-current="page"]::after { width: calc(100% - (clamp(0.34rem, 0.55vw, 0.58rem) * 2)) !important; }
+  .lang-switch { font-size: 0.68rem !important; letter-spacing: 0.08em !important; gap: 0.12rem !important; }
+  .lang-switch a { padding: 0.22rem 0.32rem !important; }
+  .menu-toggle { display: none !important; }
+  .mobile-menu { display: none !important; }
+}
+@media (min-width: 1500px) {
+  .primary-nav a { padding-inline: 0.72rem !important; }
+  .primary-nav a::after { left: 0.72rem !important; }
+  .primary-nav a:hover::after,
+  .primary-nav a[aria-current="page"]::after { width: calc(100% - 1.44rem) !important; }
+}
+.portrait-placeholder--about { max-width: min(235px, 42vw) !important; }
+.portrait-placeholder--about .portrait-placeholder__frame { box-shadow: 0 16px 38px rgba(15, 26, 43, 0.09); }
+.magazine-portrait--right { margin: 0.1rem 0 0.85rem 1.35rem !important; }
+.magazine-portrait--left { margin: 0.1rem 1.35rem 0.85rem 0 !important; }
+@media (max-width: 767px) {
+  .portrait-placeholder--about { max-width: min(260px, 78vw) !important; }
+  .magazine-portrait--right,
+  .magazine-portrait--left { float: none !important; margin: 0.5rem auto 1.25rem !important; }
+}

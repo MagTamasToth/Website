@@ -22,7 +22,7 @@
 <meta content="@MagTamasToth" name="twitter:site"/>
 <link href="fonts.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<meta content="https://magtamastoth.com/logo_hu.webp" name="twitter:image"/><meta content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://platform.twitter.com https://cdn.syndication.twimg.com; frame-src https://platform.twitter.com https://syndication.twitter.com https://x.com https://twitter.com; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/></head>
+<meta content="https://magtamastoth.com/logo_hu.webp" name="twitter:image"/><meta content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://platform.twitter.com https://cdn.syndication.twimg.com https://syndication.twitter.com https://twitter.com https://x.com; frame-src https://platform.twitter.com https://syndication.twitter.com https://x.com https://twitter.com; connect-src 'self' https://formsubmit.co https://syndication.twitter.com https://cdn.syndication.twimg.com https://x.com https://twitter.com; form-action 'self' https://formsubmit.co; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/></head>
 <body>
 <a class="skip-link" href="#main">Ugrás a tartalomra</a>
 <header class="site-header" role="banner"><div class="container site-header__inner"><a aria-label="Mag. Tamás Tóth — Bécsi kereskedelmi ügynök" class="site-logo" href="hu.html"><picture><source srcset="logo_hu.webp" type="image/webp"/><img alt="Mag. Tamás Tóth — Bécsi kereskedelmi ügynök" fetchpriority="high" height="600" loading="eager" src="logo_hu_small.png" width="600"/></picture><span class="site-logo__text"><span class="site-logo__name">Mag. Tamás Tóth</span><span class="site-logo__domain">metallagentur.at</span></span></a><nav aria-label="Főnavigáció" class="primary-nav"><ul><li><a href="hu.html">Főoldal</a></li><li><a href="hu-szolgaltatasok.html">Szolgáltatások</a></li><li><a href="hu-iparagak.html">Iparágak</a></li><li><a href="hu-regiok.html">Régiók</a></li><li><a href="hu-megoldasok.html">Megoldások</a></li><li><a href="hu-bemutatkozas.html">Bemutatkozás</a></li><li><a aria-current="page" href="hu-hirek.html">Hírek</a></li><li><a href="hu-gyik.html">GYIK</a></li></ul></nav><div aria-label="Nyelvválasztás" class="lang-switch"><a href="de.html">DE</a><a aria-current="true" href="hu.html">HU</a><a href="en.html">EN</a></div><button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü megnyitása" class="menu-toggle"><span aria-hidden="true"></span></button></div></header>
@@ -205,12 +205,14 @@
   button.addEventListener('click', function(){
     frame.hidden = false;
     box.hidden = true;
-    frame.innerHTML = '<a class="twitter-timeline" data-height="620" data-dnt="true" data-theme="light" href="https://x.com/MagTamasToth?ref_src=twsrc%5Etfw">@MagTamasToth on X</a>';
+    frame.innerHTML = '<a class="twitter-timeline" data-height="620" data-dnt="true" data-theme="light" href="https://twitter.com/MagTamasToth?ref_src=twsrc%5Etfw">@MagTamasToth on X</a>';
     if (window.twttr && window.twttr.widgets) { window.twttr.widgets.load(frame); return; }
     var js = document.createElement('script');
     js.src = 'https://platform.twitter.com/widgets.js';
     js.async = true;
     js.charset = 'utf-8';
+    js.onload = function(){ if (window.twttr && window.twttr.widgets) window.twttr.widgets.load(frame); };
+    js.onerror = function(){ frame.innerHTML = '<p class="social-note">Az X feed jelenleg nem tölthető be. Adblocker, harmadik féltől származó cookie-blokkolás vagy X oldali korlátozás okozhatja. <a href="https://x.com/MagTamasToth" target="_blank" rel="noopener">Profil megnyitása X-en</a></p>'; };
     document.body.appendChild(js);
   });
 })();

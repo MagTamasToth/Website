@@ -3877,3 +3877,152 @@ main > section.section:nth-of-type(3n):not(.section--regions-home):not(.hero) > 
 .btn--primary:hover { background: #1a2840 !important; color: #fffdf8 !important; transform: translateY(-1px); box-shadow: 0 12px 26px rgba(15,26,43,0.13) !important; }
 .btn--secondary, .btn--ghost { background: rgba(255,255,255,0.72) !important; color: var(--color-ink) !important; border: 1px solid rgba(15,26,43,0.16) !important; padding-inline: 1.55rem !important; }
 .btn--secondary:hover, .btn--ghost:hover { background: rgba(255,255,255,0.94) !important; color: var(--color-ink) !important; transform: translateY(-1px); border-color: rgba(15,26,43,0.26) !important; }
+
+
+/* ==========================================================================
+   v15 · homepage light sections, natural portrait ratio, dark-surface contrast
+   ========================================================================== */
+
+/* Keep the requested homepage sections light and editorial */
+main > section.section.section--showcase-light,
+main > section.section.section--process-home-light,
+main > section.section.section--contact-home-light {
+  background: radial-gradient(ellipse 46% 30% at 88% 0%, rgba(245,237,216,0.56), transparent 68%),
+              linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-warm) 100%) !important;
+  color: var(--color-ink) !important;
+  position: relative;
+  overflow: hidden;
+}
+
+main > section.section.section--showcase-light::before,
+main > section.section.section--process-home-light::before,
+main > section.section.section--contact-home-light::before {
+  content: none !important;
+  display: none !important;
+}
+
+main > section.section.section--showcase-light :is(h1,h2,h3,h4,p,li,.lead,a:not(.btn)),
+main > section.section.section--process-home-light :is(h1,h2,h3,h4,p,li,.lead,a:not(.btn)),
+main > section.section.section--contact-home-light :is(h1,h2,h3,h4,p,li,.lead,a:not(.btn)) {
+  color: var(--color-ink) !important;
+}
+
+main > section.section.section--showcase-light .eyebrow,
+main > section.section.section--process-home-light .eyebrow,
+main > section.section.section--contact-home-light .eyebrow,
+main > section.section.section--showcase-light :is(.form__label,strong[style*="font-family:var(--font-mono)"]),
+main > section.section.section--process-home-light :is(.form__label,strong[style*="font-family:var(--font-mono)"]),
+main > section.section.section--contact-home-light :is(.form__label,strong[style*="font-family:var(--font-mono)"]) {
+  color: var(--color-accent-hover) !important;
+}
+
+main > section.section.section--showcase-light .eyebrow::before,
+main > section.section.section--process-home-light .eyebrow::before,
+main > section.section.section--contact-home-light .eyebrow::before {
+  background: rgba(184, 134, 11, 0.66) !important;
+}
+
+main > section.section.section--showcase-light :is(.text-mute,span:not(.btn__arrow)),
+main > section.section.section--process-home-light :is(.text-mute,span:not(.btn__arrow)),
+main > section.section.section--contact-home-light :is(.text-mute,span:not(.btn__arrow)),
+main > section.section.section--contact-home-light .form__legal,
+main > section.section.section--contact-home-light .form__legal a,
+main > section.section.section--contact-home-light .form__hint {
+  color: var(--color-ink-soft) !important;
+}
+
+/* Ensure process cards remain elegant and light on the homepage */
+.section--process-home-light .process__step {
+  background: linear-gradient(145deg, rgba(255,255,253,0.97), rgba(250,250,247,0.94)) !important;
+  border: 1px solid rgba(217, 213, 202, 0.78) !important;
+  box-shadow: 0 18px 40px rgba(15,26,43,0.06), 0 4px 12px rgba(15,26,43,0.03) !important;
+}
+.section--process-home-light .process__step h3 { color: var(--color-ink) !important; }
+.section--process-home-light .process__step p { color: var(--color-ink-soft) !important; }
+.section--process-home-light .process__step::before { color: var(--color-accent-hover) !important; }
+
+/* The second portrait should use its natural aspect ratio and fill the intended visual space */
+.portrait-copy-grid__image {
+  align-self: center !important;
+}
+.portrait-copy-grid__image .portrait-placeholder,
+.portrait-copy-grid__image .portrait-placeholder__frame,
+.portrait-placeholder--trust,
+.portrait-placeholder--trust .portrait-placeholder__frame {
+  height: auto !important;
+  min-height: 0 !important;
+  max-height: none !important;
+}
+.portrait-copy-grid__image .portrait-placeholder {
+  width: min(100%, 380px) !important;
+  max-width: 380px !important;
+  margin-inline: auto;
+}
+.portrait-placeholder--trust {
+  width: 100% !important;
+  max-width: none !important;
+}
+.portrait-placeholder--trust .portrait-placeholder__frame {
+  aspect-ratio: auto !important;
+  display: block !important;
+}
+.portrait-placeholder--trust .portrait-placeholder__image {
+  display: block;
+  width: 100%;
+  height: auto !important;
+  min-height: 0 !important;
+  object-fit: cover;
+  object-position: center top;
+}
+@media (min-width: 1100px) {
+  .portrait-copy-grid__image .portrait-placeholder {
+    width: min(100%, 420px) !important;
+    max-width: 420px !important;
+  }
+}
+
+/* Dark surfaces: gold for headings and highlights, white for descriptions */
+main > section.section.section--ink:not(.section--process-home-light),
+main > section.section:nth-of-type(3n):not(.section--regions-home):not(.hero):not(.section--showcase-light):not(.section--process-home-light):not(.section--contact-home-light) {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+main > section.section.section--ink:not(.section--process-home-light) :is(h1,h2,h3,h4,.eyebrow,.form__label,dt,summary,strong),
+main > section.section:nth-of-type(3n):not(.section--regions-home):not(.hero):not(.section--showcase-light):not(.section--process-home-light):not(.section--contact-home-light) :is(h1,h2,h3,h4,.eyebrow,.form__label,dt,summary,strong) {
+  color: var(--color-accent-hover) !important;
+}
+
+main > section.section.section--ink:not(.section--process-home-light) .eyebrow::before,
+main > section.section:nth-of-type(3n):not(.section--regions-home):not(.hero):not(.section--showcase-light):not(.section--process-home-light):not(.section--contact-home-light) .eyebrow::before {
+  background: rgba(184, 134, 11, 0.72) !important;
+}
+
+main > section.section.section--ink:not(.section--process-home-light) :is(p,li,.lead,dd,label + *, .form__legal, .form__hint, a:not(.btn), span, small),
+main > section.section:nth-of-type(3n):not(.section--regions-home):not(.hero):not(.section--showcase-light):not(.section--process-home-light):not(.section--contact-home-light) :is(p,li,.lead,dd,label + *, .form__legal, .form__hint, a:not(.btn), span, small) {
+  color: rgba(255,255,255,0.92) !important;
+}
+
+/* Re-assert light-card typography inside any dark sections */
+:is(.card,.process__step,.process__item,.value-card,.faq-item,.region-card,.industry-card,.service-card,.solution-card,.contact-card,.legal-card,.content-card,.solution,.hero__grid > .reveal:first-child,.portrait-copy-grid > .reveal:last-child,.about-editorial-grid > .reveal:first-child) :is(h1,h2,h3,h4,.card__title,summary,strong,dt) {
+  color: var(--color-ink) !important;
+}
+:is(.card,.process__step,.process__item,.value-card,.faq-item,.region-card,.industry-card,.service-card,.solution-card,.contact-card,.legal-card,.content-card,.solution,.hero__grid > .reveal:first-child,.portrait-copy-grid > .reveal:last-child,.about-editorial-grid > .reveal:first-child) :is(p,li,dd,.card__body,.lead,a:not(.btn),span,small) {
+  color: var(--color-ink-soft) !important;
+}
+
+/* Contact forms on light sections */
+.section--contact-home-light .form__input,
+.section--contact-home-light .form__textarea,
+.section--contact-home-light .form__select {
+  background: rgba(255,255,255,0.96) !important;
+  color: var(--color-ink) !important;
+  border-color: rgba(15,26,43,0.14) !important;
+}
+.section--contact-home-light .form__textarea::placeholder,
+.section--contact-home-light .form__input::placeholder {
+  color: rgba(15,26,43,0.42) !important;
+}
+
+/* Keep the cookie bar readable on dark footer-like areas */
+.cookie-banner__text, .cookie-banner__text a { color: rgba(255,255,255,0.92) !important; }
+.cookie-banner__text a { text-decoration-color: rgba(184, 134, 11, 0.72); }

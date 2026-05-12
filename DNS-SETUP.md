@@ -1,6 +1,6 @@
 # DNS & E-Mail Konfiguration
 ## Hetzner DNS + GitHub Pages + ProtonMail
-### metallagentur.at
+### magtamastoth.com
 
 ---
 
@@ -8,16 +8,16 @@
 
 Die Datei `CNAME` im Root des Repositories enthält bereits:
 ```
-metallagentur.at
+magtamastoth.com
 ```
 
-GitHub Settings → Pages → Custom domain: `metallagentur.at` eintragen → **Enforce HTTPS** aktivieren.
+GitHub Settings → Pages → Custom domain: `magtamastoth.com` eintragen → **Enforce HTTPS** aktivieren.
 
 ---
 
 ## 2. Hetzner DNS Zone — Vollständige Konfiguration
 
-Im Hetzner DNS Console (dns.hetzner.com) für die Zone `metallagentur.at`:
+Im Hetzner DNS Console (dns.hetzner.com) für die Zone `magtamastoth.com`:
 
 ### A-Records (GitHub Pages IPs)
 ```
@@ -89,16 +89,16 @@ Nach dem DNS-Setup (Propagation: 1–24 Stunden):
 
 ```bash
 # GitHub Pages IPs prüfen
-dig metallagentur.at A
+dig magtamastoth.com A
 
 # MX-Records prüfen
-dig metallagentur.at MX
+dig magtamastoth.com MX
 
 # SPF prüfen
-dig metallagentur.at TXT
+dig magtamastoth.com TXT
 
 # HTTPS prüfen
-curl -I https://metallagentur.at
+curl -I https://magtamastoth.com
 ```
 
 Online-Tools:

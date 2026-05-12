@@ -9,7 +9,7 @@
    Inter: https://google-webfonts-helper.herokuapp.com/fonts/inter
    JetBrains Mono: https://google-webfonts-helper.herokuapp.com/fonts/jetbrains-mono
    
-   Mentse a .woff2 fájlokat az /assets/fonts/ mappába,
+   Mentse a .woff2 fájlokat az  mappába,
    majd aktiválja az alábbi @font-face blokkokat.
    ========================================================================== */
 
@@ -32,55 +32,55 @@
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/cormorant-garamond-v22-latin-regular.woff2") format("woff2");
+  src: url("cormorant-garamond-v22-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/assets/fonts/cormorant-garamond-v22-latin-500.woff2") format("woff2");
+  src: url("cormorant-garamond-v22-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Cormorant Garamond";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/assets/fonts/cormorant-garamond-v22-latin-600.woff2") format("woff2");
+  src: url("cormorant-garamond-v22-latin-600.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/inter-v18-latin-regular.woff2") format("woff2");
+  src: url("inter-v18-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/assets/fonts/inter-v18-latin-500.woff2") format("woff2");
+  src: url("inter-v18-latin-500.woff2") format("woff2");
 }
 @font-face {
   font-family: "Inter";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/assets/fonts/inter-v18-latin-600.woff2") format("woff2");
+  src: url("inter-v18-latin-600.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("/assets/fonts/jetbrains-mono-v18-latin-regular.woff2") format("woff2");
+  src: url("jetbrains-mono-v18-latin-regular.woff2") format("woff2");
 }
 @font-face {
   font-family: "JetBrains Mono";
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url("/assets/fonts/jetbrains-mono-v18-latin-500.woff2") format("woff2");
+  src: url("jetbrains-mono-v18-latin-500.woff2") format("woff2");
 }
 */

@@ -14,17 +14,17 @@ site/
 ├── robots.txt
 ├── 404.html
 │
-├── assets/
+├── styles.css / script.js / contact.js / logo_*.webp / logo_*_small.png
 │   ├── css/styles.css      # Gesamtes Design-System
 │   ├── js/script.js        # Header, Mobile Menu, Reveal-Animation
 │   └── js/contact.js       # FormSubmit AJAX + Fallback
 │
-├── de/                     # Deutsch (11 Inhaltsseiten + 3 Rechtsseiten)
+├── de.html                     # Deutsch (11 Inhaltsseiten + 3 Rechtsseiten)
 │   ├── index.html
-│   ├── leistungen/
-│   ├── branchen/
-│   ├── regionen/
-│   ├── loesungen/
+│   ├── leistungen.html
+│   ├── branchen.html
+│   ├── regionen.html
+│   ├── loesungen.html
 │   ├── ueber-mich/
 │   ├── faq/
 │   ├── kontakt/
@@ -32,7 +32,7 @@ site/
 │   ├── datenschutz/
 │   └── agb/
 │
-├── hu/                     # Ungarisch (11 Inhaltsseiten + 3 Rechtsseiten)
+├── hu.html                     # Ungarisch (11 Inhaltsseiten + 3 Rechtsseiten)
 │   ├── index.html
 │   ├── szolgaltatasok/
 │   ├── iparagak/
@@ -45,7 +45,7 @@ site/
 │   ├── adatvedelem/
 │   └── aszf/
 │
-└── en/                     # Englisch (11 Inhaltsseiten + 3 Rechtsseiten)
+└── en.html                     # Englisch (11 Inhaltsseiten + 3 Rechtsseiten)
     ├── index.html
     ├── services/
     ├── industries/
@@ -91,12 +91,12 @@ Auf github.com → Repository → **Settings** → **Pages**
 
 Die Website ist nach wenigen Minuten unter `https://DEIN-USERNAME.github.io/magtamastoth-site/` erreichbar.
 
-### 4. Eigene Domain einrichten (metallagentur.at)
+### 4. Eigene Domain einrichten (magtamastoth.com)
 
 **Im Repository:**  
 Eine Datei `CNAME` im Root anlegen mit dem Inhalt:
 ```
-metallagentur.at
+magtamastoth.com
 ```
 
 **Beim Domain-Registrar (z. B. GoDaddy, INWX, Namecheap):**
@@ -109,7 +109,7 @@ metallagentur.at
 | A | @ | 185.199.111.153 |
 | CNAME | www | DEIN-USERNAME.github.io |
 
-GitHub Pages → Custom domain: `metallagentur.at` eintragen → **Enforce HTTPS** aktivieren.
+GitHub Pages → Custom domain: `magtamastoth.com` eintragen → **Enforce HTTPS** aktivieren.
 
 ### 5. FormSubmit aktivieren
 
@@ -120,7 +120,7 @@ Beim ersten Absenden des Kontaktformulars schickt FormSubmit eine Bestätigungs-
 
 ## Logo einfügen
 
-1. Logo-Datei (SVG oder PNG, mind. 200×60 px) unter `assets/logo/logo.svg` ablegen.
+1. Logo-Datei (SVG oder PNG, mind. 200×60 px) unter `logo.svg` ablegen.
 2. In allen `index.html`-Dateien den `.site-logo`-Block ersetzen:
 
 ```html
@@ -132,7 +132,7 @@ Beim ersten Absenden des Kontaktformulars schickt FormSubmit eine Bestätigungs-
 
 <!-- nachher: -->
 <a class="site-logo" href="de.html">
-  <img src="logo_de.webp" alt="Mag. Tamas Toth" width="160" height="40">
+  <img src="logo.svg" alt="Mag. Tamas Toth" width="160" height="40">
 </a>
 ```
 
@@ -146,12 +146,12 @@ Im Code sind alle Portrait-Platzhalter mit diesem Kommentar markiert:
 <!-- Portrait-Platzhalter: hier später echtes Foto einfügen -->
 ```
 
-1. Foto als `portrait.jpg` (mind. 600×750 px, WebP für Performance optional) unter `assets/img/` ablegen.
+1. Foto als `portrait.jpg` (mind. 600×750 px, WebP für Performance optional) unter `` ablegen.
 2. Den `<figure class="portrait-placeholder">…</figure>`-Block ersetzen durch:
 
 ```html
 <figure>
-  <img src="portrait_1.webp" 
+  <img src="portrait.jpg" 
        alt="Mag. Tamas Toth — Handelsagent in Wien"
        width="600" height="750"
        loading="lazy">
@@ -165,13 +165,13 @@ Im Code sind alle Portrait-Platzhalter mit diesem Kommentar markiert:
 Alle kanonischen URLs, hreflang-Links, JSON-LD und Sitemap verwenden aktuell:
 
 ```
-https://metallagentur.at/
+https://magtamastoth.com/
 ```
 
 Falls eine andere Domain verwendet wird (z. B. `www.toth-handelsagent.at`), alle Vorkommen ersetzen:
 
 ```bash
-find . -name "*.html" -o -name "*.xml" | xargs sed -i 's|metallagentur.at|NEUE-DOMAIN.at|g'
+find . -name "*.html" -o -name "*.xml" | xargs sed -i 's|magtamastoth.com|NEUE-DOMAIN.at|g'
 ```
 
 ---

@@ -1,225 +1,149 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- ROOT / SPRACHWEICHE -->
   <url>
-    <loc>https://metallagentur.at/</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://magtamastoth.com/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://magtamastoth.com/"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+
+  <!-- DEUTSCH -->
+  <url>
+    <loc>https://magtamastoth.com/de.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://metallagentur.at/de.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://magtamastoth.com/de-leistungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-szolgaltatasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-services.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-branchen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-branchen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-iparagak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-industries.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-regionen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-regionen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-regiok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-regions.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-loesungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-loesungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-megoldasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-solutions.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-ueber-mich.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-ueber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-bemutatkozas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-about.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-gyik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-kapcsolat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-contact.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-impressum.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-datenschutz.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://magtamastoth.com/de-agb.html</loc>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- UNGARISCH -->
+  <url>
+    <loc>https://magtamastoth.com/hu.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://magtamastoth.com/hu-szolgaltatasok.html</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/hu-iparagak.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu-regiok.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu-megoldasok.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu-bemutatkozas.html</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/hu-gyik.html</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/hu-kapcsolat.html</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/hu-impresszum.html</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/hu-adatvedelem.html</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/hu-aszf.html</loc><priority>0.3</priority></url>
+
+  <!-- ENGLISCH -->
   <url>
-    <loc>https://metallagentur.at/hu.html</loc>
-    <lastmod>2026-05-11</lastmod>
+    <loc>https://magtamastoth.com/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url><loc>https://magtamastoth.com/en-services.html</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/en-industries.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en-regions.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en-solutions.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en-about.html</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/en-faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://magtamastoth.com/en-contact.html</loc><priority>0.9</priority></url>
+  <url><loc>https://magtamastoth.com/en-imprint.html</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/en-privacy.html</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/en-terms.html</loc><priority>0.3</priority></url>
+
+
+  <!-- AKADÁLYMENTESSÉG / BARRIEREFREIHEIT -->
   <url>
-    <loc>https://metallagentur.at/en.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <loc>https://magtamastoth.com/de-barrierefreiheit.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-barrierefreiheit.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-akadalymentesseg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-accessibility.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
   </url>
-  <url>
-    <loc>https://metallagentur.at/de-agb.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-barrierefreiheit.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-branchen.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-datenschutz.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-faq.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-impressum.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-kontakt.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-leistungen.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-loesungen.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-regionen.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/de-ueber-mich.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-about.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-accessibility.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-contact.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-faq.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-imprint.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-industries.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-privacy.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-regions.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-services.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-solutions.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/en-terms.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-adatvedelem.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-akadalymentesseg.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-aszf.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-bemutatkozas.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-gyik.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-impresszum.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-iparagak.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-kapcsolat.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-megoldasok.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-regiok.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://metallagentur.at/hu-szolgaltatasok.html</loc>
-    <lastmod>2026-05-11</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
+  <url><loc>https://magtamastoth.com/hu-akadalymentesseg.html</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/en-accessibility.html</loc><priority>0.3</priority></url>
 </urlset>

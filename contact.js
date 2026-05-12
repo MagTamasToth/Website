@@ -84,9 +84,9 @@
       lang === 'hu' ? 'hu-HU' : lang === 'de' ? 'de-AT' : 'en-GB',
       { dateStyle: 'long', timeStyle: 'short' }
     );
-    const hdr = { de:'Neue Anfrage \u2014 metallagentur.at',
-                  hu:'Új megkeres\u00e9s \u2014 metallagentur.at',
-                  en:'New enquiry \u2014 metallagentur.at' }[lang];
+    const hdr = { de:'Neue Anfrage \u2014 magtamastoth.com',
+                  hu:'Új megkeres\u00e9s \u2014 magtamastoth.com',
+                  en:'New enquiry \u2014 magtamastoth.com' }[lang];
     const order = ['name','company','role','country','email','phone','interest','industry','message'];
     let rows = '';
     order.forEach(k => { if (fields[k]) rows += (lbl[k] || k) + ': ' + fields[k] + '\n'; });
@@ -100,7 +100,7 @@
     const subj   = encodeURIComponent(
       (lang==='hu' ? 'Megkeres\u00e9s: ' : lang==='en' ? 'Enquiry from ' : 'Anfrage von ')
       + (fields.name||'') + (fields.company ? ' ('+fields.company+')' : '')
-      + ' \u2014 metallagentur.at'
+      + ' \u2014 magtamastoth.com'
     );
     return 'mailto:' + MAILTO + '?subject=' + subj + '&body=' + encodeURIComponent(buildBody(form, fields));
   }
@@ -111,7 +111,7 @@
     const body   = buildBody(form, fields);
     const subj   = (lang==='hu' ? 'Megkeres\u00e9s: ' : lang==='en' ? 'Enquiry from ' : 'Anfrage von ')
                  + (fields.name||'') + (fields.company ? ' ('+fields.company+')' : '')
-                 + ' \u2014 metallagentur.at';
+                 + ' \u2014 magtamastoth.com';
     const fd = new FormData();
     Object.entries(fields).forEach(([k,v]) => fd.append(k, v));
     fd.append('message',    body);

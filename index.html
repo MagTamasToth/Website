@@ -3,27 +3,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="icon" href="favicon.ico" sizes="any">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#0F1A2B">
-<title>Mag. Tamas Toth — Commercial Agent · Handelsagent · Kereskedelmi ügynök</title>
+  <title>Mag. Tamas Toth — Commercial Agent · Handelsagent · Kereskedelmi ügynök</title>
   <meta name="description" content="Commercial agent in Vienna for Austria and Hungary · Handelsagent in Wien für Österreich und Ungarn · Bécsi kereskedelmi ügynök Ausztria és Magyarország számára.">
 
-  <link rel="alternate" hreflang="de-AT" href="https://metallagentur.at/de.html">
-  <link rel="alternate" hreflang="hu-HU" href="https://metallagentur.at/hu.html">
-  <link rel="alternate" hreflang="en" href="https://metallagentur.at/en.html">
-  <link rel="alternate" hreflang="x-default" href="https://metallagentur.at/">
+  <link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html">
+  <link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html">
+  <link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html">
+  <link rel="alternate" hreflang="x-default" href="https://magtamastoth.com/">
 
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Inter:wght@400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
 
-  <link rel="stylesheet" href="fonts.css">
   <link rel="stylesheet" href="styles.css">
-
-  <!-- Google Search Console verification placeholder: add the provided meta tag here if you choose HTML tag verification. -->
-  <!-- Bing Webmaster Tools verification placeholder: add the provided meta tag here if you choose HTML tag verification. -->
 
   <style>
     .gateway {
@@ -99,11 +91,11 @@
     }
     .gateway__meta a { border-bottom: 1px solid var(--color-line); }
   </style>
-  <link rel="canonical" href="https://metallagentur.at/">
+  <link rel="canonical" href="https://magtamastoth.com/">
   <meta property="og:title" content="Mag. Tamas Toth — Handelsagent · Commercial Agent · Kereskedelmi ügynök">
   <meta property="og:description" content="Commercial agent in Vienna for Austria and Hungary.">
-  <meta property="og:url" content="https://metallagentur.at/">
-  <meta property="og:image" content="https://metallagentur.at/logo_en.webp">
+  <meta property="og:url" content="https://magtamastoth.com/">
+  <meta property="og:image" content="https://magtamastoth.com/logo_en.webp">
 </head>
 <body>
   <main class="gateway">
@@ -128,7 +120,7 @@
       </div>
 
       <p class="gateway__meta">1090 Wien · Liechtensteinstraße 131-133/24 · Mitglied WKO Wien · GISA 32963588<br>
-        <a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a> · <a href="tel:+4369912642565">+43 699 1264 2565</a>
+        <a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a> · <a href="tel:+436991264 2565">+43 699 1264 2565</a>
       </p>
     </div>
   </main>
@@ -148,19 +140,20 @@
         return l.toLowerCase();
       });
 
-      // Browser-language based start page.
-      // DE -> German, HU -> Hungarian, EN -> English; every other language defaults to English.
-      var target = 'en.html';
+      var target = null;
       for (var i = 0; i < langs.length; i++) {
         var l = langs[i];
         if (l.indexOf('de') === 0) { target = 'de.html'; break; }
         if (l.indexOf('hu') === 0) { target = 'hu.html'; break; }
         if (l.indexOf('en') === 0) { target = 'en.html'; break; }
       }
+      if (!target) return;
 
-      // Immediate redirect for a clean GitHub Pages landing flow.
-      try { sessionStorage.setItem('chosen-lang', target); } catch (e) {}
-      window.location.replace(target);
+      // 1.5 Sekunden Auswahl-Zeit, dann sanfte Weiterleitung
+      setTimeout(function () {
+        try { sessionStorage.setItem('chosen-lang', target); } catch (e) {}
+        window.location.replace(target);
+      }, 1500);
     })();
   </script>
 

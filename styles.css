@@ -1661,3 +1661,131 @@ body.cookie-visible .fab-cta {
     margin: 1.15rem 0 1.25rem 0 !important;
   }
 }
+
+/* ========================================================================== 
+   v31 refinement — larger desktop nav without language overlap + tighter news
+   ========================================================================== */
+.site-header__inner { min-width: 0; }
+.primary-nav { min-width: 0; }
+.primary-nav ul { min-width: 0; }
+.lang-switch { margin-left: 0.25rem; }
+
+@media (max-width: 1439px) {
+  .site-header__inner { grid-template-columns: minmax(0, 1fr) auto auto !important; }
+  .primary-nav { display: none !important; }
+  .menu-toggle { display: grid !important; }
+  .mobile-menu { display: block; }
+}
+
+@media (min-width: 1440px) {
+  .site-header__inner {
+    grid-template-columns: auto minmax(0, 1fr) auto auto !important;
+    gap: clamp(0.55rem, 1.1vw, 1.15rem) !important;
+  }
+  .site-logo img { height: 50px !important; max-width: 54px !important; }
+  .site-logo__text { padding-right: 0.15rem !important; }
+  .site-logo__name { font-size: clamp(0.98rem, 0.95vw, 1.18rem) !important; }
+  .site-logo__domain { font-size: 0.62rem !important; letter-spacing: 0.075em !important; }
+  .primary-nav {
+    display: flex !important;
+    justify-content: center !important;
+    overflow: hidden;
+  }
+  .primary-nav ul {
+    justify-content: center !important;
+    gap: 0 !important;
+  }
+  .primary-nav a {
+    font-size: clamp(0.86rem, 0.68vw, 0.95rem) !important;
+    line-height: 1.2 !important;
+    padding: 0.28rem clamp(0.42rem, 0.48vw, 0.62rem) !important;
+    letter-spacing: 0 !important;
+  }
+  .primary-nav a::after { left: clamp(0.42rem, 0.48vw, 0.62rem) !important; }
+  .primary-nav a:hover::after,
+  .primary-nav a[aria-current="page"]::after { width: calc(100% - (clamp(0.42rem, 0.48vw, 0.62rem) * 2)) !important; }
+  .lang-switch {
+    font-size: 0.72rem !important;
+    letter-spacing: 0.075em !important;
+    gap: 0.12rem !important;
+    margin-left: 0.1rem !important;
+  }
+  .lang-switch a { padding: 0.22rem 0.34rem !important; }
+  .menu-toggle { display: none !important; }
+  .mobile-menu { display: none !important; }
+}
+
+@media (min-width: 1680px) {
+  .primary-nav a {
+    font-size: 0.95rem !important;
+    padding-inline: 0.72rem !important;
+  }
+  .primary-nav a::after { left: 0.72rem !important; }
+  .primary-nav a:hover::after,
+  .primary-nav a[aria-current="page"]::after { width: calc(100% - 1.44rem) !important; }
+}
+
+/* Tighter, more balanced News/Aktuelles/Hírek layout */
+.news-hero {
+  padding: clamp(2.7rem, 5.2vw, 4.8rem) 0 clamp(1.55rem, 3vw, 2.4rem) !important;
+}
+.news-hero .hero__lead { max-width: 860px; }
+.news-grid {
+  gap: clamp(1rem, 2vw, 1.6rem) !important;
+  align-items: stretch !important;
+}
+.news-card, .social-consent-card {
+  padding: clamp(1.05rem, 2.1vw, 1.55rem) !important;
+  height: 100%;
+}
+.news-card > p,
+.social-consent-card > p { margin-bottom: 1rem; }
+.news-list {
+  gap: clamp(0.75rem, 1.35vw, 1rem) !important;
+  margin-top: 1rem !important;
+}
+.news-item {
+  padding: 0.9rem !important;
+  border: 1px solid rgba(76, 103, 125, 0.16) !important;
+  border-radius: var(--radius-md);
+  background: rgba(255,255,255,0.58);
+}
+.news-item:first-child { padding-top: 0.9rem !important; }
+.news-item h3 { line-height: 1.35; }
+.social-consent-box {
+  padding: 1rem !important;
+  margin-top: 0.65rem;
+}
+.social-link-actions {
+  gap: 0.6rem !important;
+  margin-top: 0.85rem !important;
+}
+.social-link-actions .btn {
+  min-height: 42px;
+  padding: 0.72rem 0.95rem;
+}
+@media (min-width: 980px) {
+  .news-grid {
+    grid-template-columns: minmax(0, 1.35fr) minmax(280px, 0.72fr) !important;
+  }
+  .news-list {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+  .news-item { display: flex; flex-direction: column; }
+}
+@media (max-width: 767px) {
+  .news-hero { padding-top: 2.1rem !important; }
+  .news-grid { gap: 1rem !important; }
+  .news-card, .social-consent-card { padding: 1rem !important; }
+  .news-item { padding: 0.85rem !important; }
+  .news-item:first-child { padding-top: 0.85rem !important; }
+}
+
+/* General mobile readability guardrails */
+@media (max-width: 767px) {
+  .section { padding-block: clamp(2.4rem, 8vw, 3.4rem); }
+  .grid, .grid--2, .grid--3, .grid--4 { gap: 1rem !important; }
+  .card, .knowledge-card { padding: clamp(1rem, 5vw, 1.25rem) !important; }
+  .hero__cta { gap: 0.7rem; }
+  .btn { white-space: normal; text-align: center; }
+}

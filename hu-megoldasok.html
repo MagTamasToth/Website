@@ -57,10 +57,12 @@
                loading="eager"
                fetchpriority="high">
         </picture>
+        <span class="site-logo__text"><span class="site-logo__name">Mag. Tamás Toth</span><span class="site-logo__domain">metallagentur.at</span></span>
       </a>
       <nav class="primary-nav">
         <ul>
-          <li><a href="hu-szolgaltatasok.html">Szolgáltatások</a></li>
+          
+          <li><a href="hu.html">Főoldal</a></li><li><a href="hu-szolgaltatasok.html">Szolgáltatások</a></li>
           <li><a href="hu-iparagak.html">Iparágak</a></li>
           <li><a href="hu-regiok.html">Régiók</a></li>
           <li><a href="hu-megoldasok.html" aria-current="page">Megoldások</a></li>
@@ -80,7 +82,8 @@
 
   <div class="mobile-menu" id="mobile-menu">
     <ul>
-      <li><a href="hu-szolgaltatasok.html">Szolgáltatások</a></li>
+      
+      <li><a href="hu.html">Főoldal</a></li><li><a href="hu-szolgaltatasok.html">Szolgáltatások</a></li>
       <li><a href="hu-iparagak.html">Iparágak</a></li>
       <li><a href="hu-regiok.html">Régiók</a></li>
       <li><a href="hu-megoldasok.html">Megoldások</a></li>
@@ -90,7 +93,7 @@
     </ul>
   </div>
 
-  <main id="main">
+  <main id="main" class="page-solutions">
     <section class="section">
       <div class="container">
         <div class="reveal" style="max-width: 60ch;">
@@ -102,8 +105,9 @@
     </section>
 
     <section class="section">
-      <div class="container container--narrow">
+      <div class="container solutions-container">
 
+        <div class="solutions-grid">
         <article class="solution reveal">
           <div class="solution__grid">
             <div class="solution__head">
@@ -211,6 +215,7 @@
             </div>
           </div>
         </article>
+        </div><!-- solutions-grid-fix-marker -->
 
         <div class="text-center reveal" style="margin-top: var(--space-6);">
           <a class="btn btn--primary" href="hu-kapcsolat.html">Saját probléma leírása <span class="btn__arrow">→</span></a>

@@ -146,4 +146,7 @@
   </url>
   <url><loc>https://magtamastoth.com/hu-akadalymentesseg.html</loc><priority>0.3</priority></url>
   <url><loc>https://magtamastoth.com/en-accessibility.html</loc><priority>0.3</priority></url>
+  <url><loc>https://magtamastoth.com/de-aktuelles.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/hu-hirek.html</loc><priority>0.8</priority></url>
+  <url><loc>https://magtamastoth.com/en-news.html</loc><priority>0.8</priority></url>
 </urlset>

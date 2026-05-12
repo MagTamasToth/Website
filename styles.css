@@ -201,7 +201,7 @@ h4 { font-size: var(--text-lg); font-weight: 600; }
   -webkit-backdrop-filter: saturate(180%) blur(12px);
   border-bottom: 1px solid transparent;
   height: var(--header-height);
-  transition: height 250ms ease, border-color 250ms ease;
+  transition: height 250ms ease, border-color 250ms ease, transform 240ms ease, opacity 240ms ease;
 }
 
 .site-header.is-scrolled {
@@ -1848,4 +1848,25 @@ body.cookie-visible .fab-cta {
   .portrait-placeholder--about {
     max-width: 100% !important;
   }
+}
+
+
+/* ==========================================================================
+   v35 scroll-aware header — hide on scroll down, show on scroll up
+   ========================================================================== */
+.site-header {
+  will-change: transform;
+  transform: translateY(0);
+}
+.site-header.is-hidden {
+  transform: translateY(calc(-100% - 2px)) !important;
+  pointer-events: none;
+}
+.site-header.is-menu-open {
+  transform: translateY(0) !important;
+  pointer-events: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  .site-header { transition: height 250ms ease, border-color 250ms ease !important; }
+  .site-header.is-hidden { transform: translateY(0) !important; pointer-events: auto; }
 }

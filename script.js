@@ -5,17 +5,33 @@
 (function () {
   'use strict';
 
-  // --- 1. Sticky Header Scroll-State ---------------------------------------
+  // --- 1. Sticky Header Scroll-State + Hide on Scroll Down ---------------
   const header = document.querySelector('.site-header');
   if (header) {
-    let lastY = 0;
+    let lastY = window.scrollY || 0;
+    const minDelta = 8;
+
     const onScroll = () => {
-      const y = window.scrollY;
+      const y = window.scrollY || 0;
+      const delta = y - lastY;
+      const menuIsOpen = document.querySelector('.mobile-menu.is-open');
+
       if (y > 24) header.classList.add('is-scrolled');
       else header.classList.remove('is-scrolled');
-      lastY = y;
+
+      if (menuIsOpen || y < 80) {
+        header.classList.remove('is-hidden');
+      } else if (Math.abs(delta) >= minDelta) {
+        if (delta > 0) header.classList.add('is-hidden');
+        else header.classList.remove('is-hidden');
+        lastY = y;
+      }
+
+      if (y < 80) lastY = y;
     };
+
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
     onScroll();
   }
 
@@ -27,12 +43,17 @@
       const open = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!open));
       menu.classList.toggle('is-open', !open);
+      if (header) {
+        header.classList.remove('is-hidden');
+        header.classList.toggle('is-menu-open', !open);
+      }
       document.body.style.overflow = !open ? 'hidden' : '';
     });
     menu.querySelectorAll('a').forEach((link) => {
       link.addEventListener('click', () => {
         toggle.setAttribute('aria-expanded', 'false');
         menu.classList.remove('is-open');
+        if (header) header.classList.remove('is-menu-open');
         document.body.style.overflow = '';
       });
     });

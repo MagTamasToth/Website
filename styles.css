@@ -1789,3 +1789,63 @@ body.cookie-visible .fab-cta {
   .hero__cta { gap: 0.7rem; }
   .btn { white-space: normal; text-align: center; }
 }
+
+/* ========================================================================== 
+   v33 about portrait restoration — larger editorial portrait with text wrap
+   ========================================================================== */
+.portrait-placeholder--about {
+  width: min(42%, 410px) !important;
+  max-width: 410px !important;
+  min-width: 285px !important;
+}
+.portrait-placeholder--about .portrait-placeholder__frame {
+  aspect-ratio: 800 / 1200 !important;
+  border: 0 !important;
+  outline: 0 !important;
+  box-shadow: 0 18px 44px rgba(15, 26, 43, 0.11) !important;
+}
+.portrait-placeholder--about .portrait-placeholder__frame::before,
+.portrait-placeholder--about .portrait-placeholder__frame::after {
+  content: none !important;
+  display: none !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.portrait-placeholder--about .portrait-placeholder__image {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover !important;
+  border: 0 !important;
+  outline: 0 !important;
+}
+.magazine-portrait--right.portrait-placeholder--about {
+  float: right !important;
+  margin: 0.18rem 0 1.25rem clamp(1.5rem, 3vw, 2.25rem) !important;
+}
+.magazine-portrait--left.portrait-placeholder--about {
+  float: left !important;
+  margin: 0.18rem clamp(1.5rem, 3vw, 2.25rem) 1.25rem 0 !important;
+}
+@media (min-width: 1280px) {
+  .portrait-placeholder--about {
+    width: min(44%, 430px) !important;
+    max-width: 430px !important;
+  }
+}
+@media (max-width: 899px) {
+  .portrait-placeholder--about {
+    width: 100% !important;
+    max-width: min(100%, 430px) !important;
+    min-width: 0 !important;
+  }
+  .magazine-portrait--right.portrait-placeholder--about,
+  .magazine-portrait--left.portrait-placeholder--about {
+    float: none !important;
+    margin: 0.85rem 0 1.4rem 0 !important;
+  }
+}
+@media (max-width: 560px) {
+  .portrait-placeholder--about {
+    max-width: 100% !important;
+  }
+}

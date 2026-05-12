@@ -1,7 +1,11 @@
-v27 validation
-- Flat ZIP structure preserved.
-- Local internal links/assets checked: 0 missing.
-- portrait_2.JPG added and used as the second/trust image on DE/HU/EN homepages and index.html.
-- Dashed overlay removed from portrait frames.
-- Trust portrait aspect ratio set to 2048:1535 with responsive no-overlap rules.
-- CNAME remains www.metallagentur.at.
+Build validation — v36 audit fixes
+
+Applied fixes:
+- FormSubmit retained as requested.
+- x-default hreflang added to all multilingual HTML page groups and sitemap.
+- 404.html no longer loads Google Fonts; local fonts.css is used.
+- CSP normalized and social embed domains removed because feeds are external buttons, not embedded widgets.
+- Missing JSON-LD added to 404, News/Aktuelles/Hírek and Accessibility pages.
+- Schema logo references changed from Wikimedia file pages to local metallagentur.at logo assets.
+- og:image and twitter:image ensured across HTML pages.
+- CNAME: www.metallagentur.at.

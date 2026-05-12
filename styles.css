@@ -4347,3 +4347,64 @@ main > section.section.section--portrait-copy.section--showcase-light::before {
     margin-bottom: 0.65rem !important;
   }
 }
+
+
+/* ==========================================================================
+   v22 · Content/structure improvements: decision guide and related paths
+   ========================================================================== */
+.section--decision-guide {
+  background: radial-gradient(ellipse 42% 28% at 90% 0%, rgba(245,237,216,0.56), transparent 68%),
+              linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-warm) 100%);
+}
+.decision-grid,
+.related-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: clamp(1rem, 2vw, 1.35rem);
+}
+@media (min-width: 860px) {
+  .decision-grid,
+  .related-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+.decision-card,
+.related-card {
+  display: flex;
+  flex-direction: column;
+  gap: 0.85rem;
+  min-height: 100%;
+  padding: clamp(1.25rem, 2.4vw, 2rem);
+  border-radius: 24px;
+  border: 1px solid rgba(217, 213, 202, 0.78);
+  background: linear-gradient(145deg, rgba(255,255,253,0.98), rgba(250,250,247,0.94));
+  box-shadow: 0 18px 42px rgba(15,26,43,0.06), 0 4px 12px rgba(15,26,43,0.025);
+  color: var(--color-ink);
+  text-decoration: none;
+}
+.decision-card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  font-size: clamp(1.18rem, 1.6vw, 1.55rem);
+  line-height: 1.18;
+  color: var(--color-ink);
+}
+.decision-card p,
+.related-card span:not(.card__index):not(.btn__arrow) {
+  color: var(--color-ink-soft);
+}
+.related-card strong {
+  font-family: var(--font-display);
+  font-size: clamp(1.1rem, 1.45vw, 1.42rem);
+  line-height: 1.2;
+  color: var(--color-ink);
+}
+.related-card .btn__arrow {
+  margin-top: auto;
+  color: var(--color-accent-hover);
+  font-size: 1.2rem;
+}
+.related-card:hover {
+  transform: translateY(-2px);
+  border-color: rgba(184,134,11,0.28);
+  box-shadow: 0 24px 54px rgba(15,26,43,0.085), 0 6px 16px rgba(15,26,43,0.035);
+}
+.section--related-paths .lead { max-width: 62ch; }

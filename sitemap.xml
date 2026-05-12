@@ -1,152 +1,355 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
-
-  <!-- ROOT / SPRACHWEICHE -->
   <url>
-    <loc>https://magtamastoth.com/</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://magtamastoth.com/"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-
-  <!-- DEUTSCH -->
-  <url>
-    <loc>https://magtamastoth.com/de.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
+    <loc>https://www.metallagentur.at/</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/"/>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://magtamastoth.com/de-leistungen.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-leistungen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-szolgaltatasok.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-services.html"/>
+    <loc>https://www.metallagentur.at/hu.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/"/>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-leistungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-szolgaltatasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-leistungen.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://magtamastoth.com/de-branchen.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-branchen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-iparagak.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-industries.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-regionen.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-regionen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-regiok.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-regions.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-loesungen.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-loesungen.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-megoldasok.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-solutions.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-ueber-mich.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-ueber-mich.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-bemutatkozas.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-about.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-faq.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-faq.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-gyik.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-faq.html"/>
-    <changefreq>monthly</changefreq>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-kontakt.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-kontakt.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-kapcsolat.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-contact.html"/>
+    <loc>https://www.metallagentur.at/hu-szolgaltatasok.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-szolgaltatasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-leistungen.html"/>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
   </url>
   <url>
-    <loc>https://magtamastoth.com/de-impressum.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-datenschutz.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-  <url>
-    <loc>https://magtamastoth.com/de-agb.html</loc>
-    <changefreq>yearly</changefreq>
-    <priority>0.3</priority>
-  </url>
-
-  <!-- UNGARISCH -->
-  <url>
-    <loc>https://magtamastoth.com/hu.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
+    <loc>https://www.metallagentur.at/en-services.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-leistungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-szolgaltatasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-services.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-leistungen.html"/>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.9</priority>
   </url>
-  <url><loc>https://magtamastoth.com/hu-szolgaltatasok.html</loc><priority>0.9</priority></url>
-  <url><loc>https://magtamastoth.com/hu-iparagak.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/hu-regiok.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/hu-megoldasok.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/hu-bemutatkozas.html</loc><priority>0.7</priority></url>
-  <url><loc>https://magtamastoth.com/hu-gyik.html</loc><priority>0.7</priority></url>
-  <url><loc>https://magtamastoth.com/hu-kapcsolat.html</loc><priority>0.9</priority></url>
-  <url><loc>https://magtamastoth.com/hu-impresszum.html</loc><priority>0.3</priority></url>
-  <url><loc>https://magtamastoth.com/hu-adatvedelem.html</loc><priority>0.3</priority></url>
-  <url><loc>https://magtamastoth.com/hu-aszf.html</loc><priority>0.3</priority></url>
-
-  <!-- ENGLISCH -->
   <url>
-    <loc>https://magtamastoth.com/en.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en.html"/>
+    <loc>https://www.metallagentur.at/de-branchen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-branchen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-iparagak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-industries.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-branchen.html"/>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.8</priority>
   </url>
-  <url><loc>https://magtamastoth.com/en-services.html</loc><priority>0.9</priority></url>
-  <url><loc>https://magtamastoth.com/en-industries.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/en-regions.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/en-solutions.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/en-about.html</loc><priority>0.7</priority></url>
-  <url><loc>https://magtamastoth.com/en-faq.html</loc><priority>0.7</priority></url>
-  <url><loc>https://magtamastoth.com/en-contact.html</loc><priority>0.9</priority></url>
-  <url><loc>https://magtamastoth.com/en-imprint.html</loc><priority>0.3</priority></url>
-  <url><loc>https://magtamastoth.com/en-privacy.html</loc><priority>0.3</priority></url>
-  <url><loc>https://magtamastoth.com/en-terms.html</loc><priority>0.3</priority></url>
-
-
-  <!-- AKADÁLYMENTESSÉG / BARRIEREFREIHEIT -->
   <url>
-    <loc>https://magtamastoth.com/de-barrierefreiheit.html</loc>
-    <xhtml:link rel="alternate" hreflang="de-AT" href="https://magtamastoth.com/de-barrierefreiheit.html"/>
-    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://magtamastoth.com/hu-akadalymentesseg.html"/>
-    <xhtml:link rel="alternate" hreflang="en" href="https://magtamastoth.com/en-accessibility.html"/>
+    <loc>https://www.metallagentur.at/hu-iparagak.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-branchen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-iparagak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-industries.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-branchen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-industries.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-branchen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-iparagak.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-industries.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-branchen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-regionen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-regionen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-regiok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-regions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-regionen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-regiok.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-regionen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-regiok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-regions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-regionen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-regions.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-regionen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-regiok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-regions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-regionen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-loesungen.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-loesungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-megoldasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-loesungen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-megoldasok.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-loesungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-megoldasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-loesungen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-solutions.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-loesungen.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-megoldasok.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-solutions.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-loesungen.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-ueber-mich.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-ueber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-bemutatkozas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-ueber-mich.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-bemutatkozas.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-ueber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-bemutatkozas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-ueber-mich.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-about.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-ueber-mich.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-bemutatkozas.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-about.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-ueber-mich.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-aktuelles.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-aktuelles.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-hirek.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-news.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-aktuelles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-hirek.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-aktuelles.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-hirek.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-news.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-aktuelles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-news.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-aktuelles.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-hirek.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-news.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-aktuelles.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-gyik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-gyik.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-gyik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-faq.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-gyik.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-faq.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-faq.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-kontakt.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-kapcsolat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-kontakt.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-kapcsolat.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-kapcsolat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-kontakt.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-contact.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-kontakt.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-kapcsolat.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-contact.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-kontakt.html"/>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-impressum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-impresszum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-impressum.html"/>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
-  <url><loc>https://magtamastoth.com/hu-akadalymentesseg.html</loc><priority>0.3</priority></url>
-  <url><loc>https://magtamastoth.com/en-accessibility.html</loc><priority>0.3</priority></url>
-  <url><loc>https://magtamastoth.com/de-aktuelles.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/hu-hirek.html</loc><priority>0.8</priority></url>
-  <url><loc>https://magtamastoth.com/en-news.html</loc><priority>0.8</priority></url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-impresszum.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-impresszum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-impressum.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-imprint.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-impressum.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-impresszum.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-imprint.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-impressum.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-datenschutz.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-adatvedelem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-datenschutz.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-adatvedelem.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-adatvedelem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-datenschutz.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-datenschutz.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-adatvedelem.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-privacy.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-datenschutz.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-agb.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-agb.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-aszf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-agb.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-aszf.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-agb.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-aszf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-agb.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-agb.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-aszf.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-terms.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-agb.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/de-barrierefreiheit.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-barrierefreiheit.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-akadalymentesseg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-barrierefreiheit.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/hu-akadalymentesseg.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-barrierefreiheit.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-akadalymentesseg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-barrierefreiheit.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+  <url>
+    <loc>https://www.metallagentur.at/en-accessibility.html</loc>
+    <xhtml:link rel="alternate" hreflang="de-AT" href="https://www.metallagentur.at/de-barrierefreiheit.html"/>
+    <xhtml:link rel="alternate" hreflang="hu-HU" href="https://www.metallagentur.at/hu-akadalymentesseg.html"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://www.metallagentur.at/en-accessibility.html"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://www.metallagentur.at/de-barrierefreiheit.html"/>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
 </urlset>

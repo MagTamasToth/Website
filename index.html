@@ -1,124 +1,540 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="de-AT">
 <head>
 <meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Mag. Tamas Toth — Commercial Agent · Handelsagent · Kereskedelmi ügynök</title>
-<meta content="Commercial agent in Vienna for Austria and Hungary · Handelsagent in Wien für Österreich und Ungarn · Bécsi kereskedelmi ügynök Ausztria és Magyarország számára." name="description"/>
-<link href="https://magtamastoth.com/de.html" hreflang="de-AT" rel="alternate"/>
-<link href="https://magtamastoth.com/hu.html" hreflang="hu-HU" rel="alternate"/>
-<link href="https://magtamastoth.com/en.html" hreflang="en" rel="alternate"/>
-<link href="https://magtamastoth.com/" hreflang="x-default" rel="alternate"/>
-
-
-
+<meta content="width=device-width, initial-scale=1, viewport-fit=cover" name="viewport"/>
+<title>Mag. Tamas Toth — Handelsagent in Wien für Österreich und Ungarn</title>
+<meta content="Operativer Handelsagent in Wien für Markteintritt, Marktentwicklung und Handelsvertretung in Österreich und Ungarn. Mehrsprachig, lokal verankert, mit nachweisbarer Sales-Erfahrung." name="description"/>
+<link href="https://www.metallagentur.at/" rel="canonical"/>
+<link href="https://www.metallagentur.at/" hreflang="de-AT" rel="alternate"/>
+<link href="https://www.metallagentur.at/hu.html" hreflang="hu-HU" rel="alternate"/>
+<link href="https://www.metallagentur.at/en.html" hreflang="en" rel="alternate"/>
+<link href="https://www.metallagentur.at/" hreflang="x-default" rel="alternate"/>
+<meta content="website" property="og:type"/>
+<meta content="Mag. Tamas Toth — Handelsagent" property="og:site_name"/>
+<meta content="Mag. Tamas Toth — Handelsagent in Wien für Österreich und Ungarn" property="og:title"/>
+<meta content="Operativer Handelsagent in Wien für Markteintritt, Marktentwicklung und Handelsvertretung in Österreich und Ungarn." property="og:description"/>
+<meta content="https://www.metallagentur.at/" property="og:url"/>
+<meta content="de_AT" property="og:locale"/>
+<meta content="hu_HU" property="og:locale:alternate"/>
+<meta content="en_US" property="og:locale:alternate"/>
+<meta content="summary_large_image" name="twitter:card"/>
+<meta content="@MagTamasToth" name="twitter:site"/>
+<link href="fonts.css" rel="stylesheet"/>
 <link href="styles.css" rel="stylesheet"/>
-<style>
-    .gateway {
-      min-height: 100vh;
-      display: grid;
-      place-items: center;
-      padding: var(--space-4) 1.5rem;
-      background:
-        radial-gradient(ellipse 60% 50% at 80% 20%, var(--color-accent-soft) 0%, transparent 60%),
-        linear-gradient(180deg, var(--color-paper) 0%, var(--color-paper-warm) 100%);
-    }
-    .gateway__inner {
-      max-width: 760px;
-      width: 100%;
-      text-align: center;
-    }
-    .gateway__name {
-      font-family: var(--font-display);
-      font-size: var(--text-2xl);
-      letter-spacing: -0.02em;
-      margin: 0 0 0.5rem;
-    }
-    .gateway__tag {
-      font-family: var(--font-mono);
-      font-size: var(--text-xs);
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: var(--color-accent);
-      margin-bottom: var(--space-5);
-    }
-    .gateway__choice {
-      display: grid;
-      gap: var(--space-2);
-      max-width: 460px;
-      margin: 0 auto var(--space-5);
-    }
-    @media (min-width: 640px) {
-      .gateway__choice { grid-template-columns: repeat(3, 1fr); }
-    }
-    .gateway__lang {
-      display: block;
-      padding: 1.5rem 1rem;
-      background: var(--color-paper);
-      border: 1px solid var(--color-line);
-      border-radius: var(--radius-md);
-      text-align: center;
-      transition: border-color 250ms ease, transform 250ms ease;
-    }
-    .gateway__lang:hover {
-      border-color: var(--color-accent);
-      transform: translateY(-2px);
-    }
-    .gateway__lang strong {
-      display: block;
-      font-family: var(--font-display);
-      font-size: var(--text-lg);
-      margin-bottom: 0.4rem;
-      color: var(--color-ink);
-    }
-    .gateway__lang span {
-      font-family: var(--font-mono);
-      font-size: var(--text-xs);
-      letter-spacing: 0.14em;
-      text-transform: uppercase;
-      color: var(--color-mute);
-    }
-    .gateway__meta {
-      font-size: var(--text-sm);
-      color: var(--color-mute);
-      max-width: 50ch;
-      margin: 0 auto;
-      line-height: 1.6;
-    }
-    .gateway__meta a { border-bottom: 1px solid var(--color-line); }
-  </style>
-<link href="https://magtamastoth.com/" rel="canonical"/>
-<meta content="Mag. Tamas Toth — Handelsagent · Commercial Agent · Kereskedelmi ügynök" property="og:title"/>
-<meta content="Commercial agent in Vienna for Austria and Hungary." property="og:description"/>
-<meta content="https://magtamastoth.com/" property="og:url"/>
-<meta content="https://magtamastoth.com/logo_en.webp" property="og:image"/>
-<meta content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/><meta content="https://magtamastoth.com/logo_en.webp" name="twitter:image"/></head>
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Person",
+        "@id": "https://www.metallagentur.at/#person",
+        "name": "Mag. Tamas Toth",
+        "givenName": "Tamas",
+        "familyName": "Toth",
+        "honorificPrefix": "Mag.",
+        "jobTitle": "Handelsagent / Commercial Agent / Kereskedelmi ügynök",
+        "description": "Handelsagent in Wien für Markteintritt, Marktentwicklung und Handelsmanagement in Österreich und Ungarn.",
+        "url": "https://www.metallagentur.at/",
+        "email": "mailto:tamas.toth@metallagentur.at",
+        "telephone": "+43-699-1264-2565",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Liechtensteinstraße 131-133/24",
+          "addressLocality": "Wien",
+          "postalCode": "1090",
+          "addressCountry": "AT"
+        },
+        "knowsLanguage": [
+          { "@type": "Language", "name": "German", "alternateName": "de" },
+          { "@type": "Language", "name": "Hungarian", "alternateName": "hu" },
+          { "@type": "Language", "name": "English", "alternateName": "en" }
+        ],
+        "alumniOf": [
+          { "@type": "EducationalOrganization", "name": "Wirtschaftsuniversität Wien", "url": "https://www.wu.ac.at/" },
+          { "@type": "EducationalOrganization", "name": "Aarhus School of Business", "url": "https://bss.au.dk/" }
+        ],
+        "memberOf": { "@type": "Organization", "name": "Wirtschaftskammer Wien", "url": "https://www.wko.at/" },
+        "sameAs": [
+          "https://www.linkedin.com/in/mag-tamas-toth/",
+          "https://x.com/MagTamasToth",
+          "https://commons.wikimedia.org/wiki/User:MagTamasToth"
+        ]
+      },
+      {
+        "@type": "ProfessionalService",
+        "logo": {"@type":"ImageObject","url":"https://commons.wikimedia.org/wiki/File:Mag._Tamas_Toth_logo_(de).jpg","name":"Mag. Tamas Toth Logo"},
+        "@id": "https://www.metallagentur.at/#service",
+        "name": "Mag. Tamas Toth — Handelsagent",
+        "founder": { "@id": "https://www.metallagentur.at/#person" },
+        "url": "https://www.metallagentur.at/",
+        "description": "Operativer Handelsagent in Wien für Markteintritt, Marktentwicklung und Handelsmanagement in Österreich und Ungarn.",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Liechtensteinstraße 131-133/24",
+          "addressLocality": "Wien",
+          "postalCode": "1090",
+          "addressCountry": "AT"
+        },
+        "areaServed": [
+          { "@type": "Country", "name": "Austria" },
+          { "@type": "Country", "name": "Hungary" }
+        ],
+        "availableLanguage": ["de", "hu", "en"],
+        "identifier": [
+          { "@type": "PropertyValue", "propertyID": "UID", "value": "ATU69150839" },
+          { "@type": "PropertyValue", "propertyID": "GISA", "value": "32963588" },
+          { "@type": "PropertyValue", "propertyID": "GLN", "value": "9110021161794" }
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "sales",
+          "email": "tamas.toth@metallagentur.at",
+          "telephone": "+43-699-1264-2565",
+          "areaServed": ["AT", "HU"],
+          "availableLanguage": ["de", "hu", "en"]
+        }
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.metallagentur.at/#website",
+        "url": "https://www.metallagentur.at/",
+        "name": "Mag. Tamas Toth — Handelsagent",
+        "publisher": { "@id": "https://www.metallagentur.at/#person" },
+        "inLanguage": ["de-AT", "hu-HU", "en"]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Wie funktioniert die Zusammenarbeit mit einem Handelsagenten?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Sie beauftragen mich vertraglich mit der Vermittlung oder dem Abschluss von Geschäften in Ihrem Namen. Sie behalten die volle Kontrolle über Preise, Konditionen und Verträge. Ich bin Ihr lokaler Vertriebspartner und arbeite nach den Regeln des österreichischen Handelsvertretergesetzes."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Welche Branchen verstehen Sie wirklich?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Schwerpunkte sind Industrie, Bau- und Aluminiumprofile, Konsumgüter, Bio- und Öko-Lebensmittel, Erneuerbare Energien, Reinigungsmittel und Kosmetik, Print und Werbemittel sowie Recycling-Produkte."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Arbeiten Sie auf Honorar oder Provision?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Beides ist möglich. Üblich ist ein kleiner Fixanteil zur Deckung des operativen Aufwands plus erfolgsabhängige Provision. Die genaue Struktur klären wir individuell."
+            }
+          }
+        ]
+      }
+    ]
+  }
+  </script>
+<meta content="https://www.metallagentur.at/logo_de.webp" property="og:image"/><meta content="https://www.metallagentur.at/logo_de.webp" name="twitter:image"/><meta content="default-src 'self'; base-uri 'self'; object-src 'none'; img-src 'self' data: https:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' https://platform.twitter.com https://cdn.syndication.twimg.com; frame-src https://platform.twitter.com https://syndication.twitter.com https://x.com https://twitter.com; connect-src 'self' https://formsubmit.co; form-action 'self' https://formsubmit.co; upgrade-insecure-requests" http-equiv="Content-Security-Policy"/></head>
 <body>
-<main class="gateway">
-<div class="gateway__inner">
-<p class="gateway__tag">Handelsagent · Commercial Agent · Kereskedelmi ügynök</p>
-<h1 class="gateway__name">Mag. Tamas Toth</h1>
-<p style="font-family:var(--font-display);font-size:var(--text-md);color:var(--color-ink-soft);max-width:50ch;margin:0 auto var(--space-5);line-height:1.5;">Vertriebspartner für Österreich und Ungarn. · Sales partner for Austria and Hungary. · Értékesítési partner Ausztria és Magyarország számára.</p>
-<div class="gateway__choice">
-<a class="gateway__lang" href="de.html" hreflang="de-AT">
-<strong>Deutsch</strong>
-<span>DE · Österreich</span>
-</a>
-<a class="gateway__lang" href="hu.html" hreflang="hu-HU">
-<strong>Magyar</strong>
-<span>HU · Magyarország</span>
-</a>
-<a class="gateway__lang" href="en.html" hreflang="en">
-<strong>English</strong>
-<span>EN · International</span>
-</a>
+<a class="skip-link" href="#main">Zum Inhalt springen</a>
+<header class="site-header" role="banner"><div class="container site-header__inner"><a aria-label="Mag. Tamas Toth — Handelsagent Wien" class="site-logo" href="index.html"><picture><source srcset="logo_de.webp" type="image/webp"/><img alt="Mag. Tamas Toth — Handelsagent Wien" fetchpriority="high" height="600" loading="eager" src="logo_de_small.png" width="600"/></picture><span class="site-logo__text"><span class="site-logo__name">Mag. Tamas Toth</span><span class="site-logo__domain">metallagentur.at</span></span></a><nav aria-label="Hauptnavigation" class="primary-nav"><ul><li><a aria-current="page" href="index.html">Startseite</a></li><li><a href="de-leistungen.html">Leistungen</a></li><li><a href="de-branchen.html">Branchen</a></li><li><a href="de-regionen.html">Regionen</a></li><li><a href="de-loesungen.html">Lösungen</a></li><li><a href="de-ueber-mich.html">Über mich</a></li><li><a href="de-aktuelles.html">Aktuelles</a></li><li><a href="de-faq.html">FAQ</a></li></ul></nav><div aria-label="Sprachauswahl" class="lang-switch"><a aria-current="true" href="index.html">DE</a><a href="hu.html">HU</a><a href="en.html">EN</a></div><button aria-controls="mobile-menu" aria-expanded="false" aria-label="Menü öffnen" class="menu-toggle"><span aria-hidden="true"></span></button></div></header>
+<div aria-label="Mobile Navigation" class="mobile-menu" id="mobile-menu"><ul><li><a aria-current="page" href="index.html">Startseite</a></li><li><a href="de-leistungen.html">Leistungen</a></li><li><a href="de-branchen.html">Branchen</a></li><li><a href="de-regionen.html">Regionen</a></li><li><a href="de-loesungen.html">Lösungen</a></li><li><a href="de-ueber-mich.html">Über mich</a></li><li><a href="de-aktuelles.html">Aktuelles</a></li><li><a href="de-faq.html">FAQ</a></li></ul></div>
+<main id="main">
+<!-- HERO -->
+<section class="hero">
+<div class="container hero__grid">
+<div class="reveal">
+<span class="eyebrow">Handelsagent · Wien · Ostösterreich · Ungarn</span>
+<h1 class="hero__title">Markteintritt und Marktentwicklung in Österreich und Ungarn — ohne eigene Niederlassung.</h1>
+<p class="hero__lead">Als Handelsagent in Wien übernehme ich Akquise, Kundenbetreuung und Marktarbeit für Hersteller und B2B-Anbieter — operativ, mehrsprachig und mit nachvollziehbaren Reportings.</p>
+<div class="hero__cta">
+<a class="btn btn--primary btn--block" href="de-kontakt.html">Erstgespräch vereinbaren <span class="btn__arrow">→</span></a>
+<a class="btn btn--secondary btn--block" href="de-leistungen.html">Leistungen ansehen</a>
 </div>
-<p class="gateway__meta">1090 Wien · Liechtensteinstraße 131-133/24 · Mitglied WKO Wien · GISA 32963588<br/>
-<a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a> · <a href="tel:+4369912642565">+43 699 1264 2565</a>
-</p>
+<div class="hero__meta">
+<span>Mitglied WKO Wien</span>
+<span>GISA 32963588</span>
+<span>DE · HU · EN</span>
 </div>
+</div>
+<div class="reveal" style="transition-delay: 200ms;">
+<!-- Portrait-Platzhalter: hier später echtes Foto einfügen -->
+<figure aria-label="Portrait Mag. Tamas Toth" class="portrait-placeholder portrait-placeholder--hero"><div class="portrait-placeholder__frame"><img alt="Portrait Mag. Tamas Toth" class="portrait-placeholder__image" fetchpriority="high" height="1067" loading="eager" src="portrait_1.webp" width="800"/></div></figure>
+</div>
+</div>
+</section>
+<!-- TRUST-BAR -->
+<div class="trust-bar">
+<div class="container">
+<ul class="trust-bar__list">
+<li>Mitglied Wirtschaftskammer Wien</li>
+<li>Aktive Gewerbeberechtigung · GISA 32963588</li>
+<li>1090 Wien · Liechtensteinstraße</li>
+<li>Sprachen: Deutsch · Ungarisch · Englisch</li>
+<li>Rechtsschutzversicherung · weltweit (exkl. USA/KAN/AUS)</li>
+</ul>
+</div>
+</div>
+<!-- METALS TRADING SERVICE -->
+<section class="section section--warm">
+<div class="container knowledge-panel">
+<div class="reveal">
+<span class="eyebrow">Leistungsfokus Metallhandel</span>
+<h2>Handelsvertretung für strategische Metalle — wenn Rohstoffe geschäftskritische Ressourcen sind.</h2>
+<p class="lead">Bei Edelmetallen, Technologiemetallen und Seltenen Erden entscheidet nicht nur der Preis. Einkaufsvertrauen, Materialqualität, Lieferantenreputation, Dokumentierbarkeit und ein belastbarer lokaler Geschäftsdialog bestimmen, ob aus einer Marktchance ein belastbares Geschäft wird.</p>
+<p>Ich unterstütze B2B-Anfragen zwischen Österreich und Ungarn, bei denen physische Edelmetalle, strategische Metalle, Technologiemetalle oder industriell relevante Rohstoffe marktnah positioniert, vorgestellt, verhandelt oder mehrsprachig vertreten werden müssen. Der Fokus liegt auf Handelsvertretung und Marktarbeit; es handelt sich nicht um Anlage-, Vermögens- oder Finanzberatung.</p>
+<a class="btn btn--ghost" href="de-kontakt.html">Metallhandels-Anfrage starten <span class="btn__arrow">→</span></a>
+</div>
+<div class="reveal">
+<div class="knowledge-card">
+<h3>Geschäftliche Fokusfelder</h3>
+<ul class="knowledge-list">
+<li>Gold, Silber, Platin und Palladium im B2B-Kontext</li>
+<li>Technologiemetalle und Seltene Erden für Industrie-, Batterie- und Halbleiteranwendungen</li>
+<li>Vorbereitung von Lieferanten-, Käufer-, Qualitäts-, Reinheits- und Marktvergleichen</li>
+<li>Österreichisch-ungarische Geschäftsgespräche, Verhandlungsaufbau und Nachverfolgung</li>
+</ul>
+</div>
+</div>
+</div>
+</section>
+<!-- FÜR WEN -->
+<section class="section">
+<div class="container">
+<div class="reveal" style="max-width: 60ch;">
+<span class="eyebrow">Für wen ich arbeite</span>
+<h2>Hersteller und B2B-Anbieter mit Plan für Österreich oder Ungarn.</h2>
+<p class="lead">Ich arbeite mit Unternehmen, die einen klaren Plan für Österreich oder Ungarn brauchen — und einen Partner, der ihn vor Ort umsetzt.</p>
+</div>
+<div class="grid grid--3" style="margin-top: var(--space-5);">
+<div class="card reveal">
+<div class="card__index">01</div>
+<h3 class="card__title">Industrie und B2B-Hersteller</h3>
+<p class="card__body">Unternehmen, die in Österreich oder Ungarn neue Kundengruppen aufbauen — von technischen Produkten bis zu projektbasiertem Geschäft.</p>
+</div>
+<div class="card reveal" style="transition-delay: 100ms;">
+<div class="card__index">02</div>
+<h3 class="card__title">Bio, Öko, Erneuerbare</h3>
+<p class="card__body">Bio- und biologisch-dynamische Lebensmittel, erneuerbare Energien, Reinigungsmittel und Kosmetik mit Werten, die zu meinem Interesse an nachhaltigen Innovationen passen.</p>
+</div>
+<div class="card reveal" style="transition-delay: 200ms;">
+<div class="card__index">03</div>
+<h3 class="card__title">Markteintritts-Interessenten</h3>
+<p class="card__body">Anbieter mit konkreten Plänen für Österreich oder Ungarn, denen lokale Repräsentanz, Sprache und Netzwerk fehlen.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PROBLEME / LÖSUNGEN -->
+<section class="section section--warm">
+<div class="container">
+<div class="reveal" style="max-width: 60ch;">
+<span class="eyebrow">Probleme, die ich löse</span>
+<h2>Sechs Situationen kommen besonders häufig vor.</h2>
+</div>
+<ol class="grid grid--2" style="list-style:none;padding:0;margin-top:var(--space-5);counter-reset:problem;">
+<li class="card reveal" style="counter-increment:problem;">
+<div class="card__index">Problem 01</div>
+<h3 class="card__title">Sie haben kein lokales Verkaufsgesicht.</h3>
+<p class="card__body">Sie wollen niemanden anstellen, bevor der Markt sich bewährt hat. Genau dafür gibt es Handelsagenten.</p>
+</li>
+<li class="card reveal" style="counter-increment:problem;transition-delay:80ms;">
+<div class="card__index">Problem 02</div>
+<h3 class="card__title">Sie brauchen ehrliches Marktfeedback.</h3>
+<p class="card__body">Bevor Marketing- oder Vertriebsbudget gebunden wird, lohnt ein lokaler Marktcheck.</p>
+</li>
+<li class="card reveal" style="counter-increment:problem;transition-delay:160ms;">
+<div class="card__index">Problem 03</div>
+<h3 class="card__title">Sprache und Kultur sind eine Hürde.</h3>
+<p class="card__body">Zwischen Mitteleuropa und Ungarn liegen mehr als nur Übersetzungsfragen.</p>
+</li>
+<li class="card reveal" style="counter-increment:problem;transition-delay:240ms;">
+<div class="card__index">Problem 04</div>
+<h3 class="card__title">Ostösterreich gezielt aufbauen.</h3>
+<p class="card__body">Lieber eine Region wirklich entwickeln als Ressourcen flächig verteilen.</p>
+</li>
+<li class="card reveal" style="counter-increment:problem;transition-delay:320ms;">
+<div class="card__index">Problem 05</div>
+<h3 class="card__title">Operative Unterstützung, nicht nur Strategie.</h3>
+<p class="card__body">Akquise, Termine, Angebote, Nachfass — das alles braucht jemanden, der hingeht.</p>
+</li>
+<li class="card reveal" style="counter-increment:problem;transition-delay:400ms;">
+<div class="card__index">Problem 06</div>
+<h3 class="card__title">Lokale Repräsentanz ohne eigene Struktur.</h3>
+<p class="card__body">Marktpräsenz mit kalkulierbarem Aufwand — statt eigener Niederlassung.</p>
+</li>
+</ol>
+<div class="text-center reveal" style="margin-top: var(--space-4);">
+<a class="btn btn--ghost" href="de-loesungen.html">Lösungen im Detail ansehen <span class="btn__arrow">→</span></a>
+</div>
+</div>
+</section>
+<!-- LEISTUNGEN -->
+<section class="section">
+<div class="container">
+<div class="reveal" style="max-width: 60ch;">
+<span class="eyebrow">Leistungen</span>
+<h2>Acht Bausteine entlang des Vertriebszyklus.</h2>
+<p class="lead">Sie buchen einzelne Bausteine oder eine kombinierte Vertretung — je nach Marktreife, Budget und Zielsetzung.</p>
+</div>
+<div class="grid grid--4" style="margin-top: var(--space-5);">
+<div class="card reveal">
+<h3 class="card__title">Markteintritt Österreich</h3>
+<p class="card__body">Strukturierte Erstanalyse, Erstkontakte, Pilotkunden.</p>
+</div>
+<div class="card reveal" style="transition-delay:60ms;">
+<h3 class="card__title">Markteintritt Ungarn</h3>
+<p class="card__body">Brückenfunktion in den ungarischen Markt, in Muttersprache.</p>
+</div>
+<div class="card reveal" style="transition-delay:120ms;">
+<h3 class="card__title">Marktentwicklung</h3>
+<p class="card__body">Bestehende Märkte stärken, Lücken schließen, Wachstum strukturieren.</p>
+</div>
+<div class="card reveal" style="transition-delay:180ms;">
+<h3 class="card__title">Handelsvertretung</h3>
+<p class="card__body">Aktive Vertretung gegenüber Kunden im Auftrag des Herstellers.</p>
+</div>
+<div class="card reveal">
+<h3 class="card__title">Key Account Management</h3>
+<p class="card__body">Betreuung wichtiger Kunden mit klarer Reporting-Struktur.</p>
+</div>
+<div class="card reveal" style="transition-delay:60ms;">
+<h3 class="card__title">Sales Promotion</h3>
+<p class="card__body">Verkaufsförderung am Point of Sale, im Außendienst, auf Messen.</p>
+</div>
+<div class="card reveal" style="transition-delay:120ms;">
+<h3 class="card__title">Marktanalyse</h3>
+<p class="card__body">Belastbare Grundlage vor strategischen Entscheidungen.</p>
+</div>
+<div class="card reveal" style="transition-delay:180ms;">
+<h3 class="card__title">Repräsentanz &amp; Messen</h3>
+<p class="card__body">Vor-Ort-Präsenz, Termine, Übersetzung, Nachbereitung.</p>
+</div>
+</div>
+<div class="text-center reveal" style="margin-top: var(--space-4);">
+<a class="btn btn--ghost" href="de-leistungen.html">Alle Leistungen ansehen <span class="btn__arrow">→</span></a>
+</div>
+</div>
+</section>
+<!-- REGIONEN -->
+<section class="section section--warm">
+<div class="container">
+<div class="grid grid--2" style="align-items: start;">
+<div class="reveal">
+<span class="eyebrow">Regionen</span>
+<h2>Wien, Ostösterreich und Ungarn.</h2>
+<p>Mein Tätigkeitsschwerpunkt liegt in Wien und Ostösterreich — also Niederösterreich, Burgenland und der östliche Teil der Steiermark — sowie in Ungarn. Für ausgewählte Projekte bin ich auch in Oberösterreich und im weiteren DACH-Raum mobil.</p>
+<p>Mit eigenem Pkw, regelmäßiger Reisepraxis und einem aktiven Netzwerk auf beiden Seiten der Grenze bin ich dort präsent, wo Entscheidungen vorbereitet und Kundenbeziehungen aufgebaut werden.</p>
+<a class="btn btn--ghost" href="de-regionen.html">Regionen im Detail <span class="btn__arrow">→</span></a>
+</div>
+<ul class="reveal" style="list-style:none;padding:0;margin:0;display:grid;gap:0.75rem;">
+<li style="padding:1rem;border:1px solid var(--color-line);border-radius:4px;background:var(--color-paper);"><strong style="font-family:var(--font-display);font-size:var(--text-md);">Wien</strong><br/><span class="text-mute" style="font-size:var(--text-sm);">Standort und Headquarter-Stadt für viele internationale Marken im Mitteleuropa-Raum.</span></li>
+<li style="padding:1rem;border:1px solid var(--color-line);border-radius:4px;background:var(--color-paper);"><strong style="font-family:var(--font-display);font-size:var(--text-md);">Niederösterreich &amp; Burgenland</strong><br/><span class="text-mute" style="font-size:var(--text-sm);">Industrieller Speckgürtel, grenzüberschreitende Geschäftsmodelle.</span></li>
+<li style="padding:1rem;border:1px solid var(--color-line);border-radius:4px;background:var(--color-paper);"><strong style="font-family:var(--font-display);font-size:var(--text-md);">Steiermark &amp; Oberösterreich</strong><br/><span class="text-mute" style="font-size:var(--text-sm);">Industrieschwerpunkte selektiv für überregionale Mandate.</span></li>
+<li style="padding:1rem;border:1px solid var(--color-line);border-radius:4px;background:var(--color-paper);"><strong style="font-family:var(--font-display);font-size:var(--text-md);">Ungarn</strong><br/><span class="text-mute" style="font-size:var(--text-sm);">Muttersprache, Studienverbindungen, Vertriebspraxis von Budapest bis in ländliche Regionen.</span></li>
+</ul>
+</div>
+</div>
+</section>
+<!-- WARUM MIT MIR -->
+<section class="section">
+<div class="container">
+<div class="grid grid--2" style="align-items: start;">
+<div class="reveal">
+<span class="eyebrow">Warum mit mir arbeiten</span>
+<h2>Akademisch fundiert, praktisch erfahren, lokal verankert.</h2>
+</div>
+<div class="reveal">
+<ul style="list-style:none;padding:0;margin:0;display:grid;gap:1.25rem;">
+<li><strong style="font-family:var(--font-display);font-size:var(--text-md);">Akademisch und praktisch fundiert.</strong><br/>Studium der Betriebswirtschaftslehre an der WU Wien mit Schwerpunkten Handel, Marketing und Projektmanagement, ergänzt durch ein Auslandssemester an der Aarhus School of Business.</li>
+<li><strong style="font-family:var(--font-display);font-size:var(--text-md);">Über zwei Jahrzehnte Vertriebserfahrung.</strong><br/>Vom Wertpapierhandel bis zum technischen B2B-Vertrieb von Aluminiumprofilen, vom Konsumgüter-Einkauf bei REWE bis zum Projektgeschäft bei Ahrend Austria.</li>
+<li><strong style="font-family:var(--font-display);font-size:var(--text-md);">Drei Sprachen auf Geschäftsniveau.</strong><br/>Ungarisch als Muttersprache, Deutsch auf C1, Englisch auf B2 mit Business-English-Zertifizierung.</li>
+<li><strong style="font-family:var(--font-display);font-size:var(--text-md);">Operativ, nicht beratend.</strong><br/>Ich übernehme Akquise, Termine und Kundenkontakt — nicht nur Strategiepapier.</li>
+</ul>
+</div>
+</div>
+<div class="reveal" style="margin-top:var(--space-5);">
+<!-- Portrait-Platzhalter: hier später echtes Foto einfügen -->
+<figure aria-label="Portrait-Bereich Vertrauen" class="portrait-placeholder portrait-placeholder--trust magazine-portrait magazine-portrait--left"><div class="portrait-placeholder__frame"><img alt="Portrait Mag. Tamas Toth" class="portrait-placeholder__image" height="1200" loading="lazy" src="portrait_2.webp" width="800"/></div></figure>
+</div>
+</div>
+</section>
+<!-- PROZESS -->
+<section class="section section--ink">
+<div class="container">
+<div class="reveal" style="max-width: 60ch;">
+<span class="eyebrow">So läuft die Zusammenarbeit</span>
+<h2 style="color:var(--color-paper);">Fünf klare Schritte. Keine Überraschungen.</h2>
+</div>
+<div class="process reveal" style="margin-top:var(--space-5);">
+<div class="process__step">
+<h3 style="color:var(--color-paper);">Erstgespräch</h3>
+<p style="color:rgba(250,250,247,0.7);">Kostenfrei. Wir klären Ziel, Region, Branche, Erwartung.</p>
+</div>
+<div class="process__step">
+<h3 style="color:var(--color-paper);">Marktcheck</h3>
+<p style="color:rgba(250,250,247,0.7);">Marktpotenzial, Wettbewerb und Vertriebskanäle für Ihr Produkt.</p>
+</div>
+<div class="process__step">
+<h3 style="color:var(--color-paper);">Vereinbarung</h3>
+<p style="color:rgba(250,250,247,0.7);">Leistungsumfang, Honorar- und Provisionsmodell, Reporting.</p>
+</div>
+<div class="process__step">
+<h3 style="color:var(--color-paper);">Aktiver Vertrieb</h3>
+<p style="color:rgba(250,250,247,0.7);">Akquise, Kundenbetreuung, Marktarbeit nach Plan.</p>
+</div>
+<div class="process__step">
+<h3 style="color:var(--color-paper);">Reporting</h3>
+<p style="color:rgba(250,250,247,0.7);">Regelmäßig, nachvollziehbar, mit Anpassung bei Bedarf.</p>
+</div>
+</div>
+</div>
+</section>
+<!-- FAQ -->
+<section class="section">
+<div class="container container--narrow">
+<div class="reveal">
+<span class="eyebrow">Häufige Fragen</span>
+<h2>Was vor einem Erstgespräch oft gefragt wird.</h2>
+</div>
+<div class="faq reveal" style="margin-top:var(--space-4);">
+<details>
+<summary>Wie funktioniert die Zusammenarbeit mit einem Handelsagenten?</summary>
+<div class="faq__answer">Sie beauftragen mich vertraglich mit der Vermittlung oder dem Abschluss von Geschäften in Ihrem Namen. Sie behalten die volle Kontrolle über Preise, Konditionen und Verträge — ich bin der lokale Vertriebspartner.</div>
+</details>
+<details>
+<summary>Welche Branchen verstehen Sie wirklich?</summary>
+<div class="faq__answer">Schwerpunkte sind Industrie, Bau- und Aluminiumprofile, Konsumgüter, Bio- und Öko-Lebensmittel, Erneuerbare Energien, Reinigungsmittel und Kosmetik, Print und Werbemittel sowie Recycling-Produkte. Andere Branchen prüfen wir gemeinsam.</div>
+</details>
+<details>
+<summary>Arbeiten Sie auf Honorar oder Provision?</summary>
+<div class="faq__answer">Beides ist möglich. Üblich ist ein kleiner Fixanteil zur Deckung des operativen Aufwands plus erfolgsabhängige Provision. Die genaue Struktur klären wir individuell.</div>
+</details>
+<details>
+<summary>In welchen Regionen sind Sie aktiv?</summary>
+<div class="faq__answer">Schwerpunkt Wien, Niederösterreich, Burgenland, Steiermark sowie Ungarn. Oberösterreich und weiterer DACH-Raum projektabhängig.</div>
+</details>
+</div>
+<div class="text-center" style="margin-top: var(--space-4);">
+<a class="btn btn--ghost" href="de-faq.html">Alle Fragen lesen <span class="btn__arrow">→</span></a>
+</div>
+</div>
+</section>
+<!-- KONTAKT-CTA -->
+<section class="section section--warm" id="kontakt">
+<div class="container">
+<div class="grid grid--2" style="align-items: start; gap: var(--space-5);">
+<div class="reveal">
+<span class="eyebrow">Kontakt</span>
+<h2>Schreiben Sie mir.</h2>
+<p class="lead">Ein erster Termin ist unverbindlich, vertraulich und auf Deutsch, Ungarisch oder Englisch möglich. Werktags antworte ich innerhalb von 24 Stunden.</p>
+<ul style="list-style:none;padding:0;margin:var(--space-3) 0;display:grid;gap:0.6rem;font-size:var(--text-sm);">
+<li><strong style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--color-mute);">E-Mail</strong><br/><a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a></li>
+<li><strong style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--color-mute);">Telefon AT / WhatsApp</strong><br/><a href="tel:+4369912642565">+43 699 1264 2565</a></li>
+<li><strong style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--color-mute);">Telefon HU / WhatsApp</strong><br/><a href="tel:+36308971886">+36 30 8971 886</a></li>
+<li><strong style="font-family:var(--font-mono);font-size:var(--text-xs);letter-spacing:0.12em;text-transform:uppercase;color:var(--color-mute);">LinkedIn</strong><br/><a href="https://www.linkedin.com/in/mag-tamas-toth/" rel="noopener" target="_blank">linkedin.com/in/mag-tamas-toth</a></li>
+</ul>
+</div>
+<form class="form reveal" data-form="contact" data-lang="de" novalidate="">
+<div class="form__row form__row--two">
+<div class="form__field">
+<label class="form__label" for="name">Name <span class="required">*</span></label>
+<input class="form__input" id="name" name="name" required="" type="text"/>
+</div>
+<div class="form__field">
+<label class="form__label" for="company">Unternehmen <span class="required">*</span></label>
+<input class="form__input" id="company" name="company" required="" type="text"/>
+</div>
+</div>
+<div class="form__row form__row--two">
+<div class="form__field">
+<label class="form__label" for="email">E-Mail <span class="required">*</span></label>
+<input class="form__input" id="email" name="email" required="" type="email"/>
+</div>
+<div class="form__field">
+<label class="form__label" for="phone">Telefon / WhatsApp</label>
+<input class="form__input" id="phone" name="phone" type="tel"/>
+</div>
+</div>
+<div class="form__field">
+<label class="form__label" for="message">Worum geht es? <span class="required">*</span></label>
+<textarea class="form__textarea" id="message" name="message" placeholder="Branche, Zielmarkt, kurze Skizze des Vorhabens" required=""></textarea>
+</div>
+<div class="form__submit-row">
+<label class="consent-row" for="consent_de_home">
+<input id="consent_de_home" name="consent" required="" type="checkbox"/>
+<span>Ich habe die <a href="de-datenschutz.html" rel="noopener noreferrer" target="_blank">Datenschutzerklärung</a> gelesen und stimme zu. <span aria-label="required" class="required">*</span></span>
+</label>
+<button class="btn btn--primary" type="submit">Anfrage senden <span aria-hidden="true" class="btn__arrow">→</span></button>
+</div>
+<input name="_subject" type="hidden" value="Anfrage — www.metallagentur.at (DE)"/>
+<p class="form__hint">Sie hören werktags innerhalb von 24 Stunden von mir. Lieber telefonisch? <a href="tel:+4369912642565">+43 699 1264 2565</a></p>
+</form>
+</div>
+</div>
+</section>
 </main>
+<footer class="site-footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<h4>Mag. Tamas Toth</h4>
+<p>Handelsagent in Wien für Markteintritt, Marktentwicklung und Handelsmanagement in Österreich und Ungarn.</p>
+<p style="font-size:var(--text-xs);color:rgba(250,250,247,0.5);">Liechtensteinstraße 131-133/24<br/>1090 Wien · Österreich</p>
+</div>
+<div>
+<h4>Navigation</h4>
+<ul class="footer-list">
+<li><a href="de-leistungen.html">Leistungen</a></li>
+<li><a href="de-branchen.html">Branchen</a></li>
+<li><a href="de-regionen.html">Regionen</a></li>
+<li><a href="de-loesungen.html">Lösungen</a></li>
+<li><a href="de-ueber-mich.html">Über mich</a></li>
+<li><a href="de-aktuelles.html">Aktuelles</a></li>
+<li><a href="de-faq.html">FAQ</a></li>
+</ul>
+</div>
+<div>
+<h4>Kontakt</h4>
+<ul class="footer-list">
+<li><a href="mailto:tamas.toth@metallagentur.at">tamas.toth@metallagentur.at</a></li>
+<li><a href="tel:+4369912642565">+43 699 1264 2565</a></li>
+<li><a href="tel:+36308971886">+36 30 8971 886</a></li>
+<li><a href="https://www.linkedin.com/in/mag-tamas-toth/" rel="noopener" target="_blank">LinkedIn</a></li>
+<li><a href="https://x.com/MagTamasToth" rel="noopener" target="_blank">X</a></li>
+<li><a href="https://commons.wikimedia.org/wiki/User:MagTamasToth" rel="noopener" target="_blank">Wikimedia Commons</a></li>
+</ul>
+</div>
+<div>
+<h4>Rechtliches</h4>
+<ul class="footer-list">
+<li><a href="de-impressum.html">Impressum</a></li>
+<li><a href="de-datenschutz.html">Datenschutz</a></li>
+<li><a href="de-agb.html">AGB</a></li>
+</ul>
+<p class="footer-disclaimer">Zusätzliche Gewerbeberechtigung als Finanztippgeber gem. § 136a Abs. 8 GewO 1994 (GISA 38742828). Es erfolgt keine Beratung über Vermögen, Finanzierung, Veranlagung, Vorsorge oder Versicherungen, sondern ausschließlich die Namhaftmachung interessierter Personen an dazu befugte Gewerbliche Vermögensberater.</p>
+</div>
+</div>
+<div class="footer-bottom">
+<span>© <span data-current-year="">2026</span> Mag. Tamas Toth · GISA 32963588 · Mitglied WKO Wien</span>
+<span>Sprachen: <a aria-current="true" href="index.html">DE</a> · <a href="hu.html">HU</a> · <a href="en.html">EN</a></span>
+</div>
+</div>
+</footer>
+<script defer="" src="script.js"></script>
+<script defer="" src="contact.js"></script>
+<div aria-label="Beratung anfragen" class="fab-cta" id="fab-cta" role="complementary">
+<a aria-label="Beratung anfragen" class="fab-cta__btn" href="de-kontakt.html">
+<span aria-hidden="true" class="fab-cta__icon">
+<svg fill="none" height="20" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewbox="0 0 24 24" width="20">
+<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+</svg>
+</span>
+<span class="fab-cta__label">Beratung anfragen</span>
+</a>
+</div>
 <script>
 (function() {
   'use strict';

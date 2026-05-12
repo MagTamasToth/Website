@@ -4133,3 +4133,88 @@ main > section.section.section--portrait-copy.section--showcase-light::before {
 .about-editorial-grid > .reveal:first-child :is(p,li,.lead,span:not(.btn__arrow),a:not(.btn),small) {
   color: rgba(255,255,255,0.92) !important;
 }
+
+/* ========================================================================== 
+   v19 · Elegant process step numbers
+   - refined badges for the homepage cooperation/process cards
+   - applied to HU / DE / EN through the shared .section--process-home-light class
+   ========================================================================== */
+
+.section--process-home-light .process {
+  counter-reset: step;
+}
+
+.section--process-home-light .process__step {
+  position: relative !important;
+  padding: clamp(1.45rem, 2.2vw, 1.95rem) clamp(1.25rem, 2vw, 1.7rem) clamp(1.35rem, 2vw, 1.65rem) !important;
+  overflow: visible;
+}
+
+.section--process-home-light .process__step::before {
+  content: counter(step, decimal-leading-zero) !important;
+  position: static !important;
+  display: inline-flex !important;
+  align-items: center;
+  justify-content: center;
+  width: 2.65rem !important;
+  height: 2.65rem !important;
+  margin: 0 0 1.15rem !important;
+  padding: 0 !important;
+  border: 1px solid rgba(184, 134, 11, 0.34) !important;
+  border-radius: 999px !important;
+  background:
+    radial-gradient(circle at 35% 25%, rgba(255, 255, 255, 0.88), rgba(250, 250, 247, 0.52) 58%, rgba(245, 237, 216, 0.42) 100%) !important;
+  box-shadow:
+    inset 0 1px 0 rgba(255,255,255,0.75),
+    0 10px 22px rgba(15,26,43,0.07) !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.72rem !important;
+  font-weight: 500 !important;
+  line-height: 1 !important;
+  letter-spacing: 0.08em !important;
+  color: var(--color-accent-hover) !important;
+}
+
+.section--process-home-light .process__step::after {
+  content: "";
+  position: absolute;
+  top: clamp(1.45rem, 2.2vw, 1.95rem);
+  left: calc(clamp(1.25rem, 2vw, 1.7rem) + 3.05rem);
+  width: clamp(2.25rem, 4vw, 4.2rem);
+  height: 1px;
+  background: linear-gradient(90deg, rgba(184,134,11,0.34), rgba(184,134,11,0));
+  pointer-events: none;
+}
+
+.section--process-home-light .process__step h3 {
+  margin-top: 0 !important;
+  margin-bottom: 0.6rem !important;
+}
+
+@media (min-width: 768px) {
+  .section--process-home-light .process {
+    gap: clamp(0.9rem, 1.5vw, 1.25rem) !important;
+  }
+
+  .section--process-home-light .process__step {
+    padding-top: clamp(1.45rem, 2vw, 1.85rem) !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .section--process-home-light .process__step {
+    padding: 1.25rem !important;
+  }
+
+  .section--process-home-light .process__step::before {
+    width: 2.35rem !important;
+    height: 2.35rem !important;
+    margin-bottom: 0.95rem !important;
+  }
+
+  .section--process-home-light .process__step::after {
+    top: 1.25rem;
+    left: calc(1.25rem + 2.75rem);
+    width: 3rem;
+  }
+}

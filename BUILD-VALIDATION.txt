@@ -1,9 +1,7 @@
-V26 build validation
-Scope: flat GitHub Pages package, German homepage served from index.html
-HTML files: 41
-Missing parsed local refs: 0
-Domain remnants magtamastoth.com: 0
-Local href="de.html" remnants: 0
-Absolute /de.html canonical/hreflang remnants: 0
-CNAME: www.metallagentur.at
-Portrait files swapped physically: portrait_1.webp now contains previous portrait_2 content; portrait_2.webp now contains previous portrait_1 content.
+v27 validation
+- Flat ZIP structure preserved.
+- Local internal links/assets checked: 0 missing.
+- portrait_2.JPG added and used as the second/trust image on DE/HU/EN homepages and index.html.
+- Dashed overlay removed from portrait frames.
+- Trust portrait aspect ratio set to 2048:1535 with responsive no-overlap rules.
+- CNAME remains www.metallagentur.at.
